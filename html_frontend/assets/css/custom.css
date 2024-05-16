@@ -1,15 +1,57 @@
 .h-cs-50 {
-    height: 50px !important;
+  height: 50px !important;
 }
 .h-cs-100 {
-    height: 100px !important;
+  height: 100px !important;
 }
 .h-cs-150 {
-    height: 150px !important;
+  height: 150px !important;
 }
 .h-cs-200 {
-    height: 200px !important;
+  height: 200px !important;
+}
+.h-cs-300 {
+  height: 300px !important;
+}
+.h-cs-400 {
+  height: 400px !important;
+}
+.h-cs-500 {
+  height: 500px !important;
+}
+.h-cs-600 {
+  height: 600px !important;
+}
+.h-cs-1000 {
+  height: 1000px !important;
 }
 .w-cs-fit {
-    width: fit-content;
+  width: fit-content;
+}
+.bg-cs-top-nav {
+  background-color: #005992;
+}
+.r-cs-10 {
+  right: 10px;
+}
+.r-cs-20 {
+  right: 20px;
+}
+.r-cs-30 {
+  right: 30px;
+}
+
+.center-cs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center-cs-half {
+  top: 25%;
+}
+
+li::marker {
+    content: ""!important;
 }

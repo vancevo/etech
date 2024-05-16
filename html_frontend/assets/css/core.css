@@ -21197,8 +21197,8 @@ body.header-scroll-reveal #header.header-down {
 body.header-scroll-reveal #header.header-up {
   top: -100%; }
 
-body.header-scroll-reveal:not(.header-is-on-top) #header.header-down #top_bar,
-body.header-scroll-reveal:not(.header-is-on-top) #header.header-up #top_bar {
+body.header-scroll-reveal:not(.header-is-on-top) #header.header-down #top_bar #top_bar_1,
+body.header-scroll-reveal:not(.header-is-on-top) #header.header-up #top_bar #top_bar_1 {
   display: none; }
 
 /**
