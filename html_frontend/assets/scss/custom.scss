@@ -136,42 +136,84 @@ li::marker {
   content: " ";
 }
 
-.PC_body {
-  background-image: url("https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/banner-bg.jpg");
-}
+// LOGO
 
-.lh_body {
-  display: grid;
-  grid-template-columns: 50% 50%;
-
-  &_sm {
-    grid-template-columns: 1;
-  }
-  &__left {
-    margin-left: 12px;
-  }
-  &__right {
-  }
-
-  // LOGO
-
-  .brand_support {
-    width: 160px;
-    height: 160px;
-    img {
-      object-fit: cover;
-      width: 160px;
-      height: 160px;
-    }
+.brand_support {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  img {
+    object-fit: contain;
+    width: 140px;
+    height: 140px;
   }
 }
 
 // DTCL
 .dtcl_content {
   margin-bottom: 48px;
-  &__body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+  // &__body {
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);
+  //   gap: 12px;
+  // }
+}
+
+/* SECTION-CONTAINER */
+.GTCT-container {
+  height: 600px;
+}
+.PC-container {
+  height: 500px;
+  background-image: url("https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/banner-bg.jpg");
+  .container {
+    height: 500px;
+    p {
+      width: 40%;
+      font-size: 28px;
+      text-align: justify;
+    }
+  }
+}
+.LH-container {
+  padding: 8px;
+  height: 500px;
+}
+
+// MEDIA-QUERY
+@media only screen and (max-width: 1190px) {
+  .GTCT-container {
+    height: 800px;
+  }
+  .card_GTCT {
+    height: 100px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    .card-body {
+      .card-title {
+        height: 30px;
+      }
+      .card-text {
+        display: none;
+      }
+    }
+  }
+  // PC
+  .PC-container {
+    height: 300px;
+    background-image: url("https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/banner-bg.jpg");
+    .container {
+      height: 300px;
+      p {
+        width: 100%;
+        font-size: 25px;
+      }
+    }
+  }
+  // LH
+  .LH-container {
+    height: 1000px;
   }
 }
