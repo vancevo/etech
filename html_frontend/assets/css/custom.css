@@ -1,6 +1,9 @@
 .h-cs-50 {
   height: 50px !important;
 }
+.h-cs-80 {
+  height: 80px !important;
+}
 .h-cs-100 {
   height: 100px !important;
 }
@@ -32,7 +35,8 @@
   width: fit-content;
 }
 .bg-cs-top-nav {
-  background-color: #005992;
+  background: #fad776;
+  background: linear-gradient(to bottom, #fbe29d 0%, #fad776 100%); 
 }
 .right-cs-10 {
   right: 10px;

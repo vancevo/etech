@@ -60,24 +60,22 @@
   <body class="header-sticky" style="background-color: #f8f8f8">
     <div id="wrapper">
       <!-- Header -->
-      <header id="header" class="shadow-xs bg-gradient-primary">
+      <header id="header" class="shadow-xs bg-gradient-warning">
         <!-- TOP BAR -->
         <div id="top_bar" class="bg-cs-top-nav">
           <!-- optional if body.header-sticky is present: add .js-ignore class to ignore autohide and stay visible all the time -->
           <div
-            class="container h-cs-150 border .border-primary d-flex gap-4 text-white"
+            class="container d-flex text-white justify-content-center align-items-center gap-4"
           >
-            <div
-              class="w-150 h-cs-100 border .border-primary d-flex justify-content-center align-items-center mt-4"
-            >
-              Etech LOGO
+            <div>
+              <img
+                src="assets/images/logo/LOGO HIAST.png"
+                class="object-fit-lg-contain"
+                style="width: 80px; height: 80px"
+              />
             </div>
-            <div
-              class="w-100 h-cs-100 d-flex-col justify-content-center align-items-center mt-4"
-            >
-              <p
-                class="fs-2 h-100 text-center d-flex justify-content-center align-items-center"
-              >
+            <div class="d-flex">
+              <p class="fs-2 mb-0 text-danger">
                 TRƯỜNG CAO ĐẲNG - KINH TẾ CÔNG NGHỆ TP.HCM
               </p>
             </div>
@@ -191,7 +189,7 @@
           <!-- /SEARCH -->
 
           <nav
-            class="navbar navbar-expand-lg navbar-dark text-white justify-content-lg-between justify-content-md-inherit"
+            class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit"
           >
             <div class="align-items-start">
               <!-- mobile menu button : show -->
@@ -378,39 +376,63 @@
                   <!-- Dropdown -->
                 </li>
 
-                <!-- Ngành -->
+                <!-- KHOA -->
                 <li class="nav-item dropdown">
-                  <a href="#" id="mainNavPages" class="nav-link"> Ngành </a>
+                  <a
+                    href="#"
+                    id="khoaPages"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Khoa
+                  </a>
                   <!-- Dropdown -->
-                  <!-- <div
-                    aria-labelledby="mainNavPages"
+                  <div
+                    aria-labelledby="khoaPages"
                     class="dropdown-menu dropdown-menu-clean dropdown-menu-hover dropdown-fadeinup"
                   >
                     <ul class="list-unstyled m-0 p-0">
-                      <li class="dropdown-item dropdown">
+                      <li
+                        class="dropdown-item dropdown"
+                        onclick="gotoPage('./khoa-details.html')"
+                      >
                         <a
-                          href="#"
+                          id="cnkt-details"
+                          href="./khoa-details.html"
                           class="dropdown-link"
                           data-bs-toggle="dropdown"
-                          >About</a
+                          >Công nghệ - Kỹ thuật</a
                         >
                         <ul
                           class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
                         >
                           <li class="dropdown-item">
-                            <a href="about-us-1.html" class="dropdown-link"
-                              >About Us 1</a
+                            <a
+                              href="#"
+                              class="dropdown-link"
+                              data-bs-toggle="dropdown"
+                              >Công nghệ thông tin</a
                             >
+                            <ul
+                              class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
+                            >
+                              <li class="dropdown-item">
+                                <a href="#" class="dropdown-link"
+                                  >Thiết kế đồ hoạ</a
+                                >
+                              </li>
+                              <li class="dropdown-item">
+                                <a href="#" class="dropdown-link"
+                                  >Tin học văn phòng</a
+                                >
+                              </li>
+                            </ul>
                           </li>
+
                           <li class="dropdown-item">
-                            <a href="about-us-2.html" class="dropdown-link"
-                              >About Us 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="about-us-3.html" class="dropdown-link"
-                              >About Us 3</a
-                            >
+                            <a href="#" class="dropdown-link">About Us 3</a>
                           </li>
                           <li class="dropdown-item">
                             <a href="about-us-4.html" class="dropdown-link"
@@ -440,202 +462,39 @@
                           href="#"
                           class="dropdown-link"
                           data-bs-toggle="dropdown"
-                          >Services</a
+                          >Kinh tế - du lịch</a
                         >
                         <ul
                           class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
                         >
                           <li class="dropdown-item">
-                            <a href="services-1.html" class="dropdown-link"
-                              >Services 1</a
+                            <a href="#" class="dropdown-link">About Us 1</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">About Us 2</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">About Us 3</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="about-us-4.html" class="dropdown-link"
+                              >About Us 4</a
                             >
                           </li>
                           <li class="dropdown-item">
-                            <a href="services-2.html" class="dropdown-link"
-                              >Services 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="services-3.html" class="dropdown-link"
-                              >Services 3</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="services-4.html" class="dropdown-link"
-                              >Services 4</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="services-5.html" class="dropdown-link"
-                              >Services 5</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-link"
-                          data-bs-toggle="dropdown"
-                          >Contact</a
-                        >
-                        <ul
-                          class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
-                        >
-                          <li class="dropdown-item">
-                            <a href="contact-1.html" class="dropdown-link"
-                              >Contact 1</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="contact-2.html" class="dropdown-link"
-                              >Contact 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="contact-3.html" class="dropdown-link"
-                              >Contact 3</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="contact-4.html" class="dropdown-link"
-                              >Contact 4</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-link"
-                          data-bs-toggle="dropdown"
-                          >Pricing</a
-                        >
-                        <ul
-                          class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
-                        >
-                          <li class="dropdown-item">
-                            <a href="pricing-1.html" class="dropdown-link"
-                              >Pricing 1</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="pricing-2.html" class="dropdown-link"
-                              >Pricing 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="pricing-3.html" class="dropdown-link"
-                              >Pricing 3</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="pricing-4.html" class="dropdown-link"
-                              >Pricing 4</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="pricing-5.html" class="dropdown-link"
-                              >Pricing 5</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-link"
-                          data-bs-toggle="dropdown"
-                          >FAQ</a
-                        >
-                        <ul
-                          class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
-                        >
-                          <li class="dropdown-item">
-                            <a href="faq-1.html" class="dropdown-link">FAQ 1</a>
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="faq-2.html" class="dropdown-link">FAQ 2</a>
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="faq-3.html" class="dropdown-link">FAQ 3</a>
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="faq-4.html" class="dropdown-link">FAQ 4</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-link"
-                          data-bs-toggle="dropdown"
-                          >Team</a
-                        >
-                        <ul
-                          class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
-                        >
-                          <li class="dropdown-item">
-                            <a href="team-1.html" class="dropdown-link"
-                              >Team 1</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="team-2.html" class="dropdown-link"
-                              >Team 2</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-link"
-                          data-bs-toggle="dropdown"
-                          >Account</a
-                        >
-                        <ul
-                          class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
-                        >
-                          <li class="dropdown-item">
-                            <a href="account-index.html" class="dropdown-link"
-                              >Account pages (12)</a
+                            <a href="about-us-5.html" class="dropdown-link"
+                              >About Us 5</a
                             >
                           </li>
                           <li class="dropdown-divider"></li>
                           <li class="dropdown-item">
-                            <a
-                              href="account-full-signin-1.html"
-                              class="dropdown-link"
-                              >Sign In/Up : Full 1</a
+                            <a href="about-me-1.html" class="dropdown-link"
+                              >About Me 1</a
                             >
                           </li>
                           <li class="dropdown-item">
-                            <a
-                              href="account-full-signin-2.html"
-                              class="dropdown-link"
-                              >Sign In/Up : Full 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="account-onepage-signin.html"
-                              class="dropdown-link"
-                              >Sign In/Up : Onepage</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="account-simple-signin.html"
-                              class="dropdown-link"
-                              >Sign In/Up : Simple</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="account-modal-signin.html"
-                              class="dropdown-link"
-                              >Sign In/Up : Modal</a
+                            <a href="about-me-2.html" class="dropdown-link"
+                              >About Me 2</a
                             >
                           </li>
                         </ul>
@@ -645,19 +504,39 @@
                           href="#"
                           class="dropdown-link"
                           data-bs-toggle="dropdown"
-                          >Clients / Career</a
+                          >Ngoại ngữ</a
                         >
                         <ul
                           class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
                         >
                           <li class="dropdown-item">
-                            <a href="clients.html" class="dropdown-link"
-                              >Clients</a
+                            <a href="#" class="dropdown-link">About Us 1</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">About Us 2</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">About Us 3</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="about-us-4.html" class="dropdown-link"
+                              >About Us 4</a
                             >
                           </li>
                           <li class="dropdown-item">
-                            <a href="career.html" class="dropdown-link"
-                              >Career</a
+                            <a href="about-us-5.html" class="dropdown-link"
+                              >About Us 5</a
+                            >
+                          </li>
+                          <li class="dropdown-divider"></li>
+                          <li class="dropdown-item">
+                            <a href="about-me-1.html" class="dropdown-link"
+                              >About Me 1</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="about-me-2.html" class="dropdown-link"
+                              >About Me 2</a
                             >
                           </li>
                         </ul>
@@ -667,125 +546,45 @@
                           href="#"
                           class="dropdown-link"
                           data-bs-toggle="dropdown"
-                          >Portfolio</a
+                          >Y - Dược</a
                         >
                         <ul
                           class="dropdown-menu dropdown-menu-hover dropdown-menu-block-md shadow-lg rounded-xl border-0 m-0"
                         >
                           <li class="dropdown-item">
-                            <a
-                              href="portfolio-columns-2.html"
-                              class="dropdown-link"
-                              >2 Columns</a
+                            <a href="#" class="dropdown-link">About Us 1</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">About Us 2</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">About Us 3</a>
+                          </li>
+                          <li class="dropdown-item">
+                            <a href="about-us-4.html" class="dropdown-link"
+                              >About Us 4</a
                             >
                           </li>
                           <li class="dropdown-item">
-                            <a
-                              href="portfolio-columns-3.html"
-                              class="dropdown-link"
-                              >3 Columns</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="portfolio-columns-4.html"
-                              class="dropdown-link"
-                              >4 Columns</a
-                            >
-                          </li>
-                          <li class="dropdown-divider"></li>
-                          <li class="dropdown-item">
-                            <a
-                              href="portfolio-single-1.html"
-                              class="dropdown-link"
-                              >Single Item 1</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="portfolio-single-2.html"
-                              class="dropdown-link"
-                              >Single Item 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="portfolio-single-3.html"
-                              class="dropdown-link"
-                              >Single Item 3</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a
-                              href="portfolio-single-4.html"
-                              class="dropdown-link"
-                              >Single Item 4</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item dropdown">
-                        <a
-                          href="#"
-                          class="dropdown-link"
-                          data-bs-toggle="dropdown"
-                          >Utility</a
-                        >
-                        <ul
-                          class="dropdown-menu dropdown-menu-hover dropdown-menu-up dropdown-menu-block-md shadow-lg border-0 m-0"
-                        >
-                          <li class="dropdown-item">
-                            <a href="404-1.html" class="dropdown-link"
-                              >Error 1</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="404-2.html" class="dropdown-link"
-                              >Error 2</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="404-3.html" class="dropdown-link"
-                              >Error 3</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="invoice.html" class="dropdown-link"
-                              >Invoice</a
+                            <a href="about-us-5.html" class="dropdown-link"
+                              >About Us 5</a
                             >
                           </li>
                           <li class="dropdown-divider"></li>
                           <li class="dropdown-item">
-                            <a href="maintenance-1.html" class="dropdown-link"
-                              >Maintenance 1</a
+                            <a href="about-me-1.html" class="dropdown-link"
+                              >About Me 1</a
                             >
                           </li>
                           <li class="dropdown-item">
-                            <a href="maintenance-2.html" class="dropdown-link"
-                              >Maintenance 2</a
-                            >
-                          </li>
-                          <li class="dropdown-divider"></li>
-                          <li class="dropdown-item">
-                            <a href="comingsoon-1.html" class="dropdown-link"
-                              >Coming Soon 1</a
-                            >
-                          </li>
-                          <li class="dropdown-item">
-                            <a href="comingsoon-2.html" class="dropdown-link"
-                              >Coming Soon 2</a
-                            >
-                          </li>
-                          <li class="dropdown-divider"></li>
-                          <li class="dropdown-item">
-                            <a href="page-cookie.html" class="dropdown-link"
-                              >GDPR Page &amp; Cookie Window</a
+                            <a href="about-me-2.html" class="dropdown-link"
+                              >About Me 2</a
                             >
                           </li>
                         </ul>
                       </li>
                     </ul>
-                  </div> -->
+                  </div>
                 </li>
 
                 <!-- Bộ môn -->
@@ -1521,13 +1320,18 @@
               <!-- /navbar : navigation -->
             </div>
 
-            <!-- OPTIONS -->
+            <!-- DKHP -->
             <ul class="list-inline list-unstyled mb-0 d-flex align-items-end">
               <li class="list-inline-item mx-1 dropdown">
-                <a href="#" class="nav-link p-2 border"> Đăng ký học phần </a>
+                <a
+                  href="#"
+                  class="btn btn-success text-white bg-danger border-0"
+                >
+                  Đăng ký học ngay
+                </a>
               </li>
             </ul>
-            <!-- /OPTIONS -->
+            <!-- /DKHP -->
           </nav>
         </div>
         <!-- /Navbar -->
@@ -1541,7 +1345,7 @@
         data-bs-ride="carousel"
       >
         <h1
-          class="w-bold mb-5 display-4 center-cs center-cs-half z-3 text-white text-center font-weight-bold"
+          class="w-bold display-4 center-cs center-cs-half z-3 text-white text-center font-weight-bold fs-3"
         >
           Tuyển sinh Cao Đẳng - Trung cấp
           <p class="text-danger">Khóa 02/2024</p>
@@ -2222,7 +2026,7 @@
                 </li>
                 <li class="list-item mb-2">
                   <i class="fi fi-arrow-end me-2 smaller"></i>
-                  <a class="text-gray-400" href="about-us-1.html">About Us</a>
+                  <a class="text-gray-400" href="#">About Us</a>
                 </li>
                 <li class="list-item mb-2">
                   <i class="fi fi-arrow-end me-2 smaller"></i>
@@ -2246,5 +2050,10 @@
     <!-- /#wrapper -->
 
     <script src="assets/js/core.min.js"></script>
+    <script>
+      function gotoPage(url) {
+        window.location.href = url;
+      }
+    </script>
   </body>
 </html>
