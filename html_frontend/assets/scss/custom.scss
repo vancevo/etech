@@ -35,6 +35,9 @@
   &-cs-fit {
     width: fit-content;
   }
+  &-cs-200 {
+    width: 200px;
+  }
 }
 
 .bg-cs {
@@ -216,5 +219,32 @@ li::marker {
   // LH
   .LH-container {
     height: 1000px;
+  }
+}
+
+// KHOA-DETAILS
+// NGANH-CARD
+.nganh-card {
+  height: 320px;
+  .card-body {
+    .card-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .nganh-card {
+    height: auto;
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .card-body {
+      .card-title {
+        font-size: 20px;
+      }
+    }
   }
 }

@@ -34,9 +34,15 @@
 .w-cs-fit {
   width: fit-content;
 }
+.w-cs-200 {
+  width: 200px;
+}
+.w-cs-250 {
+  width: 250px;
+}
 .bg-cs-top-nav {
   background: #fad776;
-  background: linear-gradient(to bottom, #fbe29d 0%, #fad776 100%); 
+  background: linear-gradient(to bottom, #fbe29d 0%, #fad776 100%);
 }
 .right-cs-10 {
   right: 10px;
@@ -189,5 +195,27 @@ li::marker {
   }
   .LH-container {
     height: 1000px;
+  }
+}
+
+/* KHOA-DETAILS
+NGANH-CARD */
+.nganh-card {
+  height: 320px;
+}
+.nganh-card .card-body .card-title {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1190px) {
+  .nganh-card {
+    height: auto;
+  }
+  .nganh-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .nganh-card .card-body .card-title {
+    font-size: 20px;
   }
 }
