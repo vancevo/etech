@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+a {
+  color: rgba(0, 0, 0, 0.65);
+}
+#header #top_bar {
+  height: 90px;
+  padding: 15px 0px;
+}
+#header #top_bar .top_bar-container .top_bar-title {
+  font-weight: bold;
+}
+#header #top_bar .top_bar-container .top_bar-title .subtitle {
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #4287f5;
+}
+#header #top_bar .top_bar-container .top_bar-title .title {
+  font-size: 16px;
+  color: #d51919;
+  margin-bottom: 0px;
+}
+#header .nav_bar_cs {
+  /* Height affect to menu-bar mobile */
+  background-color: yellow;
+}
+#header .navbar-nav {
+  font-size: 13px;
+}
+#header .nav-link, #header .nav-item {
+  display: flex;
+  gap: 4px;
+}
+@media only screen and (max-width: 900px) {
+  #header #top_bar {
+    height: 120px;
+    padding: 15px 0px;
+  }
+  #header #top_bar .top_bar-container .top_bar-title {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 901px) {
+  #header .nav_bar_cs {
+    /* Height affect to menu-bar mobile */
+    height: 40px !important;
+  }
+  #header .nav_bar {
+    /* Height affect to menu-bar mobile */
+    height: 40px !important;
+  }
+  #header .nav-item div {
+    top: 40px;
+    left: 15px;
+  }
+  #header .navbar-nav {
+    /* Height affect to menu-bar mobile */
+    height: 40px !important;
+  }
+  #header .nav-link, #header .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+    /* Height affect to menu-bar mobile */
+    height: 40px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav.navbar:not(.h-auto) {
+    min-height: 40px;
+  }
+}
+
+

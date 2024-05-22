@@ -1,0 +1,120 @@
+//-----COLOR-----
+// BLUE: rgb(66, 135, 245);
+// RED: rgb(213,25,25);
+//YELLOW: background-color: rgb(255, 255, 0);
+//   backdrop-filter: brightness(50%);
+//   backdrop-filter: contrast(50%);
+//-----SIZE------
+// TITLE: 16px
+// Menu title: 13px
+// Paragra: 14px
+
+* {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#header {
+  // TOP_BAR
+  #top_bar {
+    height: 90px;
+    padding: 15px 0px;
+    .top_bar-container {
+      .top_bar-title {
+        font-weight: bold;
+        .subtitle {
+          font-size: 16px;
+          margin-bottom: 0px;
+          color: rgb(66, 135, 245);
+        }
+        .title {
+          font-size: 16px;
+          color: rgb(213, 25, 25);
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  //   NAV_BAR
+  .nav_bar_cs {
+    /* Height affect to menu-bar mobile */
+    background-color: rgb(255, 255, 0);
+  }
+  .navbar-nav {
+    font-size: 13px;
+  }
+  .nav-link,
+  .nav-item {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+// MOBILE - TABLET
+@media only screen and (max-width: 900px) {
+  // TOP_BAR
+  #header {
+    #top_bar {
+      height: 120px;
+      padding: 15px 0px;
+      .top_bar-container {
+        .top_bar-title {
+          justify-content: center;
+          text-align: center;
+          .subtitle {
+          }
+          .title {
+          }
+        }
+      }
+    }
+  }
+}
+
+// DESKTOP
+@media only screen and (min-width: 901px) {
+  // TOP_BAR
+  #header {
+    //   NAV_BAR
+    .nav_bar_cs {
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+    }
+    .nav_bar {
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+    }
+    .navbar-nav {
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+      .nav-item {
+        div {
+          top: 40px;
+          left: 15px;
+        }
+      }
+    }
+    .nav-link,
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav.navbar:not(.h-auto) {
+    min-height: 40px;
+  }
+}
+
+
+//------ DESKTOP

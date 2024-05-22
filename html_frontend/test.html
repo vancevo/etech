@@ -1,0 +1,1585 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title>Smarty v5</title>
+		<meta name="description" content="...">
+
+		<meta name="viewport" content="width=device-width, maximum-scale=5, initial-scale=1">
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- up to 10% speed up for external res -->
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/">
+		<!-- preloading icon font is helping to speed up a little bit -->
+		<link rel="preload" href="assets/fonts/flaticon/Flaticon.woff2" as="font" type="font/woff2" crossorigin>
+
+		<link rel="stylesheet" href="assets/css/core.min.css">
+		<link rel="stylesheet" href="assets/css/vendor_bundle.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/custom.css" />
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="demo.files/logo/icon_512x512.png">
+        <link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/home/vendor/bootstrap/css/bootstrap.min.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/home/vendor/bootstrap-icons/bootstrap-icons.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/home/vendor/aos/aos.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/home/vendor/swiper/swiper-bundle.min.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/home/css/variables.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/home/css/main.css?1716280700=?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/js/select2/select2.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/js/select2/select2-bootstrap.min.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/js/bootstrap-datepicker/css/datepicker3.css?v=3.0.3' /><link rel='stylesheet' type='text/css' href='https://tuyensinh.citd.vn/assets/js/bootstrap-timepicker/css/bootstrap-timepicker.min.css?v=3.0.3' />
+	</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="/" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+             <img src="/assets/home/img/logo2.png?v=1716280700"  alt="">
+
+        </a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="https://tuyensinh.citd.vn"><span>Trang chủ</span></a></li>
+                <li><a class="nav-link scrollto" href="#register_form_schema"><span>Chương trình đào tạo</span></a></li>
+                <li><a class="nav-link scrollto" href="#register_form_tutorial"><span>Hướng dẫn</span></a></li><li><a class="nav-link scrollto" href="#subcriber_form_wapper"><span>Tư vấn</span></a></li>
+                <li><a class="nav-link scrollto" href="/signin"><span>Đăng nhập</span></a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav><!-- .navbar -->
+        <a class="btn-getstarted scrollto" href="#register_form">Nộp hồ sơ trực tuyến</span></a>
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-item active">
+        <div class="container">
+            <div class="row justify-content-center gy-6">
+
+                <div class="col-lg-12 col-md-12">
+                    
+                    <a id="banner" href="#register_form">
+                        <img src="https://tuyensinh.citd.vn/files/system/_file664b014aaa902-slider-01.png?v=1716280700" alt="" class="img-fluid img">
+                    </a>
+                    <a id="banner-mobile" href="#register_form"><img src="https://tuyensinh.citd.vn/files/system/_file664aff805cdfa-slider-mobile-01.png?v=1716280700" alt="" class="img-fluid img d-none"></a>
+                </div>
+
+            </div>
+        </div>
+    </div><!-- End Carousel Item -->
+
+</section><!-- End Hero Section -->
+
+<main id="main">
+    <section id="recent-blog-posts" class="recent-blog-posts about">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+              <h3>Thông báo <span class="high-light">mới nhất</span></h3>
+              <p>Nơi luôn cập nhật những bản tin mới, hữu ích cho ứng viên xét tuyển hệ đào tạo từ xa</p>
+                <p>Theo dõi thông tin tuyển sinh đầy đủ tại: <a class="high-light" href="https://www.citd.vn/chuyen-muc/tuyen-sinh/thong-tin-chung-tuyen-sinh/">https://www.citd.vn/chuyen-muc/tuyen-sinh/thong-tin-chung-tuyen-sinh/</a></p>
+            </div>
+
+            <div class="row">
+                <div id="news-left" class="col-lg-8">
+                    <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="post-box">
+                          <div class="post-img"><a target="_blank" title="Click vào để xem chi tiết" href="https://www.citd.vn/tuyen-sinh-dai-hoc-nganh-cong-nghe-thong-tin-hinh-thuc-hoc-truc-tuyen-truong-dai-hoc-cong-nghe-thong-tin-dhqg-hcm-dot-2-nam-2024/"><img src="assets/home/img/landingpage/post_main.png" class="img-fluid" alt=""></a></div>
+                          
+                          <p class="post-title"><a target="_blank" title="Click vào để xem chi tiết" href="https://www.citd.vn/tuyen-sinh-dai-hoc-nganh-cong-nghe-thong-tin-hinh-thuc-hoc-truc-tuyen-truong-dai-hoc-cong-nghe-thong-tin-dhqg-hcm-dot-2-nam-2024/">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN TUYỂN SINH CỬ NHÂN CÔNG NGHỆ THÔNG TIN, HÌNH THỨC HỌC TRỰC TUYẾN ĐỢT 2 NĂM 2024</a></p>
+                          <div class="meta">
+                            <span class="post-date">20/05/2024</span>
+                            <span class="post-author"> Bởi: Admin</span>
+                          </div>
+                          <p>Với chương trình đào tạo cử nhân Công nghệ Thông tin – hệ từ xa tại Trường Đại học Công nghệ Thông tin, ĐHQG-HCM. Bạn sẽ được trải nghiệm phương pháp dạy và học thực tế và năng động của Trường Thành viên ĐQHG-HCM. Tiếp thu đầy đủ kiến thức mới, đa dạng về lĩnh vực công nghệ thông tin. Được hưởng các đặc quyền công bằng giữa các hệ đào tạo. CHỌN UIT - CHỌN ĐỂ DẪN ĐẦU </p>                         
+                        </div>
+                    </div>
+                </div>
+                <div id="news-right" class="col-lg-4" >
+                    <div class="post-box">
+                          <div class="post-img"><a target="_blank" title="Click vào để xem chi tiết"  href="https://www.citd.vn/ho-so-du-tuyen-cu-nhan-van-bang-1/"><img src="assets/home/img/landingpage/post1.png" class="img-fluid" alt=""></a></div>
+                           
+                          <div class="meta">
+                             <p class="post-title"><a target="_blank" title="Click vào để xem chi tiết" href="https://www.citd.vn/ho-so-du-tuyen-cu-nhan-van-bang-1/">Tra hồ sơ dự tuyển Cử nhân Văn bằng 1</a></p>
+                             <span class="post-date">20/05/2024</span>
+                            <span class="post-author"> Bởi: Admin</span>
+                             <span>Hồ sơ cần chuẩn bị cho Cử nhân văn bằng 1</span> 
+                          </div>
+                    </div>
+                    <div class="post-box">
+                          <div class="post-img"><a target="_blank" title="Click vào để xem chi tiết" target="_blank" href="https://www.citd.vn/ho-so-du-tuyen-van-bang-2/"><img src="assets/home/img/landingpage/post2.png" class="img-fluid" alt=""></a></div>
+                          
+                          <div class="meta">
+                             <p class="post-title"><a target="_blank" title="Click vào để xem chi tiết" href="https://www.citd.vn/ho-so-du-tuyen-van-bang-2/">Tra hồ sơ dự tuyển Cử nhân Văn bằng 2</a></p>
+                             <span class="post-date">20/05/2024</span>
+                            <span class="post-author"> Bởi: Admin</span>
+                            <span>Hồ sơ cần chuẩn bị cho Cử nhân văn bằng 2</span>   
+                          </div>
+                    </div>
+                    <div class="post-box">
+                          <div class="post-img"><a target="_blank" href="https://www.citd.vn/ho-so-du-tuyen-lien-thong-dai-hoc/"><img src="assets/home/img/landingpage/post3.png" class="img-fluid" alt=""></a></div>
+                           
+                          <div class="meta">
+                            <p class="post-title"><a target="_blank" href="https://www.citd.vn/ho-so-du-tuyen-lien-thong-dai-hoc/">Tra hồ sơ dự tuyển Liên thông Đại học</a></p>
+                             <span class="post-date">20/05/2024</span>
+                            <span class="post-author"> Bởi: Admin</span>
+                             <span>Hồ sơ cần chuẩn bị cho Liên thông Đại học</span> 
+                          </div>
+                    </div>
+                   
+                </div>          
+
+            </div><!--end row -->
+            
+        </div>
+        
+
+    </section><!-- End Recent Blog Posts Section -->
+    <section id="register_form_schema" class="about">
+        <div id="register_form_schema_show" class="container" data-aos="fade-up">
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-center">Chương trình <span class="high-light">Đào Tạo</span></h3>
+                <p>Với mục tiêu đào tạo nguồn nhân lực công nghệ thông tin chất lượng cao góp phần tích cực vào sự phát triển của nền công nghiệp công nghệ thông tin Việt Nam. 
+Chương trình đào tạo ngành công nghệ thông tin từ xa luôn được cập nhật và đổi mới, hứa hẹn là một chương trình phù hợp xu hướng phát triển của ngành công nghệ thông tin tại Việt Nam và khu vực.</p>
+                <div id="figure-vb1" class="col-lg-4 col-md-4 register_form_schema_show_figure">    
+                    <figure class="figure text-center">
+                      <img title="Click vào để xem chi tiết" src="/assets/home/img/landingpage/vb1.png" alt="" class="img-fluid img hover-pointer figure-image">
+                      <figcaption class="figure-caption"> <a target="_blank" href="https://www.citd.vn/chuyen-muc/dao-tao/cu-nhan-van-bang-1/">Xem chi tiết</a></figcaption>
+                    </figure>              
+                    
+                       
+                </div>      
+                <div id="figure-vb2" class="col-lg-4 col-md-4 register_form_schema_show_figure">  
+                    <figure class="figure text-center">
+                        <img title="Click vào để xem chi tiết" src="/assets/home/img/landingpage/vb2.png" alt="" class="img-fluid img hover-pointer figure-image">
+                        <figcaption class="figure-caption"> <a target="_blank" href="https://www.citd.vn/chuyen-muc/dao-tao/cu-nhan-van-bang-2/">Xem chi tiết</a></figcaption>
+                    </figure>                 
+                       
+                </div>   
+                <div id="figure-ltdh" class="col-lg-4 col-md-4 register_form_schema_show_figure">  
+                    <figure class="figure text-center">
+                        <img title="Click vào để xem chi tiết" src="/assets/home/img/landingpage/ltdh.png" alt="" class="img-fluid img hover-pointer figure-image">
+                        <figcaption class="figure-caption">                
+                            <a target="_blank" href="https://www.citd.vn/chuyen-muc/dao-tao/hoan-chinh-dai-hoc/">Xem chi tiết</a>
+                        </figcaption>
+                    </figure> 
+                </div>           
+
+            </div>
+        </div>
+        <div id="register_form_schema_detail_vb1" class="container register_form_schema_detail" >
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">                
+                <div id="image_pointer_vb1" class="col-lg-4 image-pointer">     
+                 <h3 class="text-center">Chương trình <span class="high-light">Đào Tạo</span></h3>             
+                        <a href="#"><img src="/assets/home/img/landingpage/vb1.png" alt="" class="img-fluid img hover-pointer xbutton_vb1_a"></a>
+                         <a class="text-center d-block high-light" target="_blank" href="https://www.citd.vn/chuyen-muc/dao-tao/cu-nhan-van-bang-1/">Xem chi tiết tại: <br> https://www.citd.vn/chuyen-muc/dao-tao/cu-nhan-van-bang-2/</a>
+                </div>      
+                <div id="content_pointer_vb1" class="col-lg-8 content-pointer content-pointer">                  
+                        <a href="#"><img src="/assets/home/img/landingpage/vb1_content.png" alt="" class="img-fluid img hover-pointer xbutton_vb1_a"></a>
+                        
+                        <img id="xbutton_vb1" src="/assets/home/img/landingpage/xbutton.png" alt="" class="img-fluid img hover-pointer xbutton">
+                </div>                             
+
+            </div>
+        </div>
+        <div id="register_form_schema_detail_vb2" class="container register_form_schema_detail" >
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">                
+                <div id="image_pointer_vb2" class="col-lg-4 image-pointer">     
+                 <h3 class="text-center">Chương trình <span class="high-light">Đào Tạo</span></h3>             
+                        <a href="#"><img src="/assets/home/img/landingpage/vb2.png" alt="" class="img-fluid img hover-pointer xbutton_vb2_a"></a>
+                         <a class="text-center d-block high-light" target="_blank" href="https://www.citd.vn/chuyen-muc/dao-tao/cu-nhan-van-bang-2/">Xem chi tiết tại: <br /> https://www.citd.vn/chuyen-muc/dao-tao/cu-nhan-van-bang-2/</a>
+                </div>      
+                <div id="content_pointer_vb2" class="col-lg-8 content-pointer">                  
+                        <a href="#"><img src="/assets/home/img/landingpage/vb2_content.png" alt="" class="img-fluid img hover-pointer xbutton_vb2_a"></a>
+                        <img id="xbutton_vb2" src="/assets/home/img/landingpage/xbutton.png" alt="" class="img-fluid img hover-pointer xbutton">
+                </div>                             
+
+            </div>
+        </div>
+        <div id="register_form_schema_detail_ltdh" class="container register_form_schema_detail">
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">                
+                <div id="image_pointer_ltdh" class="col-lg-4 image-pointer">     
+                 <h3 class="text-center">Chương trình <span class="high-light">Đào Tạo</span></h3>             
+                        <a href="#"><img src="/assets/home/img/landingpage/ltdh.png" alt="" class="img-fluid img hover-pointer xbutton_ltdh_a"></a>
+                         <a class="text-center d-block high-light" target="_blank" href="https://www.citd.vn/chuyen-muc/dao-tao/hoan-chinh-dai-hoc/">Xem chi tiết tại: <br />https://www.citd.vn/chuyen-muc/dao-tao/hoan-chinh-dai-hoc/</a>
+                </div>      
+                <div id="content_pointer_ltdh" class="col-lg-8 content-pointer">                  
+                        <a href=""><img src="/assets/home/img/landingpage/ltdh_content.png" alt="" class="img-fluid img hover-pointer xbutton_ltdh_a"></a>
+                        
+                        <img id="xbutton_ltdh" src="/assets/home/img/landingpage/xbutton.png" alt="" class="img-fluid img hover-pointer xbutton">
+                </div>                             
+
+            </div>
+        </div>
+
+    </section><!-- End register_form_schema Section -->
+   
+
+    <section id="register_form_tutorial" class="about">
+        <div class="container" data-aos="fade-up">
+            <h3 class="text-center">Hướng Dẫn <span class="high-light">Nộp Hồ Sơ</span></h3>
+                            <p class="text-center">Ứng viên có thể truy cập vào <a class="high-light" target="_blank" href="https://www.citd.vn/chuyen-muc/tuyen-sinh/ho-so-tuyen-sinh">https://www.citd.vn/chuyen-muc/tuyen-sinh/ho-so-tuyen-sinh/ </a>để biết thêm chi tiết</p>
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-12 tab-content">                  
+                    <img src="/assets/home/img/landingpage/how-to-apply.png?v=1716280700" alt="" class="img-fluid img">
+                </div>          
+
+            </div>            
+
+        </div>
+    </section><!-- End register_form_tutorial Section -->
+   
+   
+    <section id="register_form" class="about" >
+        <div class="container" data-aos="fade-up">
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">                
+                <div  class="col-lg-12" >
+                       
+                    <h3 class="text-center">Nộp Hồ Sơ Tuyển Sinh Trực Tuyến <span class="high-light">2024</span></h3>
+                    <p class="text-center">Ứng viên đặc biệt lưu ý nhập thông tin chính xác và kiểm tra các hình ảnh minh chứng trước khi nộp.</p>
+                    <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-12 tab-content">                  
+                            <img src="/assets/home/img/landingpage/rec01.png" alt="" class="img-fluid img">
+                        </div>               
+
+                    </div>
+                    <!-- Tabs -->
+                    <ul id="wrapper" class="nav nav-pills mb-3 justify-content-center">
+                        <li><a class="nav-link active" data-bs-toggle="pill" title="Chọn vào để đăng ký ngay Cử nhân CNTT Văn bằng 1" href="#tab_cu_nhan_cntt_van_bang_1">Cử nhân CNTT Văn bằng 1</a></li>
+                        <li><a class="nav-link" data-bs-toggle="pill" title="Chọn vào để đăng ký ngay Cử nhân CNTT Văn bằng 2"href="#tab_cu_nhan_cntt_van_bang_2">Cử nhân CNTT Văn bằng 2</a></li>
+                        <li><a class="nav-link" data-bs-toggle="pill" title="Chọn vào để đăng ký ngay Liên thông Đại học"href="#tab_lien_thong_dai_hoc">Liên thông Đại học</a></li>
+                    </ul><!-- End Tabs -->
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show " id="tab_cu_nhan_cntt_van_bang_1">
+                            <form action="https://tuyensinh.citd.vn/home/ajaxCreateClientProject" id="cu_nhan_cntt_van_bang_1_form" class="row g-3 general-form" role="form" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="rise_csrf_token" value="2f39f74dee5d6f6d5f26c2cade577438" />
+<input type="hidden" name="project_type" value="1"  />
+    <!-- 1.1 Nhập thông tin xét tuyển tại các trường dữ liệu -->
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="company_name" class="form-label">1. Họ tên<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="company_name" value="" id="company_name" class="form-control" placeholder="Nguyễn Văn A" autocomplete="off" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="birth_day" class="form-label">2. Ngày sinh<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="birth_day" value="" id="birth_day_1" class="form-control" placeholder="21-05-2024" autocomplete="off" readonly="true" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+        <label for="sex" class="form-label">3. Giới tính<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <div class="input-group has-validation">            
+            <select name="sex" class='form-control'>
+<option value="">Vui lòng chọn...</option>
+<option value="Nam">Nam</option>
+<option value="Nữ">Nữ</option>
+</select>
+        </div>
+</div>
+
+<div class="col-md-6" id="birth_place_wrapper_1">
+    <label for="birth_place_1" class="form-label">4. Nơi sinh<span title="Bắt buộc" class="text-danger">(*)</span></label>    
+    <div class="input-group has-validation">
+        
+        <select name="birth_place" class='form-control select2' id='birth_place_1' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+<option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+<option value="Tỉnh Long An">Tỉnh Long An</option>
+<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+</select>
+       
+    </div>
+    <span id="birth_place_1_error" class="help-block"></span>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="country" class="form-label">5. Quốc tịch<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="country" class='form-control' id='country_1'  data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Việt Nam">Việt Nam</option>
+</select>
+
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ethnic" class="form-label">6. Dân tộc<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="ethnic" value="" id="ethnic" class="form-control" placeholder="Kinh, Hoa, Khmer, Tày..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ethnic" class="form-label">7. Tôn giáo<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="religion" value="" id="religion" class="form-control" placeholder="Phật giáo, Thiên chúa giáo, Không, ..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="phone" class="form-label">8. Số điện thoại<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="phone" value="" id="phone" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="email" class="form-label">9. Email<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="email" value="" id="email" class="form-control" placeholder="abc@gmail.com..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-email="1" data-msg-email="Vui lòng nhập một địa chỉ email hợp lệ."  />
+    </div>
+</div>
+<div class="col-md-6" id="city_wrapper_1">
+    <div class="has-validation">
+        <label for="city" class="form-label">10. Thường trú tỉnh/thành phố<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="city" class='form-control select2' id='city_1' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+<option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+<option value="Tỉnh Long An">Tỉnh Long An</option>
+<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+</select>
+    </div>
+    <span id="city_1_error" class="help-block"></span>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="province" class="form-label">11. Thường trú huyện/quận<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="state" value="" id="state" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+   
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="commune" class="form-label">12. Thường trú xã/phường<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="commune" value="" id="commune" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ward" class="form-label">13. Thường trú số nhà/đường/khu phố/ấp<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="ward" value="" id="ward" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="passport_id" class="form-label">14. Số CMND/Căn Cước<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="passport_id" value="" id="passport_id" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="address" class="form-label">15. Địa chỉ nhận giấy báo nhập học<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="address" value="" id="address" class="form-control" placeholder="Số nhà, tên đường, xã phường, huyện, tỉnh" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6" id="info_from_wrapper_1">
+    <div class="has-validation" >
+        <label for="info_from" class="form-label">16. Bạn biết thông tin tuyển sinh hệ từ xa của Trường ĐHCNTT qua kênh nào?
+            <span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="info_from" class='form-control' id='info_from_1' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="">Vui lòng chọn...</option>
+<option value="Tìm kiếm tại Google, website trường ĐH CNTT(uit.edu.vn)">Tìm kiếm tại Google, website trường ĐH CNTT(uit.edu.vn)</option>
+<option value="Tìm kiếm tại Google, website Trung Tâm Phát Triển CNTT(citd.vn)">Tìm kiếm tại Google, website Trung Tâm Phát Triển CNTT(citd.vn)</option>
+<option value="Tìm kiếm tại Google, trang tuyển sinh TTPTCNTT(tuyensinh.citd.vn)">Tìm kiếm tại Google, trang tuyển sinh TTPTCNTT(tuyensinh.citd.vn)</option>
+<option value="Quảng cáo, tư vấn tại Facebook Trung Tâm Phát Triển CNTT">Quảng cáo, tư vấn tại Facebook Trung Tâm Phát Triển CNTT</option>
+<option value="Quảng cáo, tư vấn tại Zalo Tuyển sinh Từ xa">Quảng cáo, tư vấn tại Zalo Tuyển sinh Từ xa</option>
+<option value="Quảng cáo, tư vấn tại Zalo OA Trung Tâm Phát Triển CNTT">Quảng cáo, tư vấn tại Zalo OA Trung Tâm Phát Triển CNTT</option>
+<option value="Bạn bè/người thân/thầy cô/gia đình giới thiệu">Bạn bè/người thân/thầy cô/gia đình giới thiệu</option>
+<option value="Các hội/nhóm/diễn đàn trên Facebook, Mạng xã hội">Các hội/nhóm/diễn đàn trên Facebook, Mạng xã hội</option>
+<option value="Bản thân tự biết thông tin về Trường ĐH CNTT">Bản thân tự biết thông tin về Trường ĐH CNTT</option>
+</select>
+    </div>
+    <span id="info_from_1_error" class="help-block"></span>
+</div>
+
+
+    <!-- 1.2 Upload các hình ảnh đính kèm (pdf hoặc ảnh), nó đi theo trường Đăng ký dự tuyển chương trình đào tạo: Mỗi mục dưới là 1 file ảnh upload-->
+
+    <div class="col-md-6">
+        <label for="phieu_dang_ky_du_tuyen" class="form-label">17. Phiếu đăng ký dự tuyển<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[phieu_dang_ky_du_tuyen]" id="phieu_dang_ky_du_tuyen" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+
+    </div>
+    <div class="col-md-6">
+        <label for="so_yeu_ly_lich" class="form-label">18. Sơ yếu lý lịch (<strong>công chứng</strong> và đóng dấu <strong>giáp lai</strong> ảnh 3×4)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[so_yeu_ly_lich]" id="so_yeu_ly_lich" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="trich_luc_giay_khai_sinh" class="form-label">19. Trích lục giấy khai sinh (hoặc bản sao y có chứng thực)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[trich_luc_giay_khai_sinh]" id="trich_luc_giay_khai_sinh" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="bang_tot_nghiep_thpt" class="form-label">20. Bằng tốt nghiệp <strong>THPT</strong> hoặc giấy chứng nhận tốt nghiệp tạm thời<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[bang_tot_nghiep_thpt]" id="bang_tot_nghiep_thpt" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+
+    <div class="col-md-6">
+        <div class="has-validation">
+            <label for="so_giao_duc_dao_tao" class="form-label">21. Sở Giáo dục và đào tạo cấp bằng<span title="Bắt buộc" class="text-danger">(*)</span></label>
+            <input type="text" name="so_giao_duc_dao_tao" value="" id="so_giao_duc_dao_tao" class="form-control" placeholder="Nhập tên tỉnh hoặc tên trường Trung cấp..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="has-validation">
+            <label for="diem_trung_binh_lop_10" class="form-label">22. Điểm trung bình môn cả năm lớp 10<span title="Bắt buộc" class="text-danger">(*)</span></label>
+            <input type="text" name="diem_trung_binh_lop_10" value="" id="diem_trung_binh_lop_10" class="form-control" placeholder="Vui lòng nhập... ví dụ: 7.5" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-number="1" data-msg-number="Thông tin này là dạng số."  />
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="has-validation">
+            <label for="diem_trung_binh_lop_11" class="form-label">23. Điểm trung bình môn cả năm lớp 11<span title="Bắt buộc" class="text-danger">(*)</span></label>
+            <input type="text" name="diem_trung_binh_lop_11" value="" id="diem_trung_binh_lop_11" class="form-control" placeholder="Vui lòng nhập... ví dụ: 7.5" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-number="1" data-msg-number="Thông tin này là dạng số."  />
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="has-validation">
+            <label for="diem_trung_binh_lop_12" class="form-label">24. Điểm trung bình môn cả năm lớp 12<span title="Bắt buộc" class="text-danger">(*)</span></label>
+            <input type="text" name="diem_trung_binh_lop_12" value="" id="diem_trung_binh_lop_12" class="form-control" placeholder="Vui lòng nhập... ví dụ: 7.5" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-number="1" data-msg-number="Thông tin này là dạng số."  />
+        </div>
+    </div>
+
+    
+     <div class="col-md-6 d-none">
+        <div class="has-validation">
+            <label for="company_name" class="form-label">25. Trường cấp bằng <strong>THPT</strong></label>
+            <input type="text" name="truong_cap_bang_thpt" value="" id="truong_cap_bang_thpt" class="form-control" placeholder="..." autocomplete="off"  />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="hoc_ba_thpt" class="form-label">25. Học bạ THPT<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hoc_ba_thpt]" id="hoc_ba_thpt" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_3x4" class="form-label">26. Hình 3x4(bắt buộc .jpg)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_3x4]" id="hinh_3x4" class="form-control" accept=".jpg, .JPG" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_cmnd_can_cuoc_mat_truoc" class="form-label">27. Hình CMND/CCCD mặt trước<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_cmnd_can_cuoc_mat_truoc]" id="hinh_cmnd_can_cuoc_mat_truoc" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_cmnd_can_cuoc_mat_sau" class="form-label">28. Hình CMND/CCCD mặt sau<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_cmnd_can_cuoc_mat_sau]" id="hinh_cmnd_can_cuoc_mat_sau" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+
+    <div class="col-md-6">
+        <label for="le_phi_xet_tuyen" class="form-label">29. Lệ phí xét tuyển(bản chụp lệ phí xét tuyển, hướng dẫn xem <a target="_blank" href="https://www.citd.vn/huong-dan-nop-le-phi-xet-tuyen/">tại đây</a> )<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[le_phi_xet_tuyen]" id="le_phi_xet_tuyen" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6 d-none">
+        <label for="project_paper_submit_status" class="form-label">30. Bản hồ sơ giấy<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">Tình trạng nộp bản giấy</span>
+                <select name="project_paper_submit_status" class='form-control select2'>
+<option value="0">Đã nộp</option>
+<option value="1">Đã nộp và cần bổ sung</option>
+<option value="2" selected="selected">Chưa nộp</option>
+</select>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-check" >
+            <input type="checkbox" name="term_condition" value="" id="term_condition" class="form-check-input is-valid" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+            <label class="form-check-label hover-pointer" for="term_condition">
+                Tôi đồng ý toàn bộ thông tin cá nhân của hồ sơ dự tuyển này sẽ được lưu trữ và sử dụng để phục vụ cho quá trình tuyển sinh và đào tạo.
+            </label>
+
+        </div>
+    </div>
+    <div class="col-12 text-center">
+        <button id="btn-cu-nhan-cntt-van-bang-1" class="btn btn-apply" type="submit">Nộp hồ sơ (Cử nhân CNTT Văn bằng 1)</button>
+    </div>
+</form>
+                        </div><!-- End Tab 1 - Cử nhân CNTT Văn bằng 1 Content -->
+                        <div class="tab-pane fade" id="tab_cu_nhan_cntt_van_bang_2">
+                            <form action="https://tuyensinh.citd.vn/home/ajaxCreateClientProject" id="cu_nhan_cntt_van_bang_2_form" class="row g-3 general-form" role="form" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="rise_csrf_token" value="2f39f74dee5d6f6d5f26c2cade577438" />
+<input type="hidden" name="project_type" value="2"  />
+    <!-- 1.1 Nhập thông tin xét tuyển tại các trường dữ liệu -->
+   <!-- 1.1 Nhập thông tin xét tuyển tại các trường dữ liệu -->
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="company_name" class="form-label">1. Họ tên<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="company_name" value="" id="company_name" class="form-control" placeholder="Nguyễn Văn A" autocomplete="off" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="birth_day" class="form-label">2. Ngày sinh<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="birth_day" value="" id="birth_day_2" class="form-control" placeholder="21-05-2024" autocomplete="off" readonly="true" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+        <label for="sex" class="form-label">3. Giới tính<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <div class="input-group has-validation">            
+            <select name="sex" class='form-control'>
+<option value="">Vui lòng chọn...</option>
+<option value="Nam">Nam</option>
+<option value="Nữ">Nữ</option>
+</select>
+        </div>
+</div>
+
+<div class="col-md-6" id="birth_place_wrapper_2">
+    <label for="birth_place_2" class="form-label">4. Nơi sinh<span title="Bắt buộc" class="text-danger">(*)</span></label>    
+    <div class="input-group has-validation">
+        
+        <select name="birth_place" class='form-control select2' id='birth_place_2' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+<option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+<option value="Tỉnh Long An">Tỉnh Long An</option>
+<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+</select>
+       
+    </div>
+    <span id="birth_place_2_error" class="help-block"></span>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="country" class="form-label">5. Quốc tịch<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="country" class='form-control' id='country_2'  data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Việt Nam">Việt Nam</option>
+</select>
+
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ethnic" class="form-label">6. Dân tộc<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="ethnic" value="" id="ethnic" class="form-control" placeholder="Kinh, Hoa, Khmer, Tày..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ethnic" class="form-label">7. Tôn giáo<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="religion" value="" id="religion" class="form-control" placeholder="Phật giáo, Thiên chúa giáo, Không, ..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="phone" class="form-label">8. Số điện thoại<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="phone" value="" id="phone" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="email" class="form-label">9. Email<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="email" value="" id="email" class="form-control" placeholder="abc@gmail.com..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-email="1" data-msg-email="Vui lòng nhập một địa chỉ email hợp lệ."  />
+    </div>
+</div>
+<div class="col-md-6" id="city_wrapper_2">
+    <div class="has-validation">
+        <label for="city" class="form-label">10. Thường trú tỉnh/thành phố<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="city" class='form-control select2' id='city_2' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+<option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+<option value="Tỉnh Long An">Tỉnh Long An</option>
+<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+</select>
+    </div>
+    <span id="city_2_error" class="help-block"></span>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="province" class="form-label">11. Thường trú huyện/quận<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="state" value="" id="state" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+   
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="commune" class="form-label">12. Thường trú xã/phường<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="commune" value="" id="commune" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ward" class="form-label">13. Thường trú số nhà/đường/khu phố/ấp<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="ward" value="" id="ward" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="passport_id" class="form-label">14. Số CMND/Căn Cước<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="passport_id" value="" id="passport_id" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="address" class="form-label">15. Địa chỉ nhận giấy báo nhập học<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="address" value="" id="address" class="form-control" placeholder="Số nhà, tên đường, xã phường, huyện, tỉnh" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6" id="info_from_wrapper_2">
+    <div class="has-validation" >
+        <label for="info_from" class="form-label">16. Bạn biết thông tin tuyển sinh hệ từ xa của Trường ĐHCNTT qua kênh nào?
+            <span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="info_from" class='form-control' id='info_from_2' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="">Vui lòng chọn...</option>
+<option value="Tìm kiếm tại Google, website trường ĐH CNTT(uit.edu.vn)">Tìm kiếm tại Google, website trường ĐH CNTT(uit.edu.vn)</option>
+<option value="Tìm kiếm tại Google, website Trung Tâm Phát Triển CNTT(citd.vn)">Tìm kiếm tại Google, website Trung Tâm Phát Triển CNTT(citd.vn)</option>
+<option value="Tìm kiếm tại Google, trang tuyển sinh TTPTCNTT(tuyensinh.citd.vn)">Tìm kiếm tại Google, trang tuyển sinh TTPTCNTT(tuyensinh.citd.vn)</option>
+<option value="Quảng cáo, tư vấn tại Facebook Trung Tâm Phát Triển CNTT">Quảng cáo, tư vấn tại Facebook Trung Tâm Phát Triển CNTT</option>
+<option value="Quảng cáo, tư vấn tại Zalo Tuyển sinh Từ xa">Quảng cáo, tư vấn tại Zalo Tuyển sinh Từ xa</option>
+<option value="Quảng cáo, tư vấn tại Zalo OA Trung Tâm Phát Triển CNTT">Quảng cáo, tư vấn tại Zalo OA Trung Tâm Phát Triển CNTT</option>
+<option value="Bạn bè/người thân/thầy cô/gia đình giới thiệu">Bạn bè/người thân/thầy cô/gia đình giới thiệu</option>
+<option value="Các hội/nhóm/diễn đàn trên Facebook, Mạng xã hội">Các hội/nhóm/diễn đàn trên Facebook, Mạng xã hội</option>
+<option value="Bản thân tự biết thông tin về Trường ĐH CNTT">Bản thân tự biết thông tin về Trường ĐH CNTT</option>
+</select>
+    </div>
+    <span id="info_from_2_error" class="help-block"></span>
+</div>
+
+
+
+    <!-- 1.2 Upload các hình ảnh đính kèm (pdf hoặc ảnh), nó đi theo trường Đăng ký dự tuyển chương trình đào tạo: Mỗi mục dưới là 1 file ảnh upload-->
+    <div class="col-md-6">
+        <label for="phieu_dang_ky_du_tuyen" class="form-label">17. Phiếu đăng ký dự tuyển<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[phieu_dang_ky_du_tuyen]" id="phieu_dang_ky_du_tuyen" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+
+    </div>
+    <div class="col-md-6">
+        <label for="so_yeu_ly_lich" class="form-label">18. Sơ yếu lý lịch (<strong>công chứng</strong>)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[so_yeu_ly_lich]" id="so_yeu_ly_lich" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="trich_luc_giay_khai_sinh" class="form-label">19. Trích lục giấy khai sinh (hoặc bản sao y có chứng thực)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[trich_luc_giay_khai_sinh]" id="trich_luc_giay_khai_sinh" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="bang_tot_nghiep_dai_hoc" class="form-label">20. Bằng tốt nghiệp <strong>Đại học</strong> hoặc giấy chứng nhận tốt nghiệp tạm thời<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[bang_tot_nghiep_dai_hoc]" id="bang_tot_nghiep_dai_hoc" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <div class="has-validation">
+            <label for="company_name" class="form-label">21. Trường cấp bằng <strong>Đại học</strong><span title="Bắt buộc" class="text-danger">(*)</span></label>
+            <input type="text" name="truong_cap_bang_dai_hoc" value="" id="truong_cap_bang_dai_hoc" class="form-control" placeholder="..." autocomplete="off" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="nganh_dao_tao" class="form-label">22. Ngành đào tạo<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="nganh_dao_tao" value="" id="nganh_dao_tao" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="diem_trung_binh_tot_nghiep" class="form-label">23. Điểm trung bình tốt nghiệp<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="diem_trung_binh_tot_nghiep" value="" id="diem_trung_binh_tot_nghiep" class="form-control" placeholder="7.5" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-number="1" data-msg-number="Thông tin này là dạng số."  />
+    </div>
+
+    <div class="col-md-6">
+        <label for="bang_diem_toan_khoa_dai_hoc" class="form-label">24. Bảng điểm toàn khóa hệ Đại học<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[bang_diem_toan_khoa_dai_hoc]" id="bang_diem_toan_khoa_dai_hoc" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_3x4" class="form-label">25. Hình 3x4(bắt buộc .jpg)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_3x4]" id="hinh_3x4" class="form-control" accept=".jpg, .JPG" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_cmnd_can_cuoc_mat_truoc" class="form-label">26. Hình CMND/CCCD mặt trước<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_cmnd_can_cuoc_mat_truoc]" id="hinh_cmnd_can_cuoc_mat_truoc" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_cmnd_can_cuoc_mat_sau" class="form-label">27. Hình CMND/CCCD mặt sau<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_cmnd_can_cuoc_mat_sau]" id="hinh_cmnd_can_cuoc_mat_sau" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+
+    <div class="col-md-6">
+        <label for="le_phi_xet_tuyen" class="form-label">28. Lệ phí xét tuyển(bản chụp lệ phí xét tuyển, hướng dẫn xem <a target="_blank" href="https://www.citd.vn/huong-dan-nop-le-phi-xet-tuyen/">tại đây</a> )<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[le_phi_xet_tuyen]" id="le_phi_xet_tuyen" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6 d-none">
+        <label for="project_paper_submit_status" class="form-label">29. Bản hồ sơ giấy<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">Tình trạng nộp bản giấy</span>
+            <select name="project_paper_submit_status" class='form-control select2'>
+<option value="0">Đã nộp</option>
+<option value="1">Đã nộp và cần bổ sung</option>
+<option value="2" selected="selected">Chưa nộp</option>
+</select>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-check">
+            <input type="checkbox" name="term_condition" value="" id="term_condition_2" class="form-check-input is-valid" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+            <label class="form-check-label hover-pointer" for="term_condition_2">
+                Tôi đồng ý toàn bộ thông tin cá nhân của hồ sơ dự tuyển này sẽ được lưu trữ và sử dụng để phục vụ cho quá trình tuyển sinh và đào tạo.
+            </label>
+
+        </div>
+    </div>
+    <div class="col-12 text-center">
+        <button id="btn-cu-nhan-cntt-van-bang-2" class="btn btn-apply" type="submit">Nộp hồ sơ(Cử nhân CNTT Văn bằng 2)</button>
+    </div>
+</form>                        </div><!-- End Tab 2 - Cử nhân CNTT Văn bằng 2 Content -->
+                        <div class="tab-pane fade" id="tab_lien_thong_dai_hoc">
+                            <form action="https://tuyensinh.citd.vn/home/ajaxCreateClientProject" id="cu_nhan_cntt_van_bang_3_form" class="row g-3 general-form" role="form" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="rise_csrf_token" value="2f39f74dee5d6f6d5f26c2cade577438" />
+<input type="hidden" name="project_type" value="3"  />
+    <!-- 1.1 Nhập thông tin xét tuyển tại các trường dữ liệu -->
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="company_name" class="form-label">1. Họ tên<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="company_name" value="" id="company_name" class="form-control" placeholder="Nguyễn Văn A" autocomplete="off" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="birth_day" class="form-label">2. Ngày sinh<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="birth_day" value="" id="birth_day_3" class="form-control" placeholder="21-05-2024" autocomplete="off" readonly="true" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+        <label for="sex" class="form-label">3. Giới tính<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <div class="input-group has-validation">            
+            <select name="sex" class='form-control'>
+<option value="">Vui lòng chọn...</option>
+<option value="Nam">Nam</option>
+<option value="Nữ">Nữ</option>
+</select>
+        </div>
+</div>
+
+<div class="col-md-6" id="birth_place_wrapper_3">
+    <label for="birth_place_3" class="form-label">4. Nơi sinh<span title="Bắt buộc" class="text-danger">(*)</span></label>    
+    <div class="input-group has-validation">
+        
+        <select name="birth_place" class='form-control select2' id='birth_place_3' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+<option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+<option value="Tỉnh Long An">Tỉnh Long An</option>
+<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+</select>
+       
+    </div>
+    <span id="birth_place_3_error" class="help-block"></span>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="country" class="form-label">5. Quốc tịch<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="country" class='form-control' id='country_3'  data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Việt Nam">Việt Nam</option>
+</select>
+
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ethnic" class="form-label">6. Dân tộc<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="ethnic" value="" id="ethnic" class="form-control" placeholder="Kinh, Hoa, Khmer, Tày..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ethnic" class="form-label">7. Tôn giáo<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="religion" value="" id="religion" class="form-control" placeholder="Phật giáo, Thiên chúa giáo, Không, ..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="phone" class="form-label">8. Số điện thoại<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="phone" value="" id="phone" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="email" class="form-label">9. Email<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="email" value="" id="email" class="form-control" placeholder="abc@gmail.com..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-email="1" data-msg-email="Vui lòng nhập một địa chỉ email hợp lệ."  />
+    </div>
+</div>
+<div class="col-md-6" id="city_wrapper_3">
+    <div class="has-validation">
+        <label for="city" class="form-label">10. Thường trú tỉnh/thành phố<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="city" class='form-control select2' id='city_3' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="" selected="selected">Vui lòng chọn...</option>
+<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+<option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế</option>
+<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng Tàu</option>
+<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+<option value="Tỉnh Long An">Tỉnh Long An</option>
+<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+</select>
+    </div>
+    <span id="city_3_error" class="help-block"></span>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="province" class="form-label">11. Thường trú huyện/quận<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="state" value="" id="state" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+   
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="commune" class="form-label">12. Thường trú xã/phường<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="commune" value="" id="commune" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="ward" class="form-label">13. Thường trú số nhà/đường/khu phố/ấp<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="ward" value="" id="ward" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="passport_id" class="form-label">14. Số CMND/Căn Cước<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="passport_id" value="" id="passport_id" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="has-validation">
+        <label for="address" class="form-label">15. Địa chỉ nhận giấy báo nhập học<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="address" value="" id="address" class="form-control" placeholder="Số nhà, tên đường, xã phường, huyện, tỉnh" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+</div>
+<div class="col-md-6" id="info_from_wrapper_3">
+    <div class="has-validation" >
+        <label for="info_from" class="form-label">16. Bạn biết thông tin tuyển sinh hệ từ xa của Trường ĐHCNTT qua kênh nào?
+            <span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <select name="info_from" class='form-control' id='info_from_3' data-rule-required = 'true' data-msg-required ='Thông tin này là bắt buộc.'>
+<option value="">Vui lòng chọn...</option>
+<option value="Tìm kiếm tại Google, website trường ĐH CNTT(uit.edu.vn)">Tìm kiếm tại Google, website trường ĐH CNTT(uit.edu.vn)</option>
+<option value="Tìm kiếm tại Google, website Trung Tâm Phát Triển CNTT(citd.vn)">Tìm kiếm tại Google, website Trung Tâm Phát Triển CNTT(citd.vn)</option>
+<option value="Tìm kiếm tại Google, trang tuyển sinh TTPTCNTT(tuyensinh.citd.vn)">Tìm kiếm tại Google, trang tuyển sinh TTPTCNTT(tuyensinh.citd.vn)</option>
+<option value="Quảng cáo, tư vấn tại Facebook Trung Tâm Phát Triển CNTT">Quảng cáo, tư vấn tại Facebook Trung Tâm Phát Triển CNTT</option>
+<option value="Quảng cáo, tư vấn tại Zalo Tuyển sinh Từ xa">Quảng cáo, tư vấn tại Zalo Tuyển sinh Từ xa</option>
+<option value="Quảng cáo, tư vấn tại Zalo OA Trung Tâm Phát Triển CNTT">Quảng cáo, tư vấn tại Zalo OA Trung Tâm Phát Triển CNTT</option>
+<option value="Bạn bè/người thân/thầy cô/gia đình giới thiệu">Bạn bè/người thân/thầy cô/gia đình giới thiệu</option>
+<option value="Các hội/nhóm/diễn đàn trên Facebook, Mạng xã hội">Các hội/nhóm/diễn đàn trên Facebook, Mạng xã hội</option>
+<option value="Bản thân tự biết thông tin về Trường ĐH CNTT">Bản thân tự biết thông tin về Trường ĐH CNTT</option>
+</select>
+    </div>
+    <span id="info_from_3_error" class="help-block"></span>
+</div>
+
+
+
+    <!-- 1.2 Upload các hình ảnh đính kèm (pdf hoặc ảnh), nó đi theo trường Đăng ký dự tuyển chương trình đào tạo: Mỗi mục dưới là 1 file ảnh upload-->
+    <div class="col-md-6">
+        <label for="phieu_dang_ky_du_tuyen" class="form-label">17. Phiếu đăng ký dự tuyển<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[phieu_dang_ky_du_tuyen]" id="phieu_dang_ky_du_tuyen" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+
+    </div>
+    <div class="col-md-6">
+        <label for="so_yeu_ly_lich" class="form-label">18. Sơ yếu lý lịch (<strong>công chứng</strong>)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[so_yeu_ly_lich]" id="so_yeu_ly_lich" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="trich_luc_giay_khai_sinh" class="form-label">19. Trích lục giấy khai sinh (hoặc bản sao y có chứng thực)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[trich_luc_giay_khai_sinh]" id="trich_luc_giay_khai_sinh" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="bang_tot_nghiep_cao_dang" class="form-label">20. Bằng tốt nghiệp <strong>Cao đẳng</strong> hoặc giấy chứng nhận tốt nghiệp tạm thời<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[bang_tot_nghiep_cao_dang]" id="bang_tot_nghiep_cao_dang" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+     <div class="col-md-6">
+        <div class="has-validation">
+            <label for="company_name" class="form-label">21. Trường cấp bằng <strong>Cao đẳng</strong><span title="Bắt buộc" class="text-danger">(*)</span></label>
+            <input type="text" name="truong_cap_bang_cao_dang" value="" id="truong_cap_bang_cao_dang" class="form-control" placeholder="..." autocomplete="off" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="nganh_dao_tao" class="form-label">22. Ngành đào tạo<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="nganh_dao_tao" value="" id="nganh_dao_tao" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="diem_trung_binh_tot_nghiep" class="form-label">23. Điểm trung bình tốt nghiệp<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="text" name="diem_trung_binh_tot_nghiep" value="" id="diem_trung_binh_tot_nghiep" class="form-control" placeholder="7.5" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-number="1" data-msg-number="Thông tin này là dạng số."  />
+    </div>
+    <div class="col-md-6">
+        <label for="bang_diem_toan_khoa_cao_dang" class="form-label">24. Bảng điểm toàn khóa hệ Cao đẳng<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[bang_diem_toan_khoa_cao_dang]" id="bang_diem_toan_khoa_cao_dang" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_3x4" class="form-label">25. Hình 3x4(bắt buộc .jpg)<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_3x4]" id="hinh_3x4" class="form-control" accept=".jpg, .JPG" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_cmnd_can_cuoc_mat_truoc" class="form-label">26. Hình CMND/CCCD mặt trước<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_cmnd_can_cuoc_mat_truoc]" id="hinh_cmnd_can_cuoc_mat_truoc" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+    <div class="col-md-6">
+        <label for="hinh_cmnd_can_cuoc_mat_sau" class="form-label">27. Hình CMND/CCCD mặt sau<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[hinh_cmnd_can_cuoc_mat_sau]" id="hinh_cmnd_can_cuoc_mat_sau" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+
+    <div class="col-md-6">
+        <label for="le_phi_xet_tuyen" class="form-label">28. Lệ phí xét tuyển(bản chụp lệ phí xét tuyển, hướng dẫn xem <a target="_blank" href="https://www.citd.vn/huong-dan-nop-le-phi-xet-tuyen/">tại đây</a> )<span title="Bắt buộc" class="text-danger">(*)</span></label>
+        <input type="file" name="clientFiles[le_phi_xet_tuyen]" id="le_phi_xet_tuyen" class="form-control" accept="image/*,.pdf" placeholder="Vui lòng chọn..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+    </div>
+<div class="col-md-6 d-none">
+    <label for="project_paper_submit_status" class="form-label">29. Bản hồ sơ giấy<span title="Bắt buộc" class="text-danger">(*)</span></label>
+    <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend3">Tình trạng nộp bản giấy</span>
+        <select name="project_paper_submit_status" class='form-control select2'>
+<option value="0">Đã nộp</option>
+<option value="1">Đã nộp và cần bổ sung</option>
+<option value="2" selected="selected">Chưa nộp</option>
+</select>
+    </div>
+</div>
+    <div class="col-md-12">
+        <div class="form-check">
+            <input type="checkbox" name="term_condition" value="" id="term_condition_3" class="form-check-input is-valid" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+            <label class="form-check-label hover-pointer" for="term_condition_3">
+                Tôi đồng ý toàn bộ thông tin cá nhân của hồ sơ dự tuyển này sẽ được lưu trữ và sử dụng để phục vụ cho quá trình tuyển sinh và đào tạo.
+            </label>
+
+        </div>
+    </div>
+    <div class="col-12 text-center">
+        <button id="btn-lien-thong-dai-hoc" class="btn btn-apply" type="submit">Nộp hồ sơ(Liên thông đại học)</button>
+    </div>
+</form>                        </div><!-- End Tab 3 - Liên thông Đại học Content -->
+                    </div>
+                    <!-- Tab Content -->
+                    <div class="register_form_result">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            Hệ thống đang xử lý vui lòng chờ...
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                     
+
+            </div>
+
+        </div>
+    </section><!-- End register_form Section -->   
+     <hr />
+    
+   
+   
+
+</main><!-- End #main -->
+
+<div id="fileChangeErrorModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Lỗi định dạng tập tin tải lên</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-danger">Chỉ cho phép hình ảnh(jpg,jpeg,png...) hoặc PDF được tải lên</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer  container-fluid">
+    <section id="subcriber_form_wapper" class="about" >
+             
+<div class="container" data-aos="fade-up">
+<form action="https://tuyensinh.citd.vn/home/ajaxSubcriber" id="subcriber_form" class="row g-3 general-form" role="form" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="rise_csrf_token" value="2f39f74dee5d6f6d5f26c2cade577438" />
+<input type="hidden" name="project_type" value="1"  />
+    <h3 class="text-center">Đăng Ký Để Nhận Tư Vấn Miễn Phí</h3>
+    <div id="subcriber_form_container" class="row g-4" data-aos="fade-up" data-aos-delay="200">                
+        <!-- 1.1 Nhập thông tin xét tuyển tại các trường dữ liệu -->
+        <div class="col-md-6">
+            <div class="has-validation">
+                <label for="labels" class="form-label">Chương trình đăng ký tư vấn<span title="Bắt buộc" class="text-danger">(*)</span></label>
+                <select name="labels" class='form-control select2'>
+<option value="Cử nhân văn bằng 1 hệ đào tạo từ xa">Cử nhân văn bằng 1 hệ đào tạo từ xa</option>
+<option value="Cử nhân văn bằng 2 hệ đào tạo từ xa">Cử nhân văn bằng 2 hệ đào tạo từ xa</option>
+<option value="Liên thông đại học hệ đào tạo từ xa">Liên thông đại học hệ đào tạo từ xa</option>
+</select>
+               
+            </div>
+             <div class="has-validation">
+                <label for="company_name" class="form-label">Họ và tên<span title="Bắt buộc" class="text-danger">(*)</span></label>
+                <input type="text" name="name" value="" id="name" class="form-control" placeholder="..." autocomplete="off" data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+            </div>
+            <div class="has-validation">
+                <label for="email" class="form-label">Email<span title="Bắt buộc" class="text-danger">(*)</span></label>
+                <input type="text" name="email" value="" id="email" class="form-control" placeholder="abc@gmail.com..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc." data-rule-email="1" data-msg-email="Vui lòng nhập một địa chỉ email hợp lệ."  />
+            </div>
+             <div class="has-validation">
+                <label for="phone" class="form-label">Số điện thoại<span title="Bắt buộc" class="text-danger">(*)</span></label>
+                <input type="text" name="phone" value="" id="phone" class="form-control" placeholder="..." data-rule-required="1" data-msg-required="Thông tin này là bắt buộc."  />
+            </div>   
+        <div class="col-12" id="subcriber-btn">
+            <button class="btn btn-apply" type="submit">Nhận tư vấn</button>
+        </div>  
+        </div>
+        <div class="col-md-6">
+            <img src="/assets/home/img/landingpage/tu_van.png" alt="" class="img-fluid img">
+        </div>
+    </div><!-- end form -->
+    <div class="subcriber_form_result"></div>
+</div>
+ 
+</form>            
+    </section><!-- End subcriber_form Section -->
+       
+    <div class="footer-legal text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+            <div id="footer-text" class="col-md-9">
+                <p><strong>Trung Tâm Phát Triển Công Nghệ Thông Tin</strong> là một Trung tâm hoạt động về Khoa học Công nghệ và Đào tạo trực thuộc Trường Đại học Công nghệ Thông tin, Đại học Quốc gia TP Hồ Chí Minh. Được nhà trường tin tưởng và giao nhiệm vụ triển khai đào tạo nguồn nhân lực Công Nghệ Thông Tin qua các chương trình đào tạo Cử nhân công nghệ thông tin Hệ từ xa qua Internet</p>
+            
+
+                <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                    <a target="_blank" href="https://www.facebook.com/CITD.UIT/" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/user/trungtamcitd" class="youtube"><i class="bi bi-youtube"></i></a>
+                    <a target="_blank" href="https://zalo.me/0865584879" class="google-plus"><i class="bi bi-skype"></i></a>
+                    <a target="_blank" href="tel:0865584879" class="google-plus"><i class="bi bi-telephone"></i></a>                   
+                </div>                 
+            </div>       
+            <div id="footer-link" class="col-md-3">            
+                <div class="nav-link">
+
+                    <ul>
+                        <li><a href="/" class="facebook">Trang chủ</a>
+                        <li><a  href="#register_form_tutorial" class="youtube">Hướng dẫn</a></li>
+                        <li><a href="#register_form" class="google-plus">Nộp hồ sơ trực tuyến</a></li>
+                        <li><a  href="#subcriber_form_wapper" class="youtube">Tư vấn</a></li>
+                        <li><a target="_blank" href="https://www.citd.vn/chuyen-muc/tuyen-sinh/" class="google-plus">Tin tức</a></li>                        
+                        <li><a target="_blank" href="https://www.citd.vn/cau-hoi-thuong-gap/" class="google-plus">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>  
+
+        </div>
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+              <div class="social-links order-first order-lg-last mb-3 mb-lg-0">                   
+                    <a class="copy-right-link" href="https://www.citd.vn/" target="_blank" class="google-plus">  ©1998 - 2024 Bản quyền thuộc Trung Tâm Phát Triển Công Nghệ Thông Tin</a>
+                </div>    
+
+        </div>
+    </div>
+
+</footer><!-- End Footer -->
+
+<a href="#" title="Duy chuyển về đầu trang" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        setDatePicker("#birth_day_1");
+        setDatePicker("#birth_day_2");
+        setDatePicker("#birth_day_3");
+
+        
+        $('#birth_place_1').select2();
+        $('#birth_place_2').select2();
+        $('#birth_place_3').select2();
+
+        $('#city_1').select2();
+        $('#city_2').select2();
+        $('#city_3').select2();
+
+
+        $("#figure-vb1 img, #figure-vb1 a").click(function(e){
+             e.preventDefault();
+            $("#register_form_schema_show").slideUp();
+            $("#register_form_schema_detail_vb1").slideDown();
+        });
+        $("#figure-vb2 img, #figure-vb2 a").click(function(e){
+             e.preventDefault();
+            $("#register_form_schema_show").slideUp();
+            $("#register_form_schema_detail_vb2").slideDown();
+        });
+        $("#figure-ltdh img, #figure-ltdh a").click(function(e){
+             e.preventDefault();
+            $("#register_form_schema_show").slideUp();
+            $("#register_form_schema_detail_ltdh").slideDown();
+        });
+         $("#xbutton_vb1,.xbutton_vb1_a").click(function(e){
+            e.preventDefault();
+            $("#register_form_schema_detail_vb1").slideUp();
+            $("#register_form_schema_show").slideDown();
+            
+         });
+         $("#xbutton_vb2,.xbutton_vb2_a").click(function(e){
+            e.preventDefault();
+            $("#register_form_schema_detail_vb2").slideUp();
+            $("#register_form_schema_show").slideDown();
+            
+         });
+         $("#xbutton_ltdh,.xbutton_ltdh_a").click(function(e){       
+         e.preventDefault();     
+            $("#register_form_schema_detail_ltdh").slideUp();
+            $("#register_form_schema_show").slideDown();
+            
+         });
+
+      
+    });
+     $("input[type=file]").change(function(){
+        var iputMessageText = "Chỉ cho phép hình ảnh(jpg,jpeg,png...) hoặc PDF được tải lên";
+        var idInput = $(this).attr("id");        
+        var fileName = $(this).val();
+        var dot = fileName.lastIndexOf(".") + 1;
+        var extFile = fileName.substr(dot, fileName.length).toLowerCase();
+        if (extFile == "jpg"|| extFile == "jpeg" || extFile == "png"|| extFile == "pdf") {        
+        } else {
+            $(this).val("");  
+            $(this).next("span#"+idInput+"-warning").remove();         
+            $(this).after( "<span id='" +idInput+"-warning' class='help-block'>"+iputMessageText+"</span>" );
+            $("#fileChangeErrorModal").modal("show");
+            
+        }
+       
+    });
+
+    //validate before submit
+    $("#btn-cu-nhan-cntt-van-bang-1").click(function () {           
+            $("#birth_place_1_error").html("");
+            $("#city_1_error").html("");           
+            
+            if($("#birth_place_1").val() == "") {
+                $("#birth_place_1_error").html('Thông tin này là bắt buộc.');                
+                $("#birth_place_1_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#birth_place_wrapper_1").offset().top-200);
+                return false;
+            }
+            
+            if($("#city_1").val() == "") {
+                $("#city_1_error").html('Thông tin này là bắt buộc.');                
+                $("#city_1_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#city_wrapper_1").offset().top-200);
+                return false;
+            }
+
+            if($("#info_from_1").val() == "") {
+                $("#info_from_1_error").html('Thông tin này là bắt buộc.');                
+                $("#info_from_1_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#info_from_wrapper_1").offset().top-200);
+                return false;
+            }
+              
+           
+    });
+
+    //validate before submit
+    $("#btn-cu-nhan-cntt-van-bang-2").click(function () {           
+            $("#birth_place_2_error").html("");
+            $("#city_2_error").html("");           
+            
+            if($("#birth_place_2").val() == "") {
+                $("#birth_place_2_error").html('Thông tin này là bắt buộc.');                
+                $("#birth_place_2_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#birth_place_wrapper_2").offset().top-200);
+                return false;
+            }
+            
+            if($("#city_2").val() == "") {
+                $("#city_2_error").html('Thông tin này là bắt buộc.');                
+                $("#city_2_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#city_wrapper_2").offset().top-200);
+                return false;
+            }
+
+            if($("#info_from_2").val() == "") {
+                $("#info_from_2_error").html('Thông tin này là bắt buộc.');                
+                $("#info_from_2_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#info_from_wrapper_2").offset().top-200);
+                return false;
+            }
+    });
+
+    //validate before submit
+    $("#btn-lien-thong-dai-hoc").click(function () {           
+            $("#birth_place_3_error").html("");
+            $("#city_3_error").html("");           
+            
+            if($("#birth_place_3").val() == "") {
+                $("#birth_place_3_error").html('Thông tin này là bắt buộc.');                
+                $("#birth_place_3_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#birth_place_wrapper_2").offset().top-200);
+                return false;
+            }
+            
+            if($("#city_3").val() == "") {
+                $("#city_3_error").html('Thông tin này là bắt buộc.');                
+                $("#city_3_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#city_wrapper_3").offset().top-200);
+                return false;
+            }
+
+            if($("#info_from_3").val() == "") {
+                $("#info_from_3_error").html('Thông tin này là bắt buộc.');                
+                $("#info_from_3_error").attr("style", "display: block !important");
+                $('html, body').scrollTop($("#info_from_wrapper_3").offset().top-200);
+                return false;
+            }
+    });
+  
+</script>
+</html>

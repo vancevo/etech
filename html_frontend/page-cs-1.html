@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etech</title>
+    <meta name="description" content="..." />
+
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=5, initial-scale=1, user-scalable=0"
+    />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+
+    <!-- up to 10% speed up for external res -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <!-- preloading icon font is helping to speed up a little bit -->
+    <link
+      rel="preload"
+      href="assets/fonts/flaticon/Flaticon.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="assets/css/core.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor_bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/custom-1.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="demo.files/logo/icon_512x512.png" />
+  </head>
+
+  <body class="header-sticky" style="background-color: #f8f8f8">
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="shadow-xs">
+        <!-- TOP BAR -->
+        <div id="top_bar">
+          <!-- optional if body.header-sticky is present: add .js-ignore class to ignore autohide and stay visible all the time -->
+          <div class="top_bar-container container d-flex">
+            <div>
+              <img
+                src="./assets/images/logo/logo-circle.png"
+                alt=""
+                style="object-fit: cover; max-width: 80px"
+              />
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center top_bar-title"
+            >
+              <p class="subtitle">CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+              <p class="title">TRƯỜNG CAO ĐẲNG - KINH TẾ CÔNG NGHỆ TP.HCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="nav_bar_cs">
+          <div class="container">
+            <nav
+              class="navbar navbar-expand-lg nav_bar"
+              style="margin-left: 20px"
+            >
+              <div class="align-items-start">
+                <!-- mobile menu button : show -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarMainNav"
+                  aria-controls="navbarMainNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style="height: 40px; border: 1px"
+                >
+                  <svg width="25" viewBox="0 0 20 20">
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 1.998 L -0.0108 1.998 L -0.0108 -0.0019 L 19.9876 -0.0019 L 19.9876 1.998 Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 7.9979 L -0.0108 7.9979 L -0.0108 5.9979 L 19.9876 5.9979 L 19.9876 7.9979 Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 13.9977 L -0.0108 13.9977 L -0.0108 11.9978 L 19.9876 11.9978 L 19.9876 13.9977 Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 19.9976 L -0.0108 19.9976 L -0.0108 17.9976 L 19.9876 17.9976 L 19.9876 19.9976 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="collapse navbar-collapse navbar-animate-fadein"
+                id="navbarMainNav"
+              >
+                <!-- navbar : mobile menu -->
+                <div class="navbar-xs d-none">
+                  <!-- mobile menu button : close -->
+                  <button
+                    class="navbar-toggler pt-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMainNav"
+                    aria-controls="navbarMainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <svg width="20" viewBox="0 0 20 20">
+                      <path
+                        d="M 20.7895 0.977 L 19.3752 -0.4364 L 10.081 8.8522 L 0.7869 -0.4364 L -0.6274 0.977 L 8.6668 10.2656 L -0.6274 19.5542 L 0.7869 20.9676 L 10.081 11.679 L 19.3752 20.9676 L 20.7895 19.5542 L 11.4953 10.2656 L 20.7895 0.977 Z"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <!-- 
+									Mobile Menu Logo 
+									Logo : height: 70px max
+								-->
+                  <a class="navbar-brand" href="index.html">ETECH</a>
+                </div>
+                <!-- navbar : navigation -->
+                <ul class="navbar-nav">
+                  <!-- Home -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      id="mainNavHome"
+                      class="d-flex justify-content-center pr-0"
+                      style="padding-right: 0px"
+                    >
+                      <i class="fi fi-home"></i>
+                    </a>
+                  </li>
+                  <!-- Giới thiệu -->
+                  <li class="nav-item dropdown active">
+                    <a
+                      href="#"
+                      id="mainNavGT"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Giới thiệu
+                    </a>
+
+                    <div
+                      aria-labelledby="mainNavGT"
+                      class="dropdown-menu dropdown-menu-clean dropdown-menu-hover dropdown-mega-md dropdown-fadeinup"
+                    >
+                      <div class="row">
+                        <div class="col-12 col-lg-6">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Về ETECH</a
+                              >
+                            </li>
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Sứ Mệnh - Tầm nhìn</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Tuyển Sinh -->
+                  <li class="nav-item dropdown">
+                    <a href="#" id="mainNavTS" class="nav-link">
+                      Tuyển Sinh 2024
+                    </a>
+                  </li>
+                  <!-- Ngành học -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      id="mainNavNH"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Ngành học
+                    </a>
+                    <div
+                      aria-labelledby="mainNavNH"
+                      class="dropdown-menu dropdown-menu-clean dropdown-menu-hover dropdown-mega-md dropdown-fadeinup"
+                    >
+                      <div class="row">
+                        <div class="col-12 col-lg-6">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Về ETECH</a
+                              >
+                            </li>
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Sứ Mệnh - Tầm nhìn</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Du Học -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      id="mainNavDH"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Du Học Quốc Tế
+                    </a>
+                    <div
+                      aria-labelledby="mainNavDH"
+                      class="dropdown-menu dropdown-menu-clean dropdown-menu-hover dropdown-mega-md dropdown-fadeinup"
+                    >
+                      <div class="row">
+                        <div class="col-12 col-lg-6">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Về ETECH</a
+                              >
+                            </li>
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Sứ Mệnh - Tầm nhìn</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Trung Tâm Đào Tạo -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      id="mainNavTTDT"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Trung Tâm Đào Tạo
+                    </a>
+                    <div
+                      aria-labelledby="mainNavTTDT"
+                      class="dropdown-menu dropdown-menu-clean dropdown-menu-hover dropdown-mega-md dropdown-fadeinup"
+                    >
+                      <div class="row">
+                        <div class="col-12 col-lg-6">
+                          <ul class="list-unstyled">
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Về ETECH</a
+                              >
+                            </li>
+                            <li class="dropdown-item">
+                              <a
+                                href="niche.restaurant.html"
+                                class="dropdown-link"
+                                >Sứ Mệnh - Tầm nhìn</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Liên hệ -->
+                  <li class="nav-item dropdown">
+                    <a href="#" id="mainNavLH" class="nav-link"> Liên hệ </a>
+                  </li>
+                </ul>
+                <!-- /navbar : navigation -->
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- /Navbar -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Banner -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide h-cs-600 position-relative"
+        data-bs-ride="carousel"
+      >
+        <h1
+          class="w-bold display-4 center-cs center-cs-half z-3 text-white text-center font-weight-bold fs-3"
+        >
+          Tuyển sinh Cao Đẳng - Trung cấp
+          <p class="text-danger">Khóa 02/2024</p>
+        </h1>
+        <div class="carousel-inner rounded h-cs-600">
+          <div class="carousel-item h-cs-600">
+            <!-- slide : 0 -->
+            <img
+              src="https://wapave.org/wp-content/uploads/2016/05/AdobeStock_88874805small.jpeg"
+              class="d-block w-100 h-cs-600 object-fit-cover"
+              alt="graduated_1"
+              style="object-position: top"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <!-- slide : 1 -->
+            <img
+              src="https://img.freepik.com/free-photo/male-blue-mantle-enjoying-freedom-after-graduation_181624-9842.jpg?t=st=1715849040~exp=1715852640~hmac=2593c8dda4eb4046ec3123b3f61ceb92e9e5cf9487abf7d3ad7671fd81777ab7&w=1380"
+              class="d-block w-100 h-cs-600 object-fit-cover"
+              alt="graduated_2"
+            />
+          </div>
+
+          <div class="carousel-item active">
+            <!-- slide : 2 -->
+            <img
+              src="https://images.unsplash.com/photo-1627556704314-1f7aee38ec57?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100 h-cs-600 object-fit-cover"
+              alt="graduated_3"
+            />
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+
+        <ol class="carousel-indicators">
+          <!-- indicators -->
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+      </div>
+      <!-- Chuơng trình đào tạo -->
+      <div class="container h-cs-700 my-4">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center py-5"
+        >
+          <p class="fw-bold fs-1">CHƯƠNG TRÌNH ĐÀO TẠO</p>
+          <div>
+            <a href="#" class="btn btn-dark w-150">Cao Đẳng</a>
+            <a href="#" class="btn btn-outline-dark w-150">Trung Cấp</a>
+          </div>
+        </div>
+
+        <!-- CTDT -->
+        <div
+          id="carouselExampleControls_CTDT"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner rounded">
+            <div class="carousel-item h-cs-500 active">
+              <!-- slide : 0 -->
+              <div class="d-flex gap-2">
+                <div class="card w-400">
+                  <img
+                    src="https://hiu.vn/wp-content/uploads/2021/10/cong-nghe-thong-tin-hiu-1.jpg"
+                    class="card-img-top"
+                    alt="cntt"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">CNTT</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+                <div class="card w-400">
+                  <img
+                    src="https://hiu.vn/wp-content/uploads/2021/10/cong-nghe-thong-tin-hiu-1.jpg"
+                    class="card-img-top"
+                    alt="cntt"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">CNTT</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the CNTT and make up
+                      the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+                <div class="card w-400">
+                  <img
+                    src="https://hiu.vn/wp-content/uploads/2021/10/cong-nghe-thong-tin-hiu-1.jpg"
+                    class="card-img-top"
+                    alt="cntt"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">CNTT</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the CNTT and make up
+                      the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item h-cs-500">
+              <!-- slide : 1 -->
+              <div class="d-flex gap-2">
+                <div class="card w-400">
+                  <img
+                    src="https://cdn.luatvietnam.vn/uploaded/Images/Original/2023/06/01/Kinh-te-la-gi_0106163607.jpeg"
+                    class="card-img-top"
+                    alt="cntt"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Kinh Tế</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+                <div class="card w-400">
+                  <img
+                    src="https://cdn.luatvietnam.vn/uploaded/Images/Original/2023/06/01/Kinh-te-la-gi_0106163607.jpeg"
+                    class="card-img-top"
+                    alt="Kinh Tế"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Kinh Tế</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the Kinh Tế and make
+                      up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+                <div class="card w-400">
+                  <img
+                    src="https://cdn.luatvietnam.vn/uploaded/Images/Original/2023/06/01/Kinh-te-la-gi_0106163607.jpeg"
+                    class="card-img-top"
+                    alt="Kinh Tế"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Kinh Tế</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the Kinh Tế and make
+                      up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item h-cs-500">
+              <!-- slide : 2 -->
+              <div class="d-flex gap-2">
+                <div class="card w-400">
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/07/03/1365413/luu-ngay-10-dia-diem-du-lich-cuc-lang-man-danh-cho-cac-cap-doi-tai-viet-nam-202206021609456544.jpg"
+                    class="card-img-top"
+                    alt="cntt"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Du Lịch</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+                <div class="card w-400">
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/07/03/1365413/luu-ngay-10-dia-diem-du-lich-cuc-lang-man-danh-cho-cac-cap-doi-tai-viet-nam-202206021609456544.jpg"
+                    class="card-img-top"
+                    alt="Du Lịch"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Du Lịch</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the Du Lịch and make
+                      up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+                <div class="card w-400">
+                  <img
+                    src="https://cdn.tgdd.vn/Files/2021/07/03/1365413/luu-ngay-10-dia-diem-du-lich-cuc-lang-man-danh-cho-cac-cap-doi-tai-viet-nam-202206021609456544.jpg"
+                    class="card-img-top"
+                    alt="Du Lịch"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Du Lịch</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the Du Lịch and make
+                      up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer text-muted text-center">
+                    <a href="#" class="fs-4">Xem thêm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ol class="carousel-indicators">
+            <!-- indicators -->
+            <li
+              data-bs-target="#carouselExampleControls_CTDT"
+              data-bs-slide-to="0"
+              class="active"
+              style="background-color: brown"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleControls_CTDT"
+              data-bs-slide-to="1"
+              style="background-color: brown"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleControls_CTDT"
+              data-bs-slide-to="2"
+              style="background-color: brown"
+            ></li>
+          </ol>
+        </div>
+      </div>
+      <!-- GTCT -->
+      <div class="GTCT-container container-fluid mt-4 bg-white">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center py-5"
+        >
+          <p class="fw-bold fs-1">GIÁ TRỊ BẠN NHẬN ĐƯỢC TỪ CHƯƠNG TRÌNH</p>
+
+          <div class="container" style="max-height: 600px">
+            <div class="row" style="max-height: 600px">
+              <div
+                class="card card_GTCT card_GTCT_1 col-md-12 col-lg-12 col-xl"
+              >
+                <img
+                  src="https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/icon-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px">
+                    Chương trình theo chuẩn quốc tế
+                  </h5>
+                  <p class="card-text">
+                    Nội dung chương trình được thiết kế và biên soạn theo tiêu
+                    chuẩn của tổ chức Unesco.
+                  </p>
+                </div>
+              </div>
+              <!-- GTCT_2 -->
+              <div
+                class="card card_GTCT card_GTCT_2 col-md-12 col-lg-12 col-xl"
+              >
+                <img
+                  src="https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/icon-2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px">
+                    Bằng Cao Đẳng & Trung cấp
+                  </h5>
+                  <p class="card-text">
+                    Văn bằng được cấp bởi Trường Cao Đẳng Kinh Tế Công Nghệ
+                    TP.HCM, có giá trị để ứng tuyển việc làm, học tiếp cao học.
+                  </p>
+                </div>
+              </div>
+              <!-- GTCT_3 -->
+              <div
+                class="card card_GTCT card_GTCT_3 col-md-12 col-lg-12 col-xl"
+              >
+                <img
+                  src="https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/icon-3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px">
+                    Chứng nhận năng lực nghề nghiệp
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <!-- GTCT_4 -->
+              <div
+                class="card card_GTCT card_GTCT_4 col-md-12 col-lg-12 col-xl"
+              >
+                <img
+                  src="https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/icon-4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mô hình Quốc Tế</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <!-- GTCT_5 -->
+              <div
+                class="card card_GTCT card_GTCT_5 col-md-12 col-lg-12 col-xl"
+              >
+                <img
+                  src="https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/icon-5.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dịch vụ hỗ trợ sinh viên</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/banner-bg.jpg -->
+      <!-- Phuong Cham -->
+      <div class="container-fluid PC-container">
+        <div class="container d-flex align-items-center">
+          <p class="text-white fw-bold">
+            Với phương châm “Lấy người học làm trung tâm”, chúng tôi luôn nỗ lực
+            nâng cấp chất lượng chương trình đào tạo nhằm mang đến cho sinh viên
+            những trải nghiệm học tập tuyệt vời nhất!
+          </p>
+        </div>
+      </div>
+      <!-- Lien hệ -->
+      <!-- https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/support-girl.png -->
+      <div class="container LH-container my-5">
+        <div class="row">
+          <div class="LH-container__left col-xl-6">
+            <div class="row">
+              <img
+                src="https://tuyensinh.elo.edu.vn/wp-content/uploads/2023/11/support-girl.png"
+                class="col-sm-6 col-xl-12"
+              />
+              <div class="col-sm-6 col-xl-12">
+                <div class="d-flex gap-2">
+                  <i class="fi fi-check"></i>
+                  <p>
+                    Miễn phí xét tuyển hồ sơ – Nộp hồ sơ trực tiếp hoặc gửi bưu
+                    điện
+                  </p>
+                </div>
+                <div class="d-flex gap-2">
+                  <i class="fi fi-check"></i>
+                  <p>Địa chỉ: 138 Ha Huy Giap, Q12, TP.HCM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="LH-container__right col-xl-6">
+            <p class="fs-2">ĐĂNG KÝ NHẬN TƯ VẤN</p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1_lh_mail" class="form-label"
+                >Địa chỉ email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1_lh_mail"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1_lh_sdt" class="form-label"
+                >Số điện thoại</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1_lh_sdt"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1_lh_des" class="form-label"
+                >Mô tả</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1_lh_des"
+                rows="3"
+              ></textarea>
+            </div>
+            <button class="btn btn-danger w-100">Đăng Ký</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- DTCL -->
+      <div class="dtcl_body">
+        <div class="container dtcl_content">
+          <p class="fs-2 text-center fw-bold dtcl_content__header">
+            ĐỐI TÁC CHIẾN LƯỢC
+          </p>
+
+          <div class="dtcl_content__body">
+            <div class="row gap-5">
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+              <div class="brand_support border col-lg-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/FPT_Education_logo.svg/2560px-FPT_Education_logo.svg.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /links cards -->
+
+      <!-- Footer -->
+      <footer id="footer" class="bg-gradient-warning">
+        <!-- footer cta -->
+        <div
+          class="container tet-white py-5 d-lg-flex flex-row align-items-lg-center"
+        >
+          <div class="row g-4 align-items-center">
+            <h3 class="col-lg-6 h2 mb-0">
+              Sẵn sàng trở thành thành viên của Etech - bây giờ hoặc không bao
+              giờ
+            </h3>
+            <div class="col text-lg-end">
+              <a href="#" class="btn btn-success text-white bg-danger border-0">
+                Đăng ký học ngay
+              </a>
+              <!-- <a
+                href="https://wrapbootstrap.com/theme/smarty-website-admin-rtl-WB02DSN1B"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-warning rounded-pill d-inline-flex align-items-center px-4"
+              >
+                <span class="text-dark me-2">Start now</span>
+                <svg
+                  width="18px"
+                  height="18px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  ></path>
+                </svg>
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <!-- /footer cta -->
+
+        <!-- line divider -->
+        <hr class="bg-gray-500 my-0 container" />
+
+        <div class="container py-5">
+          <div class="row g-4">
+            <div class="col-12 col-lg-4 mb-4">
+              <!-- logo -->
+              <div
+                class="w-150 h-cs-100 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="assets/images/logo/LOGO HIAST.png"
+                  class="object-fit-lg-contain"
+                  style="width: 100px; height: 100px"
+                />
+              </div>
+              <div class="small d-flex align-items-start my-3">
+                <ul>
+                  <!-- address campus 1 -->
+                  <svg
+                    class="me-3 flex-none my-1"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+
+                  <ul class="list-unstyled p-0 m-0 w-100">
+                    <li>Cơ sở Quận 11: 275/8 Lý Thường Kiệt</li>
+                    <li>Phường 15, Quận 11, TP. Hồ Chí Minh</li>
+                  </ul>
+                  <!-- address campus 2 -->
+                  <svg
+                    class="me-3 flex-none my-1"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+
+                  <ul ul class="list-unstyled p-0 m-0 w-100">
+                    <li>Cơ sở Quận 12: 138 Hà Huy Giáp</li>
+                    <li>Phường Thạnh Lộc, Quận 12, TP. Hồ Chí Minh</li>
+                  </ul>
+                </ul>
+              </div>
+
+              <div class="small d-flex align-items-start my-3">
+                <ul>
+                  <svg
+                    class="me-3 flex-none my-1"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                    ></path>
+                  </svg>
+                  <ul class="list-unstyled p-0 m-0 w-100">
+                    <li>
+                      Điện thoại:
+                      <a href="tel:18005652390" class="text-dashed"
+                        >1800 666 999 - 028 62 666 888</a
+                      >
+                    </li>
+                    <li>
+                      Email:
+                      <a href="mail:myemail@gmail.com" class="text-dashed"
+                        >tuyensinh@Etech.college</a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+
+              <!-- copyright -->
+              <!-- <div class="my-4">
+                <p class="small mb-0">&copy;Tất cả bản quyền thuộc</p>
+                <p class="small mb-0"> Cao Đẳng Etech, năm 2024</p>
+              </div> -->
+
+              <!-- social icons -->
+              <!-- <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="facebook page"
+              >
+                <i class="fi fi-social-facebook"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="twitter page"
+              >
+                <i class="fi fi-social-twitter"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="linkedin page"
+              >
+                <i class="fi fi-social-linkedin"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="youtube page"
+              >
+                <i class="fi fi-social-youtube"></i>
+              </a> -->
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4">
+              <div class="my-3">
+                <h3 class="small mb-4">SỨ MỆNH</h3>
+
+                <p class="small col-md-10">
+                  Trường Cao Đẳng Kinh Tế Công Nghệ TPHCM mang cho mình sứ mệnh
+                  hình thành hệ sinh thái riêng biệt trong giáo dục và đào tạo,
+                  đào tạo và phát triển nguồn nhân lực chất lượng cao, đáp ứng
+                  nhu cầu thị trường lao động. Tạo ra nguồn nhân lực có khả năng
+                  cạnh tranh toàn cầu, xây dựng mối liên kết chặt chẽ với doanh
+                  nghiệp và cộng đồng, khuyến khích sự sáng tạo và đổi mới, xây
+                  dựng cộng đồng học thuật, kỹ nẵng và doanh nghiệp chủ động,
+                  thúc đẩy hợp tác quốc tế và giao lưu văn hóa
+                </p>
+                <h3 class="small mb-4">TẦM NHÌN</h3>
+
+                <p class="small col-md-10">
+                  Trở thành địa chỉ đào tạo và cung ứng nguồn nhân lực đạt chất
+                  lượng cao phục vụ mọi nhu cầu của xã hội tại Việt Nam, Khu vực
+                  và Quốc tế.
+                </p>
+              </div>
+              <!-- <h3 class="small mb-4">GET IN TOUCH</h3>
+
+              <p class="small col-md-10">
+                Smarty is a responsive multipurpose template, created to help
+                you build new projects in no time! Clean, fast, simple!
+              </p> -->
+            </div>
+
+            <div class="col-12 col-lg-4 mb-4">
+              <h3 class="small mb-4">XEM THÊM</h3>
+
+              <ul class="list-unstyled">
+                <li class="list-item mb-2">
+                  <i class="fi fi-arrow-end me-2 smaller"></i>
+                  <a class="opacity-7" href="contact-1.html">Liên hệ</a>
+                </li>
+                <li class="list-item mb-2">
+                  <i class="fi fi-arrow-end me-2 smaller"></i>
+                  <a class="opacity-7" href="#">Về chúng tôi</a>
+                </li>
+                <li class="list-item mb-2">
+                  <i class="fi fi-arrow-end me-2 smaller"></i>
+                  <a class="opacity-7" href="page-terms-and-conditions.html"
+                    >Điều khoản và điều kiện</a
+                  >
+                </li>
+                <li class="list-item mb-2">
+                  <i class="fi fi-arrow-end me-2 smaller"></i>
+                  <a class="opacity-7" href="page-cookie.html"
+                    >Tùy chọn cookies</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-4">
+            <div class="small mb-0">
+              Tất cả bản quyền thuộc Trường Cao Đẳng Etech, năm 2024&copy;
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="facebook page"
+              >
+                <i class="fi fi-social-facebook"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="twitter page"
+              >
+                <i class="fi fi-social-twitter"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="linkedin page"
+              >
+                <i class="fi fi-social-linkedin"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="youtube page"
+              >
+                <i class="fi fi-social-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /Footer -->
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="assets/js/core.min.js"></script>
+    <script>
+      function gotoPage(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>

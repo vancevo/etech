@@ -1,0 +1,20 @@
+// MOBILE - TABLET
+@media only screen and (max-width: 900px) {
+  // TOP_BAR
+  #header {
+    #top_bar {
+      height: 120px;
+      padding: 15px 0px;
+      .top_bar-container {
+        .top_bar-title {
+          justify-content: center;
+          text-align: center;
+          .subtitle {
+          }
+          .title {
+          }
+        }
+      }
+    }
+  }
+}

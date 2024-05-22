@@ -1,0 +1,41 @@
+// DESKTOP
+@media only screen and (min-width: 901px) {
+  // TOP_BAR
+  #header {
+    //   NAV_BAR
+    .nav_bar_cs {
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+    }
+    .nav_bar {
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+    }
+    .navbar-nav {
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+      .nav-item {
+        div {
+          top: 40px;
+          left: 15px;
+        }
+      }
+    }
+    .nav-link,
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+      /* Height affect to menu-bar mobile */
+      height: 40px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav.navbar:not(.h-auto) {
+    min-height: 40px;
+  }
+}
