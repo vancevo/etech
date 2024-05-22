@@ -87,12 +87,12 @@ a {
 .thong-tin-truong .left-news .list-news-item {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  gap: 8px;
 }
 .thong-tin-truong .left-news .list-news-item .image img {
   width: 87px;
   height: 63px;
-  object-fit: unset;
+  object-fit: cover;
   border-radius: 8px;
 }
 /* SECTION */
