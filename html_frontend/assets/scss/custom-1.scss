@@ -16,7 +16,11 @@
 a {
   color: rgba(0, 0, 0, 0.65);
 }
-
+// ---COLOR
+.text-uniq {
+  color: rgb(66, 135, 245);
+}
+// ------
 #header {
   // TOP_BAR
   #top_bar {
@@ -116,5 +120,53 @@ a {
   }
 }
 
-
 //------ DESKTOP
+/* THONG TIN TRUONG */
+.thong-tin-truong {
+  display: flex;
+  column-gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  .left-news {
+    .list-news-item {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      .image {
+        img {
+          width: 87px;
+          height: 63px;
+          object-fit: unset;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+// SECTION
+.section-cs {
+  display: flex;
+  background-color: #035fb5;
+  height: 40px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section-cs-table {
+  .section-cs-item {
+    border-color: #dde4ea;
+    border-style: dotted;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    &--title {
+    }
+    &--content {
+    }
+  }
+}

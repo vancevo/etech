@@ -32,6 +32,21 @@
       height: 40px !important;
     }
   }
+  //CONTENT
+  #content {
+    #date {
+      margin-top: 4px;
+    }
+  }
+  // SECTION
+  .section-cs-table {
+    .section-cs-list {
+      height: 300px;
+    }
+    .section-cs-table-last-item {
+      height: 400px;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {

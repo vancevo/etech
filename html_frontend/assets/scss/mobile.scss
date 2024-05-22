@@ -17,4 +17,27 @@
       }
     }
   }
+
+  //CONTENT
+  #content {
+    #date {
+      margin-top: 32px;
+    }
+    .right-news {
+      margin-top: 15px;
+    }
+  }
+
+  //   SECTION
+  .section-cs-table > div {
+    margin-top: 16px;
+  }
+  .section-cs-table {
+    .section-cs-list {
+      height: 330px;
+    }
+    .section-cs-table-last-item {
+        height: 300px;
+    }
+  }
 }
