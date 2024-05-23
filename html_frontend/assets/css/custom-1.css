@@ -162,6 +162,11 @@ a:hover {
   .section-cs-table .section-cs-table-last-item {
     height: 300px;
   }
+  #header .nav-link,
+  #header .nav-item {
+    color: rgb(9, 45, 106);
+    font-weight: 700;
+  }
 }
 @media only screen and (min-width: 901px) {
   #header .nav_bar_cs {
