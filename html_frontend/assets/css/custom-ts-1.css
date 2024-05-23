@@ -1,0 +1,41 @@
+
+img {
+  transition: all 0.25s ease-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.hdtruong {
+  margin: 16px 0px;
+}
+
+.hdtruong--content .hdtruong--content-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.hdtruong--content .hdtruong--content-list .image img {
+  height: 140px;
+}
+
+@media only screen and (max-width: 900px) {
+  .banner-ts .banner-ts-desktop {
+    display: none;
+  }
+  .banner-ts .banner-ts-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .banner-ts .banner-ts-desktop {
+    display: block;
+  }
+  .banner-ts .banner-ts-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}

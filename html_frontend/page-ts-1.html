@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etech</title>
+    <meta name="description" content="..." />
+
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=5, initial-scale=1, user-scalable=0"
+    />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+
+    <!-- up to 10% speed up for external res -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <!-- preloading icon font is helping to speed up a little bit -->
+    <link
+      rel="preload"
+      href="assets/fonts/flaticon/Flaticon.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="assets/css/core.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor_bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/custom-1.css" />
+    <link rel="stylesheet" href="assets/css/custom-ts-1.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="demo.files/logo/icon_512x512.png" />
+  </head>
+
+  <body class="header-sticky" style="background-color: #f8f8f8">
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="shadow-xs">
+        <!-- TOP BAR -->
+        <div id="top_bar">
+          <!-- optional if body.header-sticky is present: add .js-ignore class to ignore autohide and stay visible all the time -->
+          <div class="top_bar-container container d-flex">
+            <div>
+              <img
+                src="./assets/images/logo/logo_short.png"
+                alt=""
+                style="object-fit: cover; max-width: 80px"
+              />
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center top_bar-title"
+            >
+              <p class="subtitle">BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI</p>
+              <p class="title">TRƯỜNG CAO ĐẲNG - KINH TẾ CÔNG NGHỆ TP.HCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="nav_bar_cs">
+          <div class="container">
+            <nav
+              class="navbar navbar-expand-lg nav_bar"
+              style="margin-left: 20px"
+            >
+              <div class="align-items-start">
+                <!-- mobile menu button : show -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarMainNav"
+                  aria-controls="navbarMainNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style="height: 40px; border: 1px"
+                >
+                  <svg width="25" viewBox="0 0 20 20">
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 1.998 L -0.0108 1.998 L -0.0108 -0.0019 L 19.9876 -0.0019 L 19.9876 1.998 Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 7.9979 L -0.0108 7.9979 L -0.0108 5.9979 L 19.9876 5.9979 L 19.9876 7.9979 Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 13.9977 L -0.0108 13.9977 L -0.0108 11.9978 L 19.9876 11.9978 L 19.9876 13.9977 Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M 19.9876 19.9976 L -0.0108 19.9976 L -0.0108 17.9976 L 19.9876 17.9976 L 19.9876 19.9976 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="collapse navbar-collapse navbar-animate-fadein"
+                id="navbarMainNav"
+              >
+                <!-- navbar : mobile menu -->
+                <div class="navbar-xs d-none">
+                  <!-- mobile menu button : close -->
+                  <button
+                    class="navbar-toggler pt-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMainNav"
+                    aria-controls="navbarMainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <svg width="20" viewBox="0 0 20 20">
+                      <path
+                        d="M 20.7895 0.977 L 19.3752 -0.4364 L 10.081 8.8522 L 0.7869 -0.4364 L -0.6274 0.977 L 8.6668 10.2656 L -0.6274 19.5542 L 0.7869 20.9676 L 10.081 11.679 L 19.3752 20.9676 L 20.7895 19.5542 L 11.4953 10.2656 L 20.7895 0.977 Z"
+                      ></path>
+                    </svg>
+                  </button>
+
+                  <!-- 
+									Mobile Menu Logo 
+									Logo : height: 70px max
+								-->
+                  <a class="navbar-brand" href="index.html">ETECH</a>
+                </div>
+                <!-- navbar : navigation -->
+                <ul class="navbar-nav">
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a
+                      href="./page-cs-1.html"
+                      id="mainNavHome"
+                      class="d-flex justify-content-center pr-0"
+                      style="padding-right: 0px"
+                    >
+                      <i id="home-icon" class="fi fi-home text-lg"></i>
+                    </a>
+                  </li>
+                  <!--  Trang chủ -->
+                  <li class="nav-item active">
+                    <a href="./page-ts-1.html" id="mainNavTT" class="nav-link"> Trang chủ </a>
+                  </li>
+                  <!-- Chương trình đào tạo -->
+                  <li class="nav-item">
+                    <a href="#" id="mainNavCTDT" class="nav-link">
+                      Chương trình đào tạo
+                    </a>
+                  </li>
+                  <!-- Hướng dẫn -->
+                  <li class="nav-item">
+                    <a href="#" id="mainNavHD" class="nav-link"> Hướng dẫn </a>
+                  </li>
+                  <!-- Tư vấn -->
+                  <li class="nav-item">
+                    <a href="#" id="mainNavTV" class="nav-link"> Tư vấn </a>
+                  </li>
+                </ul>
+                <!-- /navbar : navigation -->
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- /Navbar -->
+      </header>
+      <!-- /Header -->
+
+      <!-- BANNER -->
+      <div
+        class="banner-ts container-fluid d-flex"
+        style="padding: 0px; max-height: 700px"
+      >
+        <img
+          src="./assets/images/banner/banner-ts.png"
+          class="banner-ts-desktop object-fit-cover"
+          style="width: 100%"
+        />
+        <img
+          src="./assets/images/banner/banner-ts-mobile-2.png"
+          class="banner-ts-mobile object-fit-cover"
+          style="width: 100%"
+        />
+      </div>
+
+      <!-- HOAT DONG TRUONG -->
+      <div class="hdtruong">
+        <div class="hdtruong--title text-center">
+          <p class="fs-1 text-title-red text-bold">HOẠT ĐỘNG TRƯỜNG</p>
+          <div>
+            <p>
+              Nơi luôn cập nhật những bản tin mới, hữu ích cho ứng viên xét
+              tuyển
+            </p>
+            <p class="text-lg text-bold">
+              Theo dõi thông tin tuyển sinh đầy đủ tại:
+            </p>
+            <a class="text-title-blue" href="www.etech.college.com/tuyensinh">
+              www.etech.college.com/tuyensinh</a
+            >
+          </div>
+        </div>
+        <div class="my-4 container">
+          <div class="hdtruong--content row">
+            <div class="col-sm-12 col-md-12 col-xl-8 mt-0 d-flex flex-column">
+              <a class="post-image" href="/baiviet/239758">
+                <img
+                  src="https://tino.org/wp-content/uploads/2021/08/word-image-129.jpeg"
+                  alt="/Upload/fb406d25-845e-4d0a-a98f-f6b410f17b3a377b7d778a232a7d7332.jpg"
+                  class="w-100 object-fit-cover rounded-4 shadow"
+                  style="max-height: 650px"
+                />
+              </a>
+              <h2 class="post-title">
+                <a href="/baiviet/239758" class="text-xl text-title"
+                  >Nền tảng kỹ thuật số là gì? Ứng dụng thực tiễn tại ETECH</a
+                >
+              </h2>
+              <p class="post-desc text-title text-justify">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+              </p>
+            </div>
+            <div
+              class="hdtruong--content-list col-sm-12 col-md-12 col-xl-4 d-flex flex-column gap-3 mt-0"
+            >
+              <div class="hdtruong--content-list">
+                <a href="/baiviet/239757" class="image">
+                  <img
+                    src="https://5money.vn/wp-content/uploads/2024/03/Crypto-la-gi.webp"
+                    class="object-fit-cover rounded-4"
+                    style="width: 100%"
+                  />
+                </a>
+                <div class="d-flex flex-column">
+                  <p class="text-xl text-title-blue text-bold">TITLE1</p>
+                  <a
+                    class="text-title text-justify"
+                    href="/baiviet/239757"
+                    style="word-break: break-all"
+                    >Lorem Ipsum is simply dummy text of the printing Lorem
+                    Ipsum is simply dummy text of the printing ...</a
+                  >
+                </div>
+              </div>
+              <div class="hdtruong--content-list">
+                <a href="/baiviet/239757" class="image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1xegwUJLZqd0MTeUtOR0ZM4SBR0oznGTrgJXlpxZLg&s"
+                    class="object-fit-cover rounded-4"
+                    style="width: 100%"
+                  />
+                </a>
+                <div class="d-flex flex-column">
+                  <p class="text-xl text-title-blue text-bold">TITLE2</p>
+                  <a
+                    class="text-title text-justify"
+                    href="/baiviet/239757"
+                    style="word-break: break-all"
+                    >Lorem Ipsum is simply dummy text of the printing Lorem
+                    Ipsum is simply dummy text of the printing ...</a
+                  >
+                </div>
+              </div>
+              <div class="hdtruong--content-list">
+                <a href="/baiviet/239757" class="image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlQuzLAJ1JUF2Tln-ntFZs43ZC_9TX9yKNUDur784Ag&s"
+                    class="object-fit-cover rounded-4"
+                    style="width: 100%"
+                  />
+                </a>
+                <div class="d-flex flex-column">
+                  <p class="text-xl text-title-blue text-bold">TITLE3</p>
+                  <a
+                    class="text-title text-justify"
+                    href="/baiviet/239757"
+                    style="word-break: break-all"
+                    >Lorem Ipsum is simply dummy text of the printing Lorem
+                    Ipsum is simply dummy text of the printing ...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <!-- CHUONG TRINH DAO TAO -->
+      <div class="ctdt my-4">
+        <div class="ctdt--title text-center">
+          <p class="fs-1 text-title-red text-bold">CHƯƠNG TRÌNH ĐÀO TẠO</p>
+          <div class="container">
+            <p class="text-lg">
+              Với mục tiêu đào tạo nguồn nhân lực công nghệ thông tin chất lượng
+              cao góp phần tích cực vào sự phát triển của nền công nghiệp công
+              nghệ thông tin Việt Nam.
+            </p>
+            <div>
+              <img
+                src="https://t3.ftcdn.net/jpg/03/26/23/18/360_F_326231814_ILF9ZomHD1sDgAy8zZjsaLCZXDGp9BeH.jpg"
+                alt=""
+                class="w-100 object-fit-cover"
+                style="max-height: 350px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HUONG DAN NOP HO SO -->
+      <div class="hdnhs my-4">
+        <div class="hdnhs--title text-center">
+          <p class="fs-1 text-title-red text-bold">HƯỚNG DẪN NỘP HỒ SƠ</p>
+          <div class="container">
+            <p class="text-lg">
+              Ứng viên có thể truy cập vào
+              <a href=" www.etech.college.com/tuyensinh" class="text-title-blue"
+                >www.etech.college.com/tuyensinh</a
+              >
+              để biết thêm chi tiết
+            </p>
+            <div>
+              <img
+                src="https://tuyensinh.citd.vn/assets/home/img/landingpage/how-to-apply.png?v=1716430040"
+                alt=""
+                class="w-100 object-fit-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- NOP HO SO TRUC TUYEN -->
+      <div class="nhstt my-4">
+        <div class="nhstt--title text-center">
+          <p class="fs-1 text-title-red text-bold">
+            NỘP HỒ SƠ TRỰC TUYẾN
+            <span class="fs-1 text-bold text-title-blue">2024</span>
+          </p>
+          <div class="container">
+            <p class="text-lg">
+              Ứng viên đặc biệt lưu ý nhập thông tin chính xác và kiểm tra các
+              hình ảnh minh chứng trước khi nộp.
+            </p>
+            <div>
+              <img
+                src="https://images.ctfassets.net/szez98lehkfm/5pwshiMtEQeFx02HrzPG2p/7f0aebf8fc9a52f49aae99d16c9b5a57/MyIC_Article_115252"
+                alt=""
+                class="w-100 object-fit-cover rounded-4 shadow"
+                style="max-height: 450px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="nhstt--content container border p-5 my-4 rounded-4">
+          <!-- DROP-DOWN -->
+          <form novalidate class="bs-validate mt-3" method="get" action="#">
+            <div class="form-floating mb-3">
+              <select
+                required
+                id="ts-chuyennganh"
+                class="form-control"
+                title="Chuyên ngành"
+              >
+                <option value="">Công nghệ thông tin</option>
+                <option value="1">Thiết kế đồ hoạ</option>
+                <option value="2">Tin học văn phòng</option>
+                <option value="3">Kinh Tế</option>
+                <option value="4">Ngôn ngữ Anh</option>
+              </select>
+              <label for="ts-chuyennganh" style="color: gray"
+                >Chuyên ngành<span class="text-title-red">*</span></label
+              >
+            </div>
+            <div class="form-floating mb-3">
+              <select
+                required
+                id="ts-trinhdo"
+                class="form-control"
+                title="Trình độ"
+              >
+                <option
+                  value="Trung học cơ sở (hoàn thành hết chương trình lớp 9)"
+                >
+                  Trung học cơ sở (hoàn thành hết chương trình lớp 9)
+                </option>
+                <option
+                  value="Trung học phổ thông (hoàn thành hết chương trình học lớp 12)"
+                >
+                  Trung học phổ thông (hoàn thành hết chương trình học lớp 12)
+                </option>
+              </select>
+              <label for="ts-trinhdo" style="color: gray"
+                >Trình độ<span class="text-title-red">*</span></label
+              >
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-6">
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập họ và tên của bạn..."
+                    id="ts-hovaten"
+                    type="text"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-hovaten" style="color: gray"
+                    >Họ và tên <span class="text-title-red">*</span></label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập ngày, tháng, năm sinh của bạn..."
+                    id="ts-ngaysinh"
+                    type="date"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-ngaysinh" style="color: gray"
+                    >Ngày, tháng, năm sinh<span class="text-title-red"
+                      >*</span
+                    ></label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập địa chỉ email của bạn..."
+                    id="ts-email"
+                    type="text"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-email" style="color: gray"
+                    >Địa chỉ Email<span class="text-title-red">*</span></label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập số điện thoại của bạn..."
+                    id="ts-sdt"
+                    type="text"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-sdt" style="color: gray"
+                    >Số điện thoại<span class="text-title-red">*</span></label
+                  >
+                </div>
+              </div>
+              <div class="col-12 col-xl-6">
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập điểm Toán, Văn Anh của bạn..."
+                    id="ts-tva"
+                    type="text"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-tva" style="color: gray"
+                    >Điểm Toán, Văn, Anh<span class="text-title-red"
+                      >*</span
+                    ></label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập điểm Lý, Hoá, Sinh của bạn..."
+                    id="ts-lhs"
+                    type="text"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-lhs" style="color: gray"
+                    >Điểm Lý, Hoá, Sinh<span class="text-title-red"
+                      >*</span
+                    ></label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập điểm Văn, Sử, Địa của bạn..."
+                    id="ts-vsd"
+                    type="text"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-vsd" style="color: gray"
+                    >Điểm Văn, Sử, Địa<span class="text-title-red"
+                      >*</span
+                    ></label
+                  >
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    placeholder="Nhập ngày nộp hồ sơ của bạn..."
+                    id="ts-nophoso"
+                    type="date"
+                    value=""
+                    class="form-control"
+                    required
+                  />
+                  <label for="ts-nophoso" style="color: gray"
+                    >Ngày nộp hồ sơ tại trường<span class="text-title-red"
+                      >*</span
+                    ></label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn w-100 btn-lg text-white text-bold"
+              style="background-color: rgb(9, 45, 106)"
+            >
+              Nộp hồ sơ
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+      <!-- DANG KY TU VAN -->
+      <div
+        class="dktv container border my-4 p-4 rounded-4"
+        style="max-width: 900px"
+      >
+        <div class="dktv--title text-center">
+          <p class="fs-1 text-title-red text-bold">ĐĂNG KÝ TƯ VẤN TRỰC TIẾP</p>
+        </div>
+        <div class="dktv-content">
+          <!-- CONTACT FORM -->
+          <div class="container">
+            <div class="row">
+              <!-- form -->
+              <form
+                novalidate
+                action="#"
+                method="POST"
+                data-ajax-container="#ajax_dd_contact_response_container"
+                data-ajax-update-url="false"
+                data-ajax-show-loading-icon="true"
+                data-ajax-callback-function=""
+                data-error-scroll-up="false"
+                data-ajax-control-alerts="true"
+                data-ajax-control-alert-succes="#contactSuccess"
+                data-ajax-control-alert-unexpected="#contactErrorUnexpected"
+                data-ajax-control-alert-mandaroty="#contactErrorMandatory"
+                data-error-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Xin vui lòng, hoàn thành các ô nhập còn lại"
+                data-error-toast-delay="2000"
+                data-error-toast-position="bottom-center"
+                class="bs-validate js-ajax"
+              >
+                <input
+                  type="hidden"
+                  name="action"
+                  value="contact_form_submit"
+                  tabindex="-1"
+                />
+
+                <input
+                  type="text"
+                  name="norobot"
+                  value=""
+                  class="hide"
+                  tabindex="-1"
+                />
+                <!-- -->
+
+                <div class="form-floating mb-3">
+                  <input
+                    required
+                    placeholder="Name"
+                    id="contact_name"
+                    name="contact_name"
+                    type="text"
+                    class="form-control"
+                  />
+                  <label for="contact_name"
+                    >Họ và tên <span class="text-title-red">*</span></label
+                  >
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    required
+                    placeholder="Email"
+                    id="contact_email"
+                    name="contact_email"
+                    type="email"
+                    class="form-control"
+                  />
+                  <label for="contact_email"
+                    >Địa chỉ Email <span class="text-title-red">*</span></label
+                  >
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    required
+                    placeholder="Phone"
+                    id="contact_phone"
+                    name="contact_phone"
+                    type="text"
+                    class="form-control"
+                  />
+                  <label for="contact_phone"
+                    >Số điện thoại <span class="text-title-red">*</span></label
+                  >
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea
+                    required
+                    placeholder="Message"
+                    id="contact_message"
+                    name="contact_message"
+                    class="form-control"
+                    rows="3"
+                    style="min-height: 120px"
+                  ></textarea>
+                  <label for="contact_message"
+                    >Nội dung hỗ trợ
+                    <span class="text-title-red">*</span></label
+                  >
+                </div>
+
+                <!-- 
+										Server detailed error
+										!ONLY! If debug is enabled!
+										Else, shown ony "Server Error!"
+									-->
+                <div id="ajax_dd_contact_response_container"></div>
+
+                <!-- {:err:unexpected:} internal server error -->
+                <div
+                  id="contactErrorUnexpected"
+                  class="hide alert alert-danger p-3"
+                >
+                  Lỗi không xác định
+                </div>
+
+                <!-- {:err:required:} mandatory fields -->
+                <div
+                  id="contactErrorMandatory"
+                  class="hide alert alert-danger p-3"
+                >
+                  Xin vui lòng, kiểm tra lại nội dung nhập của bạn.
+                </div>
+
+                <!-- {:success:} message sent -->
+                <div id="contactSuccess" class="hide alert alert-success p-3">
+                  Cảm ơn bạn đã điền thông tin, chúng tôi sẽ phản hồi sớm nhất.
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 border-0 text-bold"
+                  style="background-color: rgb(9, 45, 106)"
+                >
+                  Gửi yêu cầu
+                </button>
+              </form>
+              <!-- /CONTACT FORM : AJAX -->
+            </div>
+          </div>
+          <!-- /CONTACT FORM -->
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="bg-blue border-top">
+      <!-- line divider -->
+      <hr class="bg-gray-500 my-0 container" />
+
+      <div class="container py-5 text-white">
+        <div class="row g-4">
+          <div class="col-12 col-lg-5">
+            <!-- logo -->
+            <div
+              class="border bg-white mb-4 rounded-4 shadows"
+              style="width: fit-content"
+            >
+              <img
+                src="./assets/images/logo/logo_short.png"
+                alt=""
+                style="object-fit: cover; max-width: 80px"
+              />
+            </div>
+
+            <!-- copyright -->
+            <p class="text-lg mb-0">&copy; CỔNG THÔNG TIN ĐIỆN TỬ</p>
+            <p class="text-lg mb-0">
+              TRƯỜNG CAO ĐẲNG - KINH TẾ CÔNG NGHỆ TP.HCM
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-3 mb-4">
+            <div class="small d-flex align-items-start my-3">
+              <svg
+                class="me-3 flex-none my-1"
+                height="24px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <ul class="list-unstyled p-0 m-0 w-100">
+                <li>138 Hà Huy Giáp, Quận 12</li>
+              </ul>
+            </div>
+
+            <div class="small d-flex align-items-start my-3">
+              <svg
+                class="me-3 flex-none my-1"
+                height="24px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                ></path>
+              </svg>
+              <ul class="list-unstyled p-0 m-0 w-100">
+                <li>
+                  Phone:
+                  <a href="tel:18005652390" class="text-dark text-dashed"
+                    >1-800-565-2390</a
+                  >
+                </li>
+                <li>
+                  Email:
+                  <a href="mail:myemail@gmail.com" class="text-dark text-dashed"
+                    >myemail@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="small d-flex align-items-start my-3">
+              <svg
+                class="me-3 flex-none my-1"
+                height="24px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                ></path>
+              </svg>
+              <ul class="list-unstyled p-0 m-0 w-100">
+                <li>Đơn vị quản lý & vận hành</li>
+              </ul>
+            </div>
+
+            <div class="small d-flex align-items-start my-3">
+              <svg
+                class="me-3 flex-none my-1"
+                height="24px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                ></path>
+              </svg>
+              <ul class="list-unstyled p-0 m-0 w-100">
+                <li>Đơn vị hợp tác quốc tế</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3 mb-4">
+            <h3 class="small mb-4">Liên hệ</h3>
+
+            <ul class="list-unstyled">
+              <!-- social icons -->
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="facebook page"
+              >
+                <i class="fi fi-social-facebook"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="twitter page"
+              >
+                <i class="fi fi-social-twitter"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="linkedin page"
+              >
+                <i class="fi fi-social-linkedin"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-sm text-white transition-hover-top mb-2 rounded-circle bg-gray-700"
+                rel="noopener"
+                aria-label="youtube page"
+              >
+                <i class="fi fi-social-youtube"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /#wrapper -->
+
+    <script src="assets/js/core.min.js"></script>
+    <script>
+      let date = document.getElementById("date");
+      let optionDates = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      date.innerText = new Date().toLocaleDateString("vi-VN", optionDates);
+      function gotoPage(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>

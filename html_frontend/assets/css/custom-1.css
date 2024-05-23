@@ -5,6 +5,9 @@
 a {
   color: rgba(0, 0, 0, 0.65);
 }
+a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
 .text-uniq {
   color: rgb(66, 135, 245);
 }
@@ -39,11 +42,17 @@ a {
 .text-xl {
   font-size: 20px; /* 18px */
 }
+.text-bold {
+  font-weight: 700;
+}
 .text-justify {
   text-align: justify;
 }
 .bg-yellow {
   background-color: rgba(255, 255, 0, 1);
+}
+.bg-blue {
+  background-color: rgba(58, 160, 219, 1);
 }
 
 #header #top_bar {
@@ -65,17 +74,28 @@ a {
 }
 #header .nav_bar_cs {
   /* Height affect to menu-bar mobile */
-  background-color: yellow;
+  background-color: rgba(58, 160, 219, 1);
 }
 #header .navbar-nav {
   font-size: 13px;
 }
 #header .nav-link,
 #header .nav-item {
+  font-size: 16px;
+  color: white;
   display: flex;
   gap: 4px;
 }
-
+#header .nav-link:hover,
+#header .nav-item:hover {
+  color: rgba(9, 45, 106, 0.9);
+}
+#mainNavHome {
+  color: white;
+}
+#mainNavHome:hover {
+  color: rgba(9, 45, 106, 0.9);
+}
 /* THONG TIN TRUONG */
 .thong-tin-truong {
   display: flex;

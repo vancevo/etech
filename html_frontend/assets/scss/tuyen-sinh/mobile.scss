@@ -1,0 +1,11 @@
+// MOBILE - TABLET
+@media only screen and (max-width: 900px) {
+  .banner-ts {
+    .banner-ts-desktop {
+      display: none;
+    }
+    .banner-ts-mobile {
+      display: block;
+    }
+  }
+}
