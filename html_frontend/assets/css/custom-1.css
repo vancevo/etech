@@ -8,6 +8,7 @@ a {
 a:hover {
   color: rgba(0, 0, 0, 0.8);
 }
+
 .text-uniq {
   color: rgb(66, 135, 245);
 }
@@ -22,6 +23,16 @@ a:hover {
 }
 .text-title-red {
   color: rgba(191, 30, 46, 1);
+}
+
+.text-title-blue-main {
+  color: #000FDB;
+}
+.text-title-yellow-main {
+  color: #FCFFAF;;
+}
+.text-title-red-main {
+  color: #F12020;
 }
 .text-title:hover {
   color: rgba(9, 45, 106, 0.9);
@@ -54,25 +65,52 @@ a:hover {
 .bg-blue {
   background-color: rgba(58, 160, 219, 1);
 }
+.bg-blue-main {
+  background-color: #000FDB;
+}
+.bg-yellow-main {
+  background-color: #FCFFAF;
+}
+.bg-red-main {
+  background-color: #F12020;
+}
 
 #header #top_bar {
   height: 90px;
-  padding: 15px 0px;
+  display: flex;
+  align-items: center;
 }
 #header #top_bar .top_bar-container .top_bar-title {
   font-weight: bold;
 }
 #header #top_bar .top_bar-container .top_bar-title .subtitle {
-  font-size: 16px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  /* color: rgba(0, 101, 179, 1); */
+  color: #000FDB;
+}
+#header #top_bar .top_bar-container .top_bar-title .subtitle_1 {
+  font-size: 14px;
   margin-bottom: 0px;
   color: rgba(0, 101, 179, 1);
 }
 #header #top_bar .top_bar-container .top_bar-title .title {
   font-size: 16px;
+  /* color: rgba(191, 30, 46, 1); */
+  color: #F12020;
+  margin-bottom: 0px;
+}
+#header #top_bar .top_bar-container .top_bar-title .title_1 {
+  font-size: 16px;
   color: rgba(191, 30, 46, 1);
   margin-bottom: 0px;
 }
 #header .nav_bar_cs {
+  /* Height affect to menu-bar mobile */
+  /* background-color: rgba(58, 160, 219, 1); */
+  background-color: #FCFFAF;
+}
+#header .nav_bar_cs_1 {
   /* Height affect to menu-bar mobile */
   background-color: rgba(58, 160, 219, 1);
 }
@@ -82,18 +120,35 @@ a:hover {
 #header .nav-link,
 #header .nav-item {
   font-size: 16px;
-  color: white;
+  color: #000FDB;
+  font-weight: 700;
   display: flex;
   gap: 4px;
 }
+
+#header .nav-item_1 {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  gap: 4px;
+}
+
 #header .nav-link:hover,
 #header .nav-item:hover {
   color: rgba(9, 45, 106, 0.9);
 }
 #mainNavHome {
-  color: white;
+  color: #000FDB;
 }
 #mainNavHome:hover {
+  color: rgba(9, 45, 106, 0.9);
+}
+
+#mainNavHome_1 {
+  color: white;
+}
+#mainNavHome_1:hover {
   color: rgba(9, 45, 106, 0.9);
 }
 /* THONG TIN TRUONG */
