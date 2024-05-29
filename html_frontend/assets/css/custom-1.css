@@ -26,13 +26,13 @@ a:hover {
 }
 
 .text-title-blue-main {
-  color: #000FDB;
+  color: #000fdb;
 }
 .text-title-yellow-main {
-  color: #FCFFAF;;
+  color: #fcffaf;
 }
 .text-title-red-main {
-  color: #F12020;
+  color: #f12020;
 }
 .text-title:hover {
   color: rgba(9, 45, 106, 0.9);
@@ -66,13 +66,13 @@ a:hover {
   background-color: rgba(58, 160, 219, 1);
 }
 .bg-blue-main {
-  background-color: #000FDB;
+  background-color: #000fdb;
 }
 .bg-yellow-main {
-  background-color: #FCFFAF;
+  background-color: #fcffaf;
 }
 .bg-red-main {
-  background-color: #F12020;
+  background-color: #f12020;
 }
 
 #header #top_bar {
@@ -87,7 +87,7 @@ a:hover {
   font-size: 14px;
   margin-bottom: 0px;
   /* color: rgba(0, 101, 179, 1); */
-  color: #000FDB;
+  color: #000fdb;
 }
 #header #top_bar .top_bar-container .top_bar-title .subtitle_1 {
   font-size: 14px;
@@ -97,7 +97,7 @@ a:hover {
 #header #top_bar .top_bar-container .top_bar-title .title {
   font-size: 16px;
   /* color: rgba(191, 30, 46, 1); */
-  color: #F12020;
+  color: #f12020;
   margin-bottom: 0px;
 }
 #header #top_bar .top_bar-container .top_bar-title .title_1 {
@@ -108,7 +108,7 @@ a:hover {
 #header .nav_bar_cs {
   /* Height affect to menu-bar mobile */
   /* background-color: rgba(58, 160, 219, 1); */
-  background-color: #FCFFAF;
+  background-color: #fcffaf;
 }
 #header .nav_bar_cs_1 {
   /* Height affect to menu-bar mobile */
@@ -119,14 +119,6 @@ a:hover {
 }
 #header .nav-link,
 #header .nav-item {
-  font-size: 16px;
-  color: #000FDB;
-  font-weight: 700;
-  display: flex;
-  gap: 4px;
-}
-
-#header .nav-item_1 {
   font-size: 16px;
   color: white;
   font-weight: 700;
@@ -139,7 +131,7 @@ a:hover {
   color: rgba(9, 45, 106, 0.9);
 }
 #mainNavHome {
-  color: #000FDB;
+  color: #000fdb;
 }
 #mainNavHome:hover {
   color: rgba(9, 45, 106, 0.9);
@@ -201,6 +193,14 @@ a:hover {
     justify-content: center;
     text-align: center;
   }
+  /* NAVBAR DROPDOWN FOR MENU */
+  .navbar-collapse.show > .navbar-nav {
+    background-color: rgba(58, 160, 219, 1);
+  }
+  .nav-item.dropdown {
+    flex-direction: column;
+  }
+  /* --------------- */
   #content #date {
     margin-top: 32px;
   }
@@ -217,11 +217,11 @@ a:hover {
   .section-cs-table .section-cs-table-last-item {
     height: 300px;
   }
-  #header .nav-link,
+  /* #header .nav-link,
   #header .nav-item {
     color: rgb(9, 45, 106);
     font-weight: 700;
-  }
+  } */
 }
 @media only screen and (min-width: 901px) {
   #header .nav_bar_cs {
