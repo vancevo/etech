@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
-    <title>Organic Farm 3T | Liên hệ</title>
+    <title>Organic Farm 3T | Về chúng tôi</title>
     <meta name="description" content="..." />
 
     <meta
@@ -27,20 +27,39 @@
       crossorigin
     />
 
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/custom-organic.css" />
+
     <link rel="stylesheet" href="assets/css/core.min.css" />
     <link rel="stylesheet" href="assets/css/vendor_bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="assets/css/default.css" />
-    <link rel="stylesheet" href="assets/css/custom-organic.css" />
+
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="demo.files/logo/icon_512x512.png" />
   </head>
 
+  <!--
+
+		Available Body Classes
+			.layout-boxed 					- boxed layout (ignored if any .header-* class is present)
+
+			.header-scroll-reveal  			- header : hide on scroll down and reveal on scroll up
+			.header-sticky  				- header : always visible on top
+			.header-over  					- header : over slider|parallax|image (next section must contain a large image, else will be indistinguishable)
+
+				Possible header combinations:
+					.header-over + .header-scroll-reveal
+					.header-over + .header-sticky
+						* NOTE: if .header-sticky + .header-scroll-reveal are both used, .header-scroll-reveal is ignored
+
+
+			.bg-cover .bg-fixed 			- both classes used with .layout-boxed to set a background image via style="background-image:url(...)"
+	-->
   <body>
     <div id="wrapper">
       <!-- Header -->
@@ -78,8 +97,8 @@
               </button>
 
               <!-- 
-                Logo : height: 70px max
-              -->
+						Logo : height: 70px max
+					  -->
               <a class="navbar-brand m-0" href="#">
                 <h1 class="h--70 d-inline-flex align-items-center border">
                   LOGO 3T
@@ -88,14 +107,14 @@
             </div>
 
             <!-- 
-
-              [SOW] SEARCH SUGGEST PLUGIN
-              ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
-              PLEASE READ DOCUMENTATION
-              documentation/plugins-sow-search-suggest.html
-              ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
-
-            -->
+		
+					  [SOW] SEARCH SUGGEST PLUGIN
+					  ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
+					  PLEASE READ DOCUMENTATION
+					  documentation/plugins-sow-search-suggest.html
+					  ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
+		
+					-->
             <form
               action="#search-page"
               method="GET"
@@ -169,9 +188,9 @@
                   </div>
 
                   <!-- 
-                    AJAX CONTENT CONTAINER 
-                    SHOULD ALWAYS BE AS IT IS : NO COMMENTS OR EVEN SPACES!
-                  -->
+							AJAX CONTENT CONTAINER 
+							SHOULD ALWAYS BE AS IT IS : NO COMMENTS OR EVEN SPACES!
+						  -->
                   <div
                     class="sow-search-content rounded w-100 scrollable-vertical"
                   ></div>
@@ -180,14 +199,14 @@
               <!-- /search suggestion container -->
 
               <!-- 
-
-                overlay combinations:
-                  backdrop-dark
-                  backdrop-light
-                  overlay-dark opacity-* [1-9]
-                  overlay-light opacity-* [1-9]
-
-              -->
+		
+						overlay combinations:
+						  backdrop-dark
+						  backdrop-light
+						  overlay-dark opacity-* [1-9]
+						  overlay-light opacity-* [1-9]
+		
+					  -->
               <div class="sow-search-backdrop backdrop-dark hide">
                 <!-- alternate: overlay-dark opacity-3 -->
               </div>
@@ -308,10 +327,10 @@
                   <div class="dropdown-header p-3 fw-medium">Giỏ hàng</div>
 
                   <!--
-                  <div class="py-5 text-center bg-light">
-                    Your cart is empty!
-                  </div>
-                  -->
+						  <div class="py-5 text-center bg-light">
+							Your cart is empty!
+						  </div>
+						  -->
 
                   <!-- item list -->
                   <div class="max-vh-50 scrollable-vertical">
@@ -395,39 +414,39 @@
             >
               <!-- Menu -->
               <!--
-
-                Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
-                  .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
-                  .dropdown-menu-hover    - open on hover
-                  .dropdown-menu-clean    - no background color on hover
-                  .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
-                  .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
-                  .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
-
-                  Repositioning long dropdown childs (Example: Pages->Account)
-                    .dropdown-menu-up-n100    - open up with top: -100px
-                    .dropdown-menu-up-n100    - open up with top: -150px
-                    .dropdown-menu-up-n180    - open up with top: -180px
-                    .dropdown-menu-up-n220    - open up with top: -220px
-                    .dropdown-menu-up-n250    - open up with top: -250px
-                    .dropdown-menu-up       - open up without negative class
-
-
-                  Dropdown prefix icon (optional, if enabled in variables.scss)
-                    .prefix-link-icon .prefix-icon-dot    - link prefix
-                    .prefix-link-icon .prefix-icon-line   - link prefix
-                    .prefix-link-icon .prefix-icon-ico    - link prefix
-                    .prefix-link-icon .prefix-icon-arrow  - link prefix
-
-                  .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
-                  .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
-
-                  Mobile animation - add to .navbar-collapse:
-                  .navbar-animate-fadein
-                .navbar-animate-fadeinup
-                  .navbar-animate-bouncein
-
-              -->
+		
+						Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
+						  .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
+						  .dropdown-menu-hover    - open on hover
+						  .dropdown-menu-clean    - no background color on hover
+						  .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
+						  .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
+						  .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
+		
+						  Repositioning long dropdown childs (Example: Pages->Account)
+							.dropdown-menu-up-n100    - open up with top: -100px
+							.dropdown-menu-up-n100    - open up with top: -150px
+							.dropdown-menu-up-n180    - open up with top: -180px
+							.dropdown-menu-up-n220    - open up with top: -220px
+							.dropdown-menu-up-n250    - open up with top: -250px
+							.dropdown-menu-up       - open up without negative class
+		
+		
+						  Dropdown prefix icon (optional, if enabled in variables.scss)
+							.prefix-link-icon .prefix-icon-dot    - link prefix
+							.prefix-link-icon .prefix-icon-line   - link prefix
+							.prefix-link-icon .prefix-icon-ico    - link prefix
+							.prefix-link-icon .prefix-icon-arrow  - link prefix
+		
+						  .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
+						  .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
+		
+						  Mobile animation - add to .navbar-collapse:
+						  .navbar-animate-fadein
+						.navbar-animate-fadeinup
+						  .navbar-animate-bouncein
+		
+					  -->
               <div
                 class="collapse navbar-collapse navbar-animate-fadein"
                 id="navbarMainNav"
@@ -454,9 +473,9 @@
                   </button>
 
                   <!-- navbar-brand
-                    Mobile Menu Logo 
-                    Logo : height: 70px max
-                  -->
+							Mobile Menu Logo 
+							Logo : height: 70px max
+						  -->
                   <a class="navbar-brand" href="#">
                     <!-- logo -->
                     <h1
@@ -472,36 +491,36 @@
                 <ul class="navbar-nav navbar-sm">
                   <!-- Menu -->
                   <!--
-
-                    Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
-                      .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
-                      .dropdown-menu-hover    - open on hover
-                      .dropdown-menu-clean    - no background color on hover
-                      .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
-                      .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
-                      .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
-
-                      Repositioning long dropdown childs (Example: Pages->Account)
-                        .dropdown-menu-up-n100    - open up with top: -100px
-                        .dropdown-menu-up-n100    - open up with top: -150px
-                        .dropdown-menu-up-n180    - open up with top: -180px
-                        .dropdown-menu-up-n220    - open up with top: -220px
-                        .dropdown-menu-up-n250    - open up with top: -250px
-                        .dropdown-menu-up       - open up without negative class
-
-
-                      Dropdown prefix icon (optional, if enabled in variables.scss)
-                        .prefix-link-icon .prefix-icon-dot    - link prefix
-                        .prefix-link-icon .prefix-icon-line   - link prefix
-                        .prefix-link-icon .prefix-icon-ico    - link prefix
-                        .prefix-link-icon .prefix-icon-arrow  - link prefix
-
-                      .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
-                      .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
-
-                  -->
+		
+							Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
+							  .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
+							  .dropdown-menu-hover    - open on hover
+							  .dropdown-menu-clean    - no background color on hover
+							  .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
+							  .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
+							  .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
+		
+							  Repositioning long dropdown childs (Example: Pages->Account)
+								.dropdown-menu-up-n100    - open up with top: -100px
+								.dropdown-menu-up-n100    - open up with top: -150px
+								.dropdown-menu-up-n180    - open up with top: -180px
+								.dropdown-menu-up-n220    - open up with top: -220px
+								.dropdown-menu-up-n250    - open up with top: -250px
+								.dropdown-menu-up       - open up without negative class
+		
+		
+							  Dropdown prefix icon (optional, if enabled in variables.scss)
+								.prefix-link-icon .prefix-icon-dot    - link prefix
+								.prefix-link-icon .prefix-icon-line   - link prefix
+								.prefix-link-icon .prefix-icon-ico    - link prefix
+								.prefix-link-icon .prefix-icon-arrow  - link prefix
+		
+							  .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
+							  .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
+		
+						  -->
                   <!-- home -->
-                  <li class="nav-item">
+                  <li class="nav-item dropdown active">
                     <a
                       href="./organic-home.html"
                       id="mainNavHome"
@@ -622,19 +641,15 @@
                   </li>
 
                   <!-- About -->
-                  <li class="nav-item">
+                  <li class="nav-item dropdown">
                     <a href="about.html" id="mainNavAbout" class="nav-link">
                       Về Chúng Tôi
                     </a>
                   </li>
 
                   <!-- Liên hệ -->
-                  <li class="nav-item active">
-                    <a
-                      href="./contact.html"
-                      id="mainNavContact"
-                      class="nav-link"
-                    >
+                  <li class="nav-item dropdown">
+                    <a href="contact.html" id="mainNavContact" class="nav-link">
                       Liên hệ
                     </a>
                   </li>
@@ -647,249 +662,364 @@
       </header>
       <!-- /Header -->
 
-      <!-- page title -->
-      <div class="container py-5">
-        <h1 class="h2 fw-bold">Liên hệ</h1>
-      </div>
-      <!-- /page title -->
-
-      <!-- content -->
-      <div class="container pb-7">
-        <div class="row g-xl-5">
-          <div class="col-12 col-lg-8 mb-7">
-            <!-- form -->
-            <div class="card">
-              <div class="card-body p-4">
-                <!-- 
-                  CONTACT FORM : AJAX [TESTED|WORKING AS IT IS]
-
-                    Plugin required: SOW Ajax Forms
-
-                    In order to work as ajax form, SOW Ajax Forms should be available/enabled
-                    Else, SOW Form Validation plugin is used.
-                    If none of them are available, normal submit is used and you can remove:
-                      .js-ajax
-                      .bs-validate
-                      novalidate
-                      any data-ajax-*
-                      any data-error-*
-
-                    ** Remove data-error-toast-* for no error toast notifications
-
-
-
-
-                  Ajax will control success/fail alerts according to server response:
-                    
-                    1. unexpected error:    if server response is this string: {:err:unexpected:}
-                    2. mising mandatory:    if server response is this string: {:err:required:}
-                    3. success:         if server response is this string: {:success:}
-                    
-                    data-ajax-control-alerts="true"
-                    data-ajax-control-alert-succes="#contactSuccess" 
-                    data-ajax-control-alert-unexpected="#contactErrorUnexpected" 
-                    data-ajax-control-alert-mandaroty="#contactErrorMandatory" 
-
-                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                    WORKING CONTACT! Edit your php/config.inc.php
-                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                -->
-                <form
-                  novalidate
-                  action="php/contact_form.php"
-                  method="POST"
-                  data-ajax-container="#ajax_dd_contact_response_container"
-                  data-ajax-update-url="false"
-                  data-ajax-show-loading-icon="true"
-                  data-ajax-callback-function=""
-                  data-error-scroll-up="false"
-                  data-ajax-control-alerts="true"
-                  data-ajax-control-alert-succes="#contactSuccess"
-                  data-ajax-control-alert-unexpected="#contactErrorUnexpected"
-                  data-ajax-control-alert-mandaroty="#contactErrorMandatory"
-                  data-error-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Xin vui lòng, kiểm tra lại thông tin còn thiếu!"
-                  data-error-toast-delay="2000"
-                  data-error-toast-position="bottom-center"
-                  class="bs-validate js-ajax"
-                >
-                  <!-- 1. 
-                    optional, hidden action for your backend
-
-                    PHP Basic Example
-                    if($_POST['action'] == 'contact_form_submit') {
-                      ... send message
-                    }
-                  -->
-                  <input
-                    type="hidden"
-                    name="action"
-                    value="contact_form_submit"
-                    tabindex="-1"
-                  />
-                  <!-- -->
-
-                  <!-- 2. 
-                    A very small optional trick (using .hide class instead of type="hidden") for some low spam robots. 
-                    If this is not empty, the process should stop. A normal user/visitor should not be able to see this field.
-
-                    PHP Basic Example
-                    if($_POST['norobot'] != '') {
-                      exit;
-                    }
-                  -->
-                  <input
-                    type="text"
-                    name="norobot"
-                    value=""
-                    class="hide"
-                    tabindex="-1"
-                  />
-                  <!-- -->
-
-                  <div class="form-floating mb-3">
-                    <input
-                      required
-                      placeholder="Họ và tên"
-                      id="contact_name"
-                      name="contact_name"
-                      type="text"
-                      class="form-control"
-                    />
-                    <label for="contact_name"
-                      >Họ và tên<sup class="text-danger">*</sup></label
-                    >
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <input
-                      required
-                      placeholder="Địa chỉ email"
-                      id="contact_email"
-                      name="contact_email"
-                      type="email"
-                      class="form-control"
-                    />
-                    <label for="contact_email"
-                      >Địa chỉ email <sup class="text-danger">*</sup></label
-                    >
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <input
-                      required
-                      placeholder="Số điện thoại"
-                      id="contact_phone"
-                      name="contact_phone"
-                      type="text"
-                      class="form-control"
-                    />
-                    <label for="contact_phone"
-                      >Số điện thoại <sup class="text-danger">*</sup></label
-                    >
-                  </div>
-
-                  <div class="form-floating mb-3">
-                    <textarea
-                      required
-                      placeholder="Tin nhắn gửi đến chúng tôi..."
-                      id="contact_message"
-                      name="contact_message"
-                      class="form-control"
-                      rows="3"
-                      style="min-height: 120px"
-                    ></textarea>
-                    <label for="contact_message"
-                      >Tin nhắn gửi đến chúng tôi...</label
-                    >
-                  </div>
-
-                  <!-- 
-                    Server detailed error
-                    !ONLY! If debug is enabled!
-                    Else, shown ony "Server Error!"
-                  -->
-                  <div id="ajax_dd_contact_response_container"></div>
-
-                  <!-- {:err:unexpected:} internal server error -->
-                  <div
-                    id="contactErrorUnexpected"
-                    class="hide alert alert-danger p-3"
-                  >
-                    Bạn nhập sai định dạng, xin vui lòng nhập lại thông tin !!
-                  </div>
-
-                  <!-- {:err:required:} mandatory fields -->
-                  <div
-                    id="contactErrorMandatory"
-                    class="hide alert alert-danger p-3"
-                  >
-                    Bạn nhập sai định dạng, xin vui lòng nhập lại thông tin !!
-                  </div>
-
-                  <!-- {:success:} message sent -->
-                  <div id="contactSuccess" class="hide alert alert-success p-3">
-                    Cảm ơn bạn đã gửi thông tin đến chúng tôi. Chúng tôi sẽ liên
-                    hệ bạn sớm.
-                  </div>
-
-                  <button type="submit" class="btn btn-primary w-100 fw-bold">
-                    Gửi tin nhắn
-                  </button>
-                </form>
-                <!-- /CONTACT FORM : AJAX -->
-              </div>
+      <!-- COVER + CONTACT -->
+      <div
+        class="section bg-theme-color-light overlay-dark overlay-opacity-8 bg-cover lazy"
+        data-background-image="demo.files/images/3t/about/about_banner.jpg"
+      >
+        <div class="container h-cs-400">
+          <div
+            class="row text-center-md text-center-xs d-middle justify-content-start"
+          >
+            <div
+              class="col-12 col-lg-6 mb-5 text-white"
+              data-aos="fade-in"
+              data-aos-delay="0"
+            >
+              <!-- main title -->
+              <h1 class="display-4 fw-bold mb-0">
+                <span class="h4 d-block">Về chúng tôi</span>
+                Organic Farm 3T
+              </h1>
+              <br />
+              <span class="h4 d-block text-justify"
+                >Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                u</span
+              >
             </div>
           </div>
+        </div>
+      </div>
+      <!-- /COVER + CONTACT -->
 
-          <div class="col-12 col-lg-4 mb-3">
-            <div class="sticky-top z-index-0" style="top: 120px">
-              <div class="d-flex">
-                <div class="float-none me-3">
-                  <i
-                    class="fi fi-shape-abstract-dots text-gray-500 float-start fs-2"
-                  ></i>
+      <!-- start :: Passion / Creativity / Innovation -->
+      <div class="section bg-gradient-light">
+        <div class="container">
+          <div class="row g-lg-5">
+            <!-- images -->
+            <div class="col-12 col-lg-6 mb-5 order-1 order-lg-2">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    class="img-fluid rounded shadow-lg jarallax"
+                    data-jarallax-element="-30"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                    data-aos-offset="0"
+                    src="demo.files/images/3t/about/about_tuan.png"
+                    alt="..."
+                  />
+                  <img
+                    class="img-fluid rounded mt-4 shadow-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                    data-aos-offset="0"
+                    src="demo.files/images/3t/about/about_danh.png"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-6 jarallax" data-jarallax-element="-60">
+                  <img
+                    class="img-fluid rounded mt-5 shadow-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                    data-aos-offset="0"
+                    src="demo.files/images/3t/about/about_trang.png"
+                    alt="..."
+                  />
+                  <img
+                    class="img-fluid rounded mt-4 shadow-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                    data-aos-offset="0"
+                    src="demo.files/images/3t/about/about_vinh.jpeg"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-lg-6 mb-5 order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-offset="0"
+            >
+              <h2 class="display-5 fw-bold mb-5">Sứ mệnh và Tầm nhìn</h2>
+
+              <div class="d-flex mb-4">
+                <!-- icon -->
+                <div class="text-primary">
+                  <img
+                    width="50"
+                    height="50"
+                    src="demo.files/svg/icons/startup/017-megaphone.svg"
+                    alt="..."
+                  />
                 </div>
 
-                <div>
-                  <h2 class="fs-5">Doanh nghiệp Organic Farm 3T</h2>
-                  <ul class="list-unstyled m-0 fs-6">
-                    <li class="list-item text-muted">
-                      Số đăng ký giấy phép: 01234567
-                    </li>
-                    <li class="list-item text-muted">Số VAT: 0123456</li>
-                    <li class="list-item text-muted">
-                      Ngân hàng: INTERNATIONAL BANK
-                    </li>
-                  </ul>
+                <div class="mx-4">
+                  <!-- heading -->
+                  <h3 class="h4 fw-bold mb-1">Who we are?</h3>
+
+                  <!-- text -->
+                  <p>
+                    Smarty is the creative agency you are looking for since
+                    always: recognized professionals with many years of
+                    experience in all areas of digital, specialized in
+                    coordinated online corporate image.
+                  </p>
                 </div>
               </div>
 
-              <div class="d-flex mt-4">
-                <div class="float-none me-3">
-                  <i class="fi fi-phone text-gray-500 float-start fs-2"></i>
+              <div class="d-flex mb-4">
+                <!-- icon -->
+                <div class="text-primary">
+                  <img
+                    width="50"
+                    height="50"
+                    src="demo.files/svg/icons/startup/017-growth.svg"
+                    alt="..."
+                  />
                 </div>
 
-                <div>
-                  <h3 class="h5">Số Điện Thoại</h3>
-                  <ul class="list-unstyled m-0">
-                    <li class="list-item mb-2 text-gray-500">
-                      <a class="link-muted" href="tel:7853889450"
-                        >785-388-9450</a
-                      >
-                    </li>
-                    <li class="list-item mb-2 text-gray-500">
-                      <a class="link-muted" href="tel:3162881850"
-                        >316-288-1850</a
-                      >
-                    </li>
-                  </ul>
+                <div class="mx-4">
+                  <!-- heading -->
+                  <h3 class="h4 fw-bold mb-1">What we do?</h3>
+
+                  <!-- text -->
+                  <p>
+                    Together we can weave your story online, creating the
+                    perfect digital image, and using technology as a means, and
+                    never as an end. Why choose us among so many agencies?
+                    Because we are different from others: because also us, as
+                    you, have decided to fly high.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-4">
+                <!-- icon -->
+                <div class="text-primary">
+                  <img
+                    width="50"
+                    height="50"
+                    src="demo.files/svg/icons/startup/017-networking.svg"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="mx-4">
+                  <!-- heading -->
+                  <h3 class="h4 fw-bold mb-1">Core Values</h3>
+
+                  <!-- text -->
+                  <p>
+                    Listening, research, detail and time are our core values, to
+                    accompany you from the first meeting until the end of the
+                    realization of your dream, and if you want it even after.
+                    Quality, simplicity, functionality, modernity, cleanliness
+                    and minimalism are the keys to each of our projects.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- /content -->
+      <!-- end :: Passion / Creativity / Innovation -->
+
+      <!-- COUNTER -->
+      <div class="section pt-5 p-0 mt-1 bg-light">
+        <div class="container">
+          <div class="row col-border text-center">
+            <div class="col-6 col-md-3 mb-5">
+              <h2 class="h6 m-0">
+                <div
+                  class="d-flex flex-column justify-content-between align-content-center"
+                >
+                  <h2>Hợp tác</h2>
+                  <div>
+                    <img
+                      width="60"
+                      height="60"
+                      class="lazy"
+                      data-src="demo.files/images/3t/icons/partner_icon.png"
+                    />
+                  </div>
+                  <br />
+                  <h4
+                    data-toggle="count"
+                    data-count-from="0"
+                    data-count-to="1024"
+                    data-count-duration="2500"
+                    data-count-decimals="0"
+                  >
+                    0
+                  </h4>
+                </div>
+              </h2>
+            </div>
+
+            <div class="col-6 col-md-3 mb-5">
+              <h2 class="h6 m-0">
+                <div
+                  class="d-flex flex-column justify-content-between align-content-center"
+                >
+                  <h2>Khách hàng hài lòng</h2>
+                  <div>
+                    <img
+                      width="60"
+                      height="60"
+                      class="lazy"
+                      data-src="demo.files/images/3t/icons/happy-face_icon.png"
+                    />
+                  </div>
+                  <br />
+                  <h4
+                    data-toggle="count"
+                    data-count-from="0"
+                    data-count-to="6868"
+                    data-count-duration="2500"
+                    data-count-decimals="0"
+                  >
+                    0
+                  </h4>
+                </div>
+              </h2>
+            </div>
+
+            <div class="col-6 col-md-3 mb-5">
+              <h2 class="h6 m-0">
+                <div
+                  class="d-flex flex-column justify-content-between align-content-center"
+                >
+                  <h2>Tỉnh thành</h2>
+                  <div>
+                    <img
+                      width="60"
+                      height="60"
+                      class="lazy"
+                      data-src="demo.files/images/3t/icons/map_icon.png"
+                    />
+                  </div>
+                  <br />
+                  <h4
+                    data-toggle="count"
+                    data-count-from="0"
+                    data-count-to="63"
+                    data-count-duration="2500"
+                    data-count-decimals="0"
+                  >
+                    0
+                  </h4>
+                </div>
+              </h2>
+            </div>
+
+            <div class="col-6 col-md-3 mb-5">
+              <h2 class="h6 m-0">
+                <div
+                  class="d-flex flex-column justify-content-between align-content-center"
+                >
+                  <h2>Yêu thích</h2>
+                  <div>
+                    <img
+                      width="60"
+                      height="60"
+                      class="lazy"
+                      data-src="demo.files/images/3t/icons/heart_icon.png"
+                    />
+                  </div>
+                  <br />
+                  <h4
+                    data-toggle="count"
+                    data-count-from="0"
+                    data-count-to="9999"
+                    data-count-duration="2500"
+                    data-count-decimals="0"
+                  >
+                    0
+                  </h4>
+                </div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /COUNTER -->
+
+      <!-- block : img-stretch : end -->
+      <div class="section overflow-hidden">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="order-2 order-md-1 col-12 col-md-6 mb-5">
+              <h3>Chúng tôi</h3>
+              <h2 class="display-5 fw-bold mb-5">
+                Tổ chức Giáo dục, Khoa học và Văn hóa của UNESCO
+              </h2>
+              <p class="mb-5">
+                Answering those questions and more is a tall order, but one you
+                should approach with enthusiasm. After all, this is the one
+                place you can and should sing your own praises.
+              </p>
+
+              <!-- play -->
+              <div class="clearfix d-flex align-items-center">
+                <!-- play button : based on SOW : Ajax Modal -->
+                <span
+                  class="d-inline-block rounded-circle border border-light border-3 p-1 transition-hover-zoom transition-all-ease-150 shadow-primary-lg"
+                >
+                  <a
+                    aria-label="See our video"
+                    href="https://www.youtube.com/watch?v=iM_KMYulI_s"
+                    class="js-ajax-modal d-inline-flex bg-primary text-white rounded-circle align-items-center justify-content-center"
+                    data-ajax-modal-type="video"
+                    data-ajax-modal-size="modal-xl"
+                    data-ajax-modal-centered="true"
+                    style="width: 60px; height: 60px"
+                  >
+                    <svg
+                      width="34"
+                      height="34"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="bi bi-play-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                      ></path>
+                    </svg>
+                  </a>
+                </span>
+                <span class="px-3">XEM CUỘC HÀNH TRÌNH</span>
+              </div>
+              <!-- /play -->
+            </div>
+
+            <div class="order-1 order-md-2 col-12 col-md-6 mb-5">
+              <!-- 
+								Image set as cover, loaded via lazyload - better for height custom calibration via py-*
+								Base64 image is an empty landscape png for better autoresize
+								Classes: rounded, rounded-xl, py-* 
+							-->
+              <div
+                class="stretch-end py-5 rounded-xl bg-light bg-cover lazy"
+                data-background-image="demo.files/images/3t/about/about_1.jpg"
+              >
+                <img
+                  class="w-100"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAKCAQAAADxnt1TAAAAEUlEQVR42mNkIBowjiodaKUACusAC4zze1kAAAAASUVORK5CYII="
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /block : img-stretch : end -->
 
       <!-- Footer -->
       <footer id="footer" class="shadow-xs">
