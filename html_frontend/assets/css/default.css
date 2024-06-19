@@ -60,7 +60,13 @@
   font-size: 18px; /* 18px */
 }
 .text-xl {
-  font-size: 20px; /* 18px */
+  font-size: 20px; /* 20px */
+}
+.text-24px {
+  font-size: 24px; /* 24px */
+}
+.text-28px {
+  font-size: 28px; /* 28px */
 }
 /* TEXT-STYLE */
 .text-bold {

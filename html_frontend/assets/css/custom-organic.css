@@ -2,45 +2,77 @@
     background-color: red;
 } */
 .nav-item > .nav-link {
-    color: white !important;
-    font-size: 16px;
-    font-weight: bold;
+  color: white !important;
+  font-size: 16px;
+  font-weight: bold;
 }
 .card-product-wrapper {
-    width: 300px !important;
-    height: 400px !important;
-    background-color: #81b86e !important;
+  width: 300px !important;
+  height: 400px !important;
+  background-color: #81b86e !important;
 }
 .card-product--item {
-    /* max-width: 250px !important;
+  /* max-width: 250px !important;
     height: 400px !important; */
-    background-color: #81b86e !important;
+  background-color: #81b86e !important;
 }
 .card-product-item_title {
-    color: black;
+  color: black;
 }
 .card-product-item_title:hover {
-    color: #384C74;
+  color: #384c74;
 }
 .card-product-item_price--del {
-    color: #384C74 !important;
+  color: #384c74 !important;
 }
 .card-product-item_price--publish {
-    color: #384C74 !important;
-    font-size: 16px;
+  color: #384c74 !important;
+  font-size: 16px;
 }
 .card-product-item_shop--title {
-    color: #384C74;
+  color: #384c74;
 }
 .card-product-item_shop--title:hover {
-    color: white;
+  color: white;
 }
 .size-sm {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
-@media only screen and (max-width: 900px) { 
-    .nav-item > .nav-link {
-        color: unset !important;
-    }
+
+/* PRODUCT DETAIL */
+.product_detail-info--title {
+  font-size: 28px;
+}
+.product_detail-info--price > span,
+.product_detail-info--price > del {
+  font-size: 24px;
+}
+.product_detail-info--price > del {
+  color: #4e4e4e !important;
+}
+.product_detail-info--price > span {
+  color: #fd2424;
+  font-weight: bold;
+}
+.product_detail-info--pl,
+.product_detail-info--sl {
+  width: fit-content;
+}
+
+@media only screen and (max-width: 500px) {
+  /* PRODUCT DETAIL */
+  .product_detail-info--title {
+    font-size: 24px;
+  }
+  .product_detail-info--pl,
+  .product_detail-info--sl {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-item > .nav-link {
+    color: unset !important;
+  }
 }
