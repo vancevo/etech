@@ -124,9 +124,7 @@
 .card_GTCT_5 {
   background-color: #df5961;
 }
-li::marker {
-  content: " ";
-}
+
 .brand_support {
   width: 140px;
   height: 140px;

@@ -8,4 +8,16 @@
       display: block;
     }
   }
+  .nganh-hoc-other {
+    gap: 16px;
+  }
+
+  .nganh-hoc {
+    .nganh-hoc--content-text {
+      padding: 0px 16px;
+    }
+    .nganh-hoc--content-list {
+      padding: 0px 16px;
+    }
+  }
 }

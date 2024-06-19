@@ -1,9 +1,42 @@
 .hdtruong--content {
-    .hdtruong--content-list {
-        display: flex;
-        gap: 4px;
-        .image img {
-            height: 140px;
-        }
+  .hdtruong--content-list {
+    display: flex;
+    gap: 4px;
+    .image img {
+      height: 140px;
     }
+  }
+}
+
+.nganh-hoc {
+  margin: 16px 0px;
+  .nganh-hoc--content {
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &-text {
+      font-size: 14px;
+      text-align: justify;
+    }
+    &-list {
+        padding: 0px 8px;
+      .nh-item {
+        list-style: circle !important;
+        &--style1 {
+          list-style: square !important;
+        }
+      }
+    }
+  }
+}
+
+.nganh-hoc-other {
+  .card {
+    min-height: 300px;
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
 }

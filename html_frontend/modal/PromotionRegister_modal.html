@@ -1,0 +1,68 @@
+<!-- close button -->
+<button
+  type="button"
+  class="close cursor-pointer z-index-10 position-absolute top-0 end-0 my-2 mx-3"
+  data-bs-dismiss="modal"
+  aria-label="Close"
+>
+  <span
+    class="fi fi-close fs-5 position-absolute end-0 top-0"
+    aria-hidden="true"
+  ></span>
+</button>
+
+<div class="modal-body p-0 rounded overflow-hidden">
+  <div class="row g-0 z-index-1 position-relative">
+    <!-- 
+
+					And adjust background luminozity:
+						overlay-opacity-[0-9]
+
+				-->
+    <div
+      class="col-12 col-lg-5 d-flex align-items-center overlay-dark overlay-opacity-4 bg-cover text-white"
+      style="background-image: url(demo.files/images/apple_tree_bg.png)"
+    >
+      <div class="px-4 py-6 w-100 text-center-xs"></div>
+    </div>
+
+    <div class="col-12 col-lg-7 d-flex align-items-center">
+      <div class="py-lg-7 pt-4 px-md-5 w-100">
+        <h4 class="mt-2 fw-bold">
+          Nhận ưu đãi từ <br>
+          <span
+            style="width: fit-content;color: black"
+            >Organic Farm 3T</span
+          >
+        </h4>
+
+        <div class="py-3">
+          <p class="lead fw-bold">Đăng ký ngay</p>
+          <form novalidate class="bs-validate" method="post" action="#">
+            <div class="input-group mb-3">
+              <input
+                required
+                type="email"
+                name="subscribe_email"
+                value=""
+                class="form-control"
+                placeholder="Địa chỉ email"
+              />
+              <button class="btn btn-dark">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--
+
+						Cookie button, expire: 1 day
+						documentation/plugins-sow-utils.html
+
+						onload_modal_shop   	should match the id of the html markup that trigger this modal!
+												because is the cookie name set for this modal!
+
+					-->
+    </div>
+  </div>
+</div>
