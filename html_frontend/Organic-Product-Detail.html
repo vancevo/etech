@@ -950,7 +950,7 @@
                   </div>
                 </div>
                 <div
-                  class="d-flex justify-content-between align-items-center mt-4  gap-4"
+                  class="d-flex justify-content-between align-items-center mt-4 gap-4"
                 >
                   <div class="col-3">
                     <p class="text-align-left fw-bold text-base">Số lượng</p>
@@ -963,7 +963,12 @@
                     >
                       -
                     </button>
-                    <input type="text" value="10" class="border-1 p-2 text-center" style="width: 110px;"/>
+                    <input
+                      type="text"
+                      value="10"
+                      class="border-1 p-2 text-center"
+                      style="width: 110px"
+                    />
                     <button
                       class="btn btn-outline-secondary"
                       type="button"
@@ -978,27 +983,24 @@
                 <hr class="my-0 bg-gray-300" />
 
                 <!-- add to cart -->
-                <div class="py-3 d-lg-flex">
+                <div class="py-2 d-lg-flex">
                   <div class="w-100 d-flex mb-2 mb-lg-0">
-                    <!-- quantity -->
-                    <!-- <input required type="number" value="1" min="1" max="9999" class="flex-none form-control form-control-lg w-auto text-center float-start mx-0"> -->
-
-                    <!-- add to cart button -->
                     <div class="d-flex">
                       <button
                         type="submit"
-                        class="btn btn-lg btn-warning flex-none mb-2"
+                        class="btn btn-lg btn-warning  mb-2"
                       >
                         Mua ngay
                       </button>
                       <button
                         type="submit"
-                        class="btn btn-lg btn-primary flex-none mb-2"
+                        class="btn btn-lg btn-primary  mb-2"
                       >
                         Thêm vào giỏ hàng
                       </button>
                     </div>
                   </div>
+                </div>
 
                   <!-- favourites button (delete if not needed) -->
                   <a
@@ -1024,138 +1026,151 @@
           </div>
         </div>
       </div>
-      <!-- /PRODUCT -->
 
-      <!-- DESCRIPTION + SEPCIFICATIONS -->
-      <div class="section">
-        <div class="container">
-          <div class="row g-4 g-xl-5">
-            <div class="col-lg-6 mb-5">
-              <h2 class="fw-bold mb-4">Description</h2>
-
-              <!--
-								.article-format class will add some slightly formattings for a good text visuals. 
-								This is because most editors are not ready formatted for bootstrap
-								The content should come inside this container, as it is from database!
-								src/scss/_core/base/_typography.scss
-							-->
-              <div class="article-format">
-                <p>
-                  A product description is the <b>marketing copy</b> used to
-                  describe a product’s value proposition to potential customers.
-                  A compelling product description provides customers with
-                  details around features, problems it solves and other benefits
-                  to help generate a sale.
-                </p>
-                <p>
-                  Whether your products have a specific function, like a camera,
-                  or a personal purpose, like fashion, all products exist to
-                  enhance or improve the purchaser’s quality of life in one way
-                  or another. As the shopper browses, they instinctively imagine
-                  having each product in hand, using it and enjoying it.
-                </p>
-                <p>
-                  The more powerful the customer’s fantasy of owning the
-                  product, the more likely they are to buy it. Therefore, I like
-                  to think of product descriptions as storytelling and
-                  psychology, incorporating the elements of both prose writing
-                  and journalism. A “good” product description will not do.
-                  Competition is getting too fierce. It must be great!
-                </p>
-              </div>
-
-              <!-- last update info -->
-              <div class="fs-6 fw-light mt-1 text-muted">
-                Last updated on
-                <time datetime="2019-11-19">Nov 19th, 2019</time>
-              </div>
+      <!-- Description info -->
+      <div class="container card py-4 px-4">
+        <div
+          class="title_module_main heading-bar d-flex justify-content-between align-items-center py-3"
+        >
+        <h2 class="heading-bar__title">Mô tả sản phẩm</h2>
+        </div>
+        <div class="rte product_getcontent py-3 pos-relative text-justify">
+          <divid="content" style="height: auto">
+            <h1><strong>BƠ Organic</strong></h1>
+            <div><strong>Quy cách:</strong> 300~500g/ trái</div>
+            <div><strong>Sản lượng</strong> 200-300 kg/mùa vụ</div>
+            <div><strong>Vùng trồng</strong>: Châu Đức, Bà Rịa-Vũng Tàu</div>
+            <div>
+              <p>
+                <strong>Hướng dẫn bảo quản:</strong>&nbsp;Bảo quản ở nơi thoáng
+                mát, ủ rơm để trái chín nhanh hơn. Khi trái chín, bảo quản trong
+                ngăn mát tủ lạnh để dùng được lâu hơn.
+              </p>
+              <p><strong>Hướng dẫn sử dụng:</strong>&nbsp;Dùng trực tiếp.</p>
             </div>
-
-            <div class="col-lg-6 mb-5">
-              <h2 class="fw-bold mb-4">Specifications</h2>
-
-              <div class="table-responsive">
-                <h3 class="h5">Video</h3>
-
-                <table class="table table-striped">
-                  <tbody>
-                    <tr>
-                      <td class="text-muted w-50">Display Type</td>
-                      <td>Flat LCD 55"</td>
-                    </tr>
-
-                    <tr>
-                      <td class="text-muted w-50">Resolution</td>
-                      <td>
-                        1200 x 450 <br />
-                        1366 x 768 <br />
-                        1920 x 768
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <h3 class="h5">Connectors</h3>
-
-                <table class="table table-striped">
-                  <tbody>
-                    <tr>
-                      <td class="text-muted w-50">Network Connector</td>
-                      <td>No</td>
-                    </tr>
-
-                    <tr>
-                      <td class="text-muted w-50">USB</td>
-                      <td>1</td>
-                    </tr>
-
-                    <tr>
-                      <td class="text-muted w-50">HDMI</td>
-                      <td>&ndash;</td>
-                    </tr>
-
-                    <tr>
-                      <td class="text-muted w-50">PCMCIA</td>
-                      <td>1</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <p class="m-0">
-                <!-- brand logo -->
-
-                <span class="d-inline-block px-2">
-                  <a href="#" class="small d-flex align-items-center">
-                    <img
-                      class="float-start"
-                      height="50"
-                      src="demo.files/svg/brands/hms.svg"
-                      alt="..."
-                    />
-                    <span>More by HMS</span>
-                  </a>
-                </span>
+            <div >
+              <p>
+                Bơ Cuba, còn được gọi là bơ Caribbean, là một loại trái cây
+                nhiệt đới độc đáo có nguồn gốc từ vùng Caribbean, đặc biệt phổ
+                biến ở Cuba. Loại bơ này không chỉ được biết đến với hương vị
+                thơm ngon mà còn với những lợi ích dinh dưỡng phong phú. Hãy
+                cùng tìm hiểu chi tiết về sản phẩm này.
+              </p>
+              <p style="text-align: center">
+                <img class="w-100 p-3"
+                  src="//file.hstatic.net/200000423303/file/c69409d0c82669783037313_5dd1ffe759184e6c89e0c0b2951a61d8_grande.jpg"
+                />
+              </p>
+              <p style="text-align: center">
+                <em>Bơ Cuba được trưng bày, bán tại Organicfood.vn</em>
+              </p>
+              <h2><strong>Đặc điểm hình thái</strong></h2>
+              <p>
+                Bơ Cuba có hình dạng khá đặc biệt so với các loại bơ thông
+                thường. Trái bơ thường có kích thước lớn hơn, hình quả lê hoặc
+                hình cầu, vỏ màu xanh lá cây đậm khi chưa chín và chuyển sang
+                màu hơi vàng khi chín. Vỏ của bơ Cuba dày hơn và có kết cấu sần
+                sùi, giúp bảo vệ phần thịt bên trong tốt hơn.
+              </p>
+              <p>
+                Phần thịt của bơ Cuba có màu vàng sáng, mịn màng và rất béo. So
+                với bơ Hass - loại bơ phổ biến trên thế giới, bơ Cuba có vị nhẹ
+                nhàng hơn và ít béo hơn, nhưng vẫn giữ được hương vị bơ truyền
+                thống. Hạt của bơ Cuba cũng lớn hơn và chiếm một phần đáng kể
+                bên trong trái.
+              </p>
+              <h2><strong>Giá trị dinh dưỡng</strong></h2>
+              <p>
+                Bơ Cuba là nguồn cung cấp chất dinh dưỡng dồi dào. Chúng chứa
+                nhiều chất béo không bão hòa đơn, loại chất béo tốt cho tim
+                mạch. Ngoài ra, bơ Cuba còn giàu vitamin E, K, C và các vitamin
+                nhóm B (B5, B6), cũng như các khoáng chất như kali, magiê và
+                folate. Các chất chống oxy hóa mạnh mẽ có trong bơ như lutein và
+                zeaxanthin giúp bảo vệ mắt và tăng cường sức khỏe tổng thể.
+              </p>
+              <h2><strong>Công dụng và lợi ích sức khỏe</strong></h2>
+              <ol>
+                <li>
+                  <p>
+                    <strong>Tốt cho tim mạch</strong>: Chất béo không bão hòa
+                    đơn trong bơ giúp giảm cholesterol xấu (LDL) và tăng
+                    cholesterol tốt (HDL), giúp ngăn ngừa các bệnh tim mạch.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Hỗ trợ giảm cân</strong>: Mặc dù bơ chứa nhiều calo,
+                    nhưng chất béo và chất xơ trong bơ giúp bạn cảm thấy no lâu
+                    hơn, giảm cảm giác thèm ăn và hỗ trợ quá trình giảm cân hiệu
+                    quả.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Tăng cường sức khỏe mắt</strong>: Các chất chống oxy
+                    hóa như lutein và zeaxanthin có trong bơ giúp bảo vệ mắt
+                    khỏi các tác động của ánh sáng xanh và giảm nguy cơ mắc các
+                    bệnh về mắt như đục thủy tinh thể.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Cải thiện tiêu hóa</strong>: Hàm lượng chất xơ cao
+                    trong bơ giúp cải thiện hệ tiêu hóa, ngăn ngừa táo bón và
+                    duy trì sức khỏe đường ruột.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Làm đẹp da và tóc</strong>: Vitamin E và các axit
+                    béo trong bơ giúp dưỡng ẩm, làm mịn da và tóc. Chúng cũng có
+                    tác dụng chống lão hóa, giúp da luôn trẻ trung và tươi sáng.
+                  </p>
+                </li>
+              </ol>
+              <h2><strong>Sử dụng trong ẩm thực</strong></h2>
+              <p>
+                Bơ Cuba có thể được sử dụng linh hoạt trong nhiều món ăn. Chúng
+                có thể được ăn trực tiếp, trộn salad, làm sinh tố, hoặc thậm chí
+                là nguyên liệu chính trong các món ăn truyền thống của Cuba như
+                guacamole hoặc các loại nước sốt. Hương vị béo ngậy của bơ Cuba
+                giúp nâng tầm bất kỳ món ăn nào, từ các món khai vị đến món
+                chính hay tráng miệng.
+              </p>
+              <h2><strong>Cách chọn mua và bảo quản bơ cuba</strong></h2>
+              <p>
+                Khi chọn mua bơ Cuba, bạn nên chọn những quả có vỏ ngoài mịn
+                màng, không có vết thâm hay bị dập nát. Bơ nên có độ cứng vừa
+                phải, khi nhấn nhẹ vào vỏ cảm thấy mềm nhưng không quá nhũn. Nếu
+                bơ chưa chín, bạn có thể để ở nhiệt độ phòng vài ngày cho đến
+                khi chín. Khi bơ đã chín, nên bảo quản trong ngăn mát tủ lạnh để
+                giữ được độ tươi ngon.
               </p>
             </div>
+          </divid=>
+
+          <div class="ega-pro__seemore text-center pos-relative show">
+            <a href="javascript:void(0)" title="Xem thêm" class="btn btn-main"
+              >Thu gọn nội dung -
+            </a>
           </div>
         </div>
       </div>
-      <!-- /DESCRIPTION + SEPCIFICATIONS -->
+    </div>
+      <!-- /Description info -->
+    <!-- SUGGESTIONS -->
+    <div class="section bg-gray-200 py-5">
+      <div class="container">
+        <h2 class="fw-bold">SẢN PHẨM TƯƠNG TỰ</h2>
 
-      <!-- SUGGESTIONS -->
-      <div class="section bg-gray-200">
-        <div class="container">
-          <h2 class="fw-bold">You might also like</h2>
-
-          <!-- 
+        <!-- 
 
 						SWIPER SLIDER 
 
 					-->
-          <div
-            class="swiper-container"
-            data-swiper='{
+        <div
+          class="swiper-container"
+          data-swiper='{
 							"slidesPerView": 5,
 							"spaceBetween": 10,
 							"autoplay": false,
@@ -1167,966 +1182,957 @@
 								"0": 	{ "slidesPerView": "2" }
 							}
 						}'
-          >
-            <!--
+        >
+          <!--
 							
 							NOTE: do not use lazy when loop is true!
 
 						-->
-            <div class="swiper-wrapper">
-              <!-- slider 1 -->
-              <div class="swiper-slide">
-                <div
-                  class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5"
-                >
-                  <a href="#" class="text-decoration-none">
-                    <figure
-                      class="ratio ratio-1x1 py-5 px-2 m-0 text-center bg-gradient-radial-light rounded-top"
-                    >
-                      <img
-                        src="demo.files/images/various/product/speakers/thumb/1-min.jpg"
-                        alt="..."
-                        class="img-fluid bg-suprime"
-                      />
-                    </figure>
+          <div class="swiper-wrapper">
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5" 
+              >
+                <a href="#" class="text-decoration-none">
+                  <div
+                    class="py-1 px-2 m-0 text-center bg-gradient-radial-light rounded-top" 
+                  >
+                    <img
+                      src="OrganicFarm/image/chuoi1.jpg"
+                      alt="..."
+                      class="img-fluid bg-suprime"
+                    style="height: 104px; object-fit: cover;"/>
+                  </div>
 
-                    <div class="text-center-xs text-gray-600 py-3">
-                      <!-- .max-height-80  = limited to 2 rows of text -->
-                      <span class="d-block fs-6 max-h-50 overflow-hidden">
-                        Product title comes here
-                      </span>
+                  <div class="text-center-xs text-gray-600 py-3">
+                    <!-- .max-height-80  = limited to 2 rows of text -->
+                    <span class="d-block fs-6 max-h-50 overflow-hidden">
+                      Tiêu đề sản phẩm
+                    </span>
 
-                      <span class="d-block text-danger fw-medium fs-6 mt-2">
-                        <del class="text-muted">$220<sup>00</sup></del>
+                    <span class="d-block text-danger fw-medium fs-6 mt-2">
+                      <del class="text-muted">20.000 vnđ</del>
 
-                        $173<sup>00</sup>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- slider 2 -->
-              <div class="swiper-slide">
-                <div
-                  class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5"
-                >
-                  <a href="#" class="text-decoration-none">
-                    <figure
-                      class="py-5 px-2 m-0 text-center bg-gradient-radial-light rounded-top"
-                    >
-                      <img
-                        src="demo.files/images/various/product/speakers/thumb/2-min.jpg"
-                        alt="..."
-                        class="img-fluid bg-suprime"
-                      />
-                    </figure>
-
-                    <div class="text-center-xs text-gray-600 py-3">
-                      <!-- .max-height-80  = limited to 2 rows of text -->
-                      <span class="d-block fs-6 max-h-50 overflow-hidden">
-                        Product title comes here
-                      </span>
-
-                      <span class="d-block text-danger fw-medium fs-6 mt-2">
-                        <del class="text-muted">$220<sup>00</sup></del>
-
-                        $173<sup>00</sup>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- slider 3 -->
-              <div class="swiper-slide">
-                <div
-                  class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5"
-                >
-                  <a href="#" class="text-decoration-none">
-                    <figure
-                      class="py-5 px-2 m-0 text-center bg-gradient-radial-light rounded-top"
-                    >
-                      <img
-                        src="demo.files/images/various/product/speakers/thumb/3-min.jpg"
-                        alt="..."
-                        class="img-fluid bg-suprime"
-                      />
-                    </figure>
-
-                    <div class="text-center-xs text-gray-600 py-3">
-                      <!-- .max-height-80  = limited to 2 rows of text -->
-                      <span class="d-block fs-6 max-h-50 overflow-hidden">
-                        Product title comes here
-                      </span>
-
-                      <span class="d-block text-danger fw-medium fs-6 mt-2">
-                        <del class="text-muted">$220<sup>00</sup></del>
-
-                        $173<sup>00</sup>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- slider 4 -->
-              <div class="swiper-slide">
-                <div
-                  class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5"
-                >
-                  <a href="#" class="text-decoration-none">
-                    <figure
-                      class="py-5 px-2 m-0 text-center bg-gradient-radial-light rounded-top"
-                    >
-                      <img
-                        src="demo.files/images/various/product/speakers/thumb/8-min.jpg"
-                        alt="..."
-                        class="img-fluid bg-suprime"
-                      />
-                    </figure>
-
-                    <div class="text-center-xs text-gray-600 py-3">
-                      <!-- .max-height-80  = limited to 2 rows of text -->
-                      <span class="d-block fs-6 max-h-50 overflow-hidden">
-                        Product title comes here
-                      </span>
-
-                      <span class="d-block text-danger fw-medium fs-6 mt-2">
-                        <del class="text-muted">$220<sup>00</sup></del>
-
-                        $173<sup>00</sup>
-                      </span>
-                    </div>
-                  </a>
-                </div>
+                      17.300 vnđ
+                    </span>
+                  </div>
+                </a>
               </div>
             </div>
 
-            <!-- Bullets -->
-            <div class="swiper-pagination"></div>
-          </div>
-          <!-- /SWIPER SLIDER -->
-        </div>
-      </div>
-      <!-- /SUGGESTIONS -->
-      <!-- INFO BOX -->
-      <div class="section py-0 border-bottom-xs">
-        <div class="container py-3 bg-light">
-          <div class="row g-4 d-flex align-items-center">
-            <div
-              class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
-            >
-              <img
-                width="60"
-                height="60"
-                class="lazy"
-                data-src="demo.files/images/3t/icons/diet_icon.png"
-              />
-              <div class="ps-3 d-flex align-items-center">
-                <h3 class="fs-5">An toàn sản phẩm</h3>
+            <!-- slider 2 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5" 
+              >
+                <a href="#" class="text-decoration-none">
+                  <div
+                    class="py-1 px-2 m-0 text-center bg-gradient-radial-light rounded-top" 
+                  >
+                    <img
+                      src="OrganicFarm/image/chomchom1.jpg"
+                      alt="..."
+                      class="img-fluid bg-suprime"
+                    style="height: 104px; object-fit: cover;"/>
+                  </div>
+
+                  <div class="text-center-xs text-gray-600 py-3">
+                    <!-- .max-height-80  = limited to 2 rows of text -->
+                    <span class="d-block fs-6 max-h-50 overflow-hidden">
+                      Tiêu đề sản phẩm
+                    </span>
+
+                    <span class="d-block text-danger fw-medium fs-6 mt-2">
+                      <del class="text-muted">20.000 vnđ</del>
+
+                      17.300 vnđ
+                    </span>
+                  </div>
+                </a>
               </div>
             </div>
-            <div
-              class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
-            >
-              <img
-                width="60"
-                height="60"
-                class="lazy"
-                data-src="demo.files/images/3t/icons/24-hours-support_icon.png"
-              />
-              <div class="ps-3 d-flex align-items-center">
-                <h3 class="fs-5">Hỗ trợ tận tình</h3>
+
+            <!-- slider 3 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5" 
+              >
+                <a href="#" class="text-decoration-none">
+                  <div
+                    class="py-1 px-2 m-0 text-center bg-gradient-radial-light rounded-top" 
+                  >
+                    <img
+                      src="OrganicFarm/image/oi1.png"
+                      alt="..."
+                      class="img-fluid bg-suprime"
+                    style="height: 104px; object-fit: cover;"/>
+                  </div>
+
+                  <div class="text-center-xs text-gray-600 py-3">
+                    <!-- .max-height-80  = limited to 2 rows of text -->
+                    <span class="d-block fs-6 max-h-50 overflow-hidden">
+                      Tiêu đề sản phẩm
+                    </span>
+
+                    <span class="d-block text-danger fw-medium fs-6 mt-2">
+                      <del class="text-muted">20.000 vnđ</del>
+
+                      17.300 vnđ
+                    </span>
+                  </div>
+                </a>
               </div>
             </div>
-            <div
-              class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
-            >
-              <img
-                width="60"
-                height="60"
-                class="lazy"
-                data-src="demo.files/images/3t/icons/money-bag_icon.png"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                alt="..."
-              />
-              <div class="ps-3 d-flex align-items-center">
-                <h3 class="fs-5">Giá cả hợp lý</h3>
-              </div>
-            </div>
-            <div
-              class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
-            >
-              <img
-                width="60"
-                height="60"
-                class="lazy"
-                data-src="demo.files/images/3t/icons/speed_car_icon.png"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                alt="..."
-              />
-              <div class="ps-3 d-flex align-items-center">
-                <h3 class="fs-5">Giao hàng nhanh</h3>
+
+            <!-- slider 4 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white shadow-xs transition-all-ease-250 transition-hover-top rounded p-2 my-5" 
+              >
+                <a href="#" class="text-decoration-none">
+                  <div
+                    class="py-1 px-2 m-0 text-center bg-gradient-radial-light rounded-top" 
+                  >
+                    <img
+                      src="OrganicFarm/image/saurieng1.jpg"
+                      alt="..."
+                      class="img-fluid bg-suprime"
+                    style="height: 104px; object-fit: cover;"/>
+                  </div>
+
+                  <div class="text-center-xs text-gray-600 py-3">
+                    <!-- .max-height-80  = limited to 2 rows of text -->
+                    <span class="d-block fs-6 max-h-50 overflow-hidden">
+                      Tiêu đề sản phẩm
+                    </span>
+
+                    <span class="d-block text-danger fw-medium fs-6 mt-2">
+                      <del class="text-muted">20.000 vnđ</del>
+
+                      17.300 vnđ
+                    </span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
+
+          <!-- Bullets -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- /SWIPER SLIDER -->
+      </div>
+    </div>
+    <!-- /SUGGESTIONS -->
+    <!-- INFO BOX -->
+    <div class="section py-0 border-bottom-xs">
+      <div class="container py-3 bg-light">
+        <div class="row g-4 d-flex align-items-center">
+          <div
+            class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
+          >
+            <img
+              width="60"
+              height="60"
+              class="lazy"
+              data-src="demo.files/images/3t/icons/diet_icon.png"
+            />
+            <div class="ps-3 d-flex align-items-center">
+              <h3 class="fs-5">An toàn sản phẩm</h3>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
+          >
+            <img
+              width="60"
+              height="60"
+              class="lazy"
+              data-src="demo.files/images/3t/icons/24-hours-support_icon.png"
+            />
+            <div class="ps-3 d-flex align-items-center">
+              <h3 class="fs-5">Hỗ trợ tận tình</h3>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
+          >
+            <img
+              width="60"
+              height="60"
+              class="lazy"
+              data-src="demo.files/images/3t/icons/money-bag_icon.png"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              alt="..."
+            />
+            <div class="ps-3 d-flex align-items-center">
+              <h3 class="fs-5">Giá cả hợp lý</h3>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-3 d-flex justify-content-center py-2 py-sm-3 py-lg-4"
+          >
+            <img
+              width="60"
+              height="60"
+              class="lazy"
+              data-src="demo.files/images/3t/icons/speed_car_icon.png"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              alt="..."
+            />
+            <div class="ps-3 d-flex align-items-center">
+              <h3 class="fs-5">Giao hàng nhanh</h3>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- /INFO BOX -->
+    </div>
+    <!-- /INFO BOX -->
 
-      <!-- REVIEWS -->
-      <div class="section">
-        <div class="container">
-          <h2 class="fw-bold mb-5">Customer review</h2>
+    <!-- REVIEWS -->
+    <div class="section">
+      <div class="container">
+        <h2 class="fw-bold mb-5">Khách hàng đánh giá</h2>
 
-          <div class="row g-4 g-lg-5">
-            <!-- sidebar -->
-            <div class="col-lg-4">
-              <div
-                class="bg-gray-900 rounded px-3 py-5 mb-4 text-white d-flex align-items-center justify-content-center"
-              >
-                <h3 class="float-none display-4 fw-normal px-2 m-0">4.39</h3>
-                <div class="px-2 lh-1">
-                  <i class="rating-4 text-warning"><!-- stars --></i>
-                  <p class="fs-6 mt-1 mb-0">172 reviews</p>
-                </div>
-              </div>
-
-              <div class="d-none d-lg-block px-4 py-4 bg-light rounded">
-                <div
-                  class="row g-1 d-flex align-items-center justify-content-center position-relative"
-                >
-                  <a
-                    href="#"
-                    class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
-                    >5 stars</a
-                  >
-                  <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
-                    122
-                  </div>
-                  <div class="order-3 order-lg-2 1 col">
-                    <div class="progress" style="height: 8px">
-                      <div
-                        class="progress-bar bg-warning"
-                        role="progressbar"
-                        style="width: 89%"
-                        aria-valuenow="89"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="row g-1 d-flex align-items-center justify-content-center position-relative"
-                >
-                  <a
-                    href="#"
-                    class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
-                    >4 stars</a
-                  >
-                  <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
-                    91
-                  </div>
-                  <div class="order-3 order-lg-2 1 col">
-                    <div class="progress" style="height: 8px">
-                      <div
-                        class="progress-bar bg-warning"
-                        role="progressbar"
-                        style="width: 77%"
-                        aria-valuenow="7"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="row g-1 d-flex align-items-center justify-content-center position-relative"
-                >
-                  <a
-                    href="#"
-                    class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
-                    >3 stars</a
-                  >
-                  <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
-                    12
-                  </div>
-                  <div class="order-3 order-lg-2 1 col">
-                    <div class="progress" style="height: 8px">
-                      <div
-                        class="progress-bar bg-warning"
-                        role="progressbar"
-                        style="width: 12%"
-                        aria-valuenow="12"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="row g-1 d-flex align-items-center justify-content-center position-relative"
-                >
-                  <a
-                    href="#"
-                    class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
-                    >2 stars</a
-                  >
-                  <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
-                    3
-                  </div>
-                  <div class="order-3 order-lg-2 1 col">
-                    <div class="progress" style="height: 8px">
-                      <div
-                        class="progress-bar bg-warning"
-                        role="progressbar"
-                        style="width: 3%"
-                        aria-valuenow="3"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="row g-1 d-flex align-items-center justify-content-center position-relative"
-                >
-                  <a
-                    href="#"
-                    class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
-                    >1 stars</a
-                  >
-                  <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
-                    1
-                  </div>
-                  <div class="order-3 order-lg-2 1 col">
-                    <div class="progress" style="height: 8px">
-                      <div
-                        class="progress-bar bg-warning"
-                        role="progressbar"
-                        style="width: 1%"
-                        aria-valuenow="1"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
+        <div class="row g-4 g-lg-5">
+          <!-- sidebar -->
+          <div class="col-lg-4">
+            <div
+              class="bg-gray-900 rounded px-3 py-5 mb-4 text-white d-flex align-items-center justify-content-center"
+            >
+              <h3 class="float-none display-4 fw-normal px-2 m-0">4.39</h3>
+              <div class="px-2 lh-1">
+                <i class="rating-4 text-warning"><!-- sao --></i>
+                <p class="fs-6 mt-1 mb-0">172 đánh giá</p>
               </div>
             </div>
 
-            <!-- review list -->
-            <div class="col-lg-8">
-              <!-- filters, buttons -->
+            <div class="d-none d-lg-block px-4 py-4 bg-light rounded">
               <div
-                class="d-flex justify-content-between align-items-center mb-3"
+                class="row g-1 d-flex align-items-center justify-content-center position-relative"
               >
-                <div class="position-relative">
-                  <a
-                    id="ratingSort"
-                    href="#"
-                    class="text-gray-700 text-decoration-none d-inline-grid gap-auto-2"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Popular First</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18px"
-                      height="18px"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                  </a>
-
-                  <ul
-                    class="dropdown-menu shadow-lg rounded-xl"
-                    aria-labelledby="ratingSort"
-                  >
-                    <li>
-                      <a class="dropdown-item active" href="#">Popular First</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Newest First</a></li>
-                    <li class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Most Helpful</a></li>
-                  </ul>
+                <a
+                  href="#"
+                  class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
+                  >5 sao</a
+                >
+                <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
+                  122
                 </div>
-
-                <div class="position-relative">
-                  <a
-                    href="#!"
-                    data-href="_ajax/modal_shop_review.html"
-                    data-ajax-modal-size="modal-md"
-                    data-ajax-modal-backdrop="static"
-                    data-ajax-modal-centered="true"
-                    class="js-ajax-modal btn btn-primary border-0"
-                  >
-                    <svg
-                      height="18px"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M12 20h9"></path>
-                      <path
-                        d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
-                      ></path>
-                    </svg>
-                    <small>write a review</small>
-                  </a>
-                </div>
-              </div>
-
-              <!-- review -->
-              <div class="border border-light rounded mb-4 p-4">
-                <div class="row">
-                  <div class="col-md-3 text-center">
+                <div class="order-3 order-lg-2 1 col">
+                  <div class="progress" style="height: 8px">
                     <div
-                      class="avatar avatar-lg rounded-circle"
-                      style="
-                        background-image: url(demo.files/images/avatar/jessica_barden.jpg);
-                      "
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 89%"
+                      aria-valuenow="89"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
                     ></div>
-                    <p class="text-gray-900">
-                      <span class="d-block fw-medium">Jessica Barden</span>
-                      <span class="d-block small text-muted"
-                        >about 2 weeks ago</span
-                      >
-                      <span class="d-block small">
-                        <span class="text-success">
-                          <svg
-                            height="18px"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          >
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                          </svg>
-                          verified purchase
-                        </span>
-                      </span>
-                    </p>
                   </div>
-                  <div class="col-md-9">
-                    <h3 class="h5">Awesome product!</h3>
-                    <i class="rating-4 text-warning"><!-- stars --></i>
-                    <p>
-                      I just bought them few weeks ago. The sound is awesome, is
-                      really 3D but what was more impressive is that you can
-                      hear the surroundings. So there is no risk to get killed
-                      by a car. :) Very good for kids!
-                    </p>
-                    <div class="border-bottom border-light pb-4 mb-4">
-                      <!-- user media -->
-                      <h4 class="small mb-2 text-muted">Uploaded media</h4>
-                      <div class="clearfix">
-                        <a
-                          class="photoswipe text-center float-start m-0"
-                          data-group="review-1"
-                          href="demo.files/images/unsplash/products/julian-o-hayon-oW4tZeidfkA-unsplash-min.jpg"
+                </div>
+              </div>
+
+              <div
+                class="row g-1 d-flex align-items-center justify-content-center position-relative"
+              >
+                <a
+                  href="#"
+                  class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
+                  >4 sao</a
+                >
+                <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
+                  91
+                </div>
+                <div class="order-3 order-lg-2 1 col">
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 77%"
+                      aria-valuenow="7"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row g-1 d-flex align-items-center justify-content-center position-relative"
+              >
+                <a
+                  href="#"
+                  class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
+                  >3 sao</a
+                >
+                <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
+                  12
+                </div>
+                <div class="order-3 order-lg-2 1 col">
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 12%"
+                      aria-valuenow="12"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row g-1 d-flex align-items-center justify-content-center position-relative"
+              >
+                <a
+                  href="#"
+                  class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
+                  >2 sao</a
+                >
+                <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
+                  3
+                </div>
+                <div class="order-3 order-lg-2 1 col">
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 3%"
+                      aria-valuenow="3"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="row g-1 d-flex align-items-center justify-content-center position-relative"
+              >
+                <a
+                  href="#"
+                  class="order-1 col-md-6 col-lg-3 text-decoration-none link-muted stretched-link"
+                  >1 sao</a
+                >
+                <div class="order-1 order-lg-3 col-md-6 col-lg-2 text-end">
+                  1
+                </div>
+                <div class="order-3 order-lg-2 1 col">
+                  <div class="progress" style="height: 8px">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 1%"
+                      aria-valuenow="1"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- review list -->
+          <div class="col-lg-8">
+            <!-- filters, buttons -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="position-relative">
+                <a
+                  id="ratingSort"
+                  href="#"
+                  class="text-gray-700 text-decoration-none d-inline-grid gap-auto-2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>Phổ biến nhất</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </a>
+
+                <ul
+                  class="dropdown-menu shadow-lg rounded-xl"
+                  aria-labelledby="ratingSort"
+                >
+                  <li>
+                    <a class="dropdown-item active" href="#">Popular First</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Newest First</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Most Đã thích</a></li>
+                </ul>
+              </div>
+
+              <div class="position-relative">
+                <a
+                  href="#!"
+                  data-href="_ajax/modal_shop_review.html"
+                  data-ajax-modal-size="modal-md"
+                  data-ajax-modal-backdrop="static"
+                  data-ajax-modal-centered="true"
+                  class="js-ajax-modal btn btn-primary border-0"
+                >
+                  <svg
+                    height="18px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 20h9"></path>
+                    <path
+                      d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+                    ></path>
+                  </svg>
+                  <small>Viết đánh giá</small>
+                </a>
+              </div>
+            </div>
+
+            <!-- review -->
+            <div class="border border-light rounded mb-4 p-4">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <div
+                    class="avatar avatar-lg rounded-circle"
+                    style="
+                      background-image: url(demo.files/images/avatar/jessica_barden.jpg);
+                    "
+                  ></div>
+                  <p class="text-gray-900">
+                    <span class="d-block fw-medium">Lương Thơm</span>
+                    <span class="d-block small text-muted"
+                      >2 tuần trước</span
+                    >
+                    <span class="d-block small">
+                      <span class="text-success">
+                        <svg
+                          height="18px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         >
-                          <img
-                            height="80"
-                            class="m-1 rounded"
-                            src="demo.files/images/unsplash/products/thumb_330/julian-o-hayon-oW4tZeidfkA-unsplash-min.jpg"
-                            alt="..."
-                          />
-                        </a>
-                        <a
-                          class="photoswipe text-center float-start m-0"
-                          data-group="review-1"
-                          href="demo.files/images/unsplash/products/julian-o-hayon-sDU_o416hlE-unsplash-min.jpg"
-                        >
-                          <img
-                            height="80"
-                            class="m-1 rounded"
-                            src="demo.files/images/unsplash/products/thumb_330/julian-o-hayon-sDU_o416hlE-unsplash-min.jpg"
-                            alt="..."
-                          />
-                        </a>
-                        <a
-                          class="photoswipe text-center float-start m-0"
-                          data-group="review-1"
-                          href="demo.files/images/unsplash/products/julian-o-hayon-w4znns7NTA0-unsplash-min.jpg"
-                        >
-                          <img
-                            height="80"
-                            class="m-1 rounded"
-                            src="demo.files/images/unsplash/products/thumb_330/julian-o-hayon-w4znns7NTA0-unsplash-min.jpg"
-                            alt="..."
-                          />
-                        </a>
-                      </div>
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                       Đã mua hàng
+                      </span>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-md-9">
+                  <h3 class="h5">Sản phẩm tuyệt vời</h3>
+                  <i class="rating-4 text-warning"><!-- sao --></i>
+                  <p>
+                    Tôi mới mua chúng vài tuần trước. Bơ rất ngon. Tôi sẽ đặt thêm vài kí nữa 
+                  </p>
+                  <div class="border-bottom border-light pb-4 mb-4">
+                    <!-- user media -->
+                    <h4 class="small mb-2 text-muted">tải ảnh lên</h4>
+                    <div class="clearfix">
+                      <a
+                        class="photoswipe text-center float-start m-0"
+                        data-group="review-1"
+                        href="demo.files/images/unsplash/products/julian-o-hayon-oW4tZeidfkA-unsplash-min.jpg"
+                      >
+                        <img
+                          height="80"
+                          class="m-1 rounded"
+                          src="demo.files/images/unsplash/products/thumb_330/julian-o-hayon-oW4tZeidfkA-unsplash-min.jpg"
+                          alt="..."
+                        />
+                      </a>
+                      <a
+                        class="photoswipe text-center float-start m-0"
+                        data-group="review-1"
+                        href="demo.files/images/unsplash/products/julian-o-hayon-sDU_o416hlE-unsplash-min.jpg"
+                      >
+                        <img
+                          height="80"
+                          class="m-1 rounded"
+                          src="demo.files/images/unsplash/products/thumb_330/julian-o-hayon-sDU_o416hlE-unsplash-min.jpg"
+                          alt="..."
+                        />
+                      </a>
+                      <a
+                        class="photoswipe text-center float-start m-0"
+                        data-group="review-1"
+                        href="demo.files/images/unsplash/products/julian-o-hayon-w4znns7NTA0-unsplash-min.jpg"
+                      >
+                        <img
+                          height="80"
+                          class="m-1 rounded"
+                          src="demo.files/images/unsplash/products/thumb_330/julian-o-hayon-w4znns7NTA0-unsplash-min.jpg"
+                          alt="..."
+                        />
+                      </a>
                     </div>
-                    <!-- 
+                  </div>
+                  <!-- 
 	                    NOTE: working ajax button! Check console for debug 
 	                    No security implemented to block multiple votes
 	                    So on page refresh, should be handled by backend!
 
 	                    documentation/plugins-sow-btn-toggle.html
 	                  -->
-                    <a
-                      href="#!"
-                      data-toggle-ajax-url-on="demo.files/php/demo.ajax_request.php?review_id=1&amp;vote=1"
-                      class="btn-toggle link-muted text-decoration-none d-inline-grid gap-auto-2"
-                      ><!-- helpful -->
-                      <svg
-                        width="20px"
-                        height="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M512,304c0-12.821-5.099-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.144,0-37.995,12.48-38.656,12.992c-2.539,2.027-4.011,5.099-4.011,8.341v72.341L173.205,237.44l-2.539,1.301v-4.075c0-5.888-4.779-10.667-10.667-10.667H53.333C23.915,224,0,247.915,0,277.333V448c0,29.419,23.915,53.333,53.333,53.333h64c23.061,0,42.773-14.72,50.197-35.264C185.28,475.2,209.173,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.248c2.453-11.136,1.024-22.336-3.84-32.064c15.744-7.915,26.347-24.192,26.347-42.688c0-7.552-1.728-14.784-4.992-21.312C501.419,338.752,512,322.496,512,304z M467.008,330.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c5.419,5.099,8.427,11.968,8.427,19.307c0,13.461-10.176,24.768-23.637,26.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c7.019,6.613,9.835,15.893,7.723,25.451c-2.624,11.904-14.187,20.523-27.499,20.523H224c-17.323,0-46.379-8.128-56.448-18.219c-3.051-3.029-7.659-3.925-11.627-2.304c-3.989,1.643-6.592,5.547-6.592,9.856c0,17.643-14.357,32-32,32h-64c-17.643,0-32-14.357-32-32V277.333c0-17.643,14.357-32,32-32h96V256c0,3.691,1.92,7.125,5.077,9.088c3.115,1.877,7.04,2.069,10.368,0.448l21.333-10.667c2.155-1.067,3.883-2.859,4.907-5.056l64-138.667c0.64-1.408,0.981-2.944,0.981-4.48V37.781C260.437,35.328,268.139,32,277.333,32C289.024,32,320,61.056,320,96c0,37.547-20.437,91.669-20.629,92.203c-1.237,3.264-0.811,6.955,1.173,9.856c2.005,2.88,5.291,4.608,8.789,4.608h146.795c17.792,0,32.896,12.736,34.389,28.992c1.131,12.16-4.715,23.723-15.189,30.187c-3.264,2.005-5.205,5.632-5.056,9.493s2.368,7.317,5.781,9.088c9.024,4.587,14.613,13.632,14.613,23.573C490.667,317.461,480.491,328.768,467.008,330.325z"
-                        ></path>
-                        <path
-                          d="M160,245.333c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V256C170.667,250.112,165.888,245.333,160,245.333z"
-                        ></path>
-                      </svg>
-                      <span class="small text-dashed"
-                        >helpful <span class="fw-light">(32)</span></span
-                      >
-                    </a>
-                  </div>
+                  <a
+                    href="#!"
+                    data-toggle-ajax-url-on="demo.files/php/demo.ajax_request.php?review_id=1&amp;vote=1"
+                    class="btn-toggle link-muted text-decoration-none d-inline-grid gap-auto-2"
+                    ><!-- Đã thích -->
+                    <svg
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M512,304c0-12.821-5.099-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.144,0-37.995,12.48-38.656,12.992c-2.539,2.027-4.011,5.099-4.011,8.341v72.341L173.205,237.44l-2.539,1.301v-4.075c0-5.888-4.779-10.667-10.667-10.667H53.333C23.915,224,0,247.915,0,277.333V448c0,29.419,23.915,53.333,53.333,53.333h64c23.061,0,42.773-14.72,50.197-35.264C185.28,475.2,209.173,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.248c2.453-11.136,1.024-22.336-3.84-32.064c15.744-7.915,26.347-24.192,26.347-42.688c0-7.552-1.728-14.784-4.992-21.312C501.419,338.752,512,322.496,512,304z M467.008,330.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c5.419,5.099,8.427,11.968,8.427,19.307c0,13.461-10.176,24.768-23.637,26.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c7.019,6.613,9.835,15.893,7.723,25.451c-2.624,11.904-14.187,20.523-27.499,20.523H224c-17.323,0-46.379-8.128-56.448-18.219c-3.051-3.029-7.659-3.925-11.627-2.304c-3.989,1.643-6.592,5.547-6.592,9.856c0,17.643-14.357,32-32,32h-64c-17.643,0-32-14.357-32-32V277.333c0-17.643,14.357-32,32-32h96V256c0,3.691,1.92,7.125,5.077,9.088c3.115,1.877,7.04,2.069,10.368,0.448l21.333-10.667c2.155-1.067,3.883-2.859,4.907-5.056l64-138.667c0.64-1.408,0.981-2.944,0.981-4.48V37.781C260.437,35.328,268.139,32,277.333,32C289.024,32,320,61.056,320,96c0,37.547-20.437,91.669-20.629,92.203c-1.237,3.264-0.811,6.955,1.173,9.856c2.005,2.88,5.291,4.608,8.789,4.608h146.795c17.792,0,32.896,12.736,34.389,28.992c1.131,12.16-4.715,23.723-15.189,30.187c-3.264,2.005-5.205,5.632-5.056,9.493s2.368,7.317,5.781,9.088c9.024,4.587,14.613,13.632,14.613,23.573C490.667,317.461,480.491,328.768,467.008,330.325z"
+                      ></path>
+                      <path
+                        d="M160,245.333c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V256C170.667,250.112,165.888,245.333,160,245.333z"
+                      ></path>
+                    </svg>
+                    <span class="small text-dashed"
+                      >Đã thích <span class="fw-light">(32)</span></span
+                    >
+                  </a>
                 </div>
               </div>
-
-              <!-- review -->
-              <div class="border border-light rounded mb-4 p-4">
-                <div class="row">
-                  <div class="col-md-3 text-center">
-                    <div
-                      class="avatar avatar-lg bg-gray-300 rounded-circle text-white"
-                    >
-                      <i>JD</i>
-                    </div>
-                    <p class="text-gray-900">
-                      <span class="d-block fw-medium">J. Dantas</span>
-                      <span class="d-block small text-muted"
-                        >about 3 weeks ago</span
-                      >
-                      <span class="d-block small">
-                        <span class="text-success">
-                          <svg
-                            height="18px"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          >
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                          </svg>
-                          verified purchase
-                        </span>
-                      </span>
-                    </p>
-                  </div>
-                  <div class="col-md-9">
-                    <h3 class="h5">Good for gym</h3>
-                    <i class="rating-5 text-warning"><!-- stars --></i>
-                    <p>
-                      I go to gym 5 days a week, so I use them everyday! Very
-                      good quality, I recommend them!
-                    </p>
-                    <a
-                      href="#!"
-                      class="link-muted text-decoration-none d-inline-grid gap-auto-2"
-                      ><!-- helpful -->
-                      <svg
-                        width="20px"
-                        height="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M512,304c0-12.821-5.099-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.144,0-37.995,12.48-38.656,12.992c-2.539,2.027-4.011,5.099-4.011,8.341v72.341L173.205,237.44l-2.539,1.301v-4.075c0-5.888-4.779-10.667-10.667-10.667H53.333C23.915,224,0,247.915,0,277.333V448c0,29.419,23.915,53.333,53.333,53.333h64c23.061,0,42.773-14.72,50.197-35.264C185.28,475.2,209.173,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.248c2.453-11.136,1.024-22.336-3.84-32.064c15.744-7.915,26.347-24.192,26.347-42.688c0-7.552-1.728-14.784-4.992-21.312C501.419,338.752,512,322.496,512,304z M467.008,330.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c5.419,5.099,8.427,11.968,8.427,19.307c0,13.461-10.176,24.768-23.637,26.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c7.019,6.613,9.835,15.893,7.723,25.451c-2.624,11.904-14.187,20.523-27.499,20.523H224c-17.323,0-46.379-8.128-56.448-18.219c-3.051-3.029-7.659-3.925-11.627-2.304c-3.989,1.643-6.592,5.547-6.592,9.856c0,17.643-14.357,32-32,32h-64c-17.643,0-32-14.357-32-32V277.333c0-17.643,14.357-32,32-32h96V256c0,3.691,1.92,7.125,5.077,9.088c3.115,1.877,7.04,2.069,10.368,0.448l21.333-10.667c2.155-1.067,3.883-2.859,4.907-5.056l64-138.667c0.64-1.408,0.981-2.944,0.981-4.48V37.781C260.437,35.328,268.139,32,277.333,32C289.024,32,320,61.056,320,96c0,37.547-20.437,91.669-20.629,92.203c-1.237,3.264-0.811,6.955,1.173,9.856c2.005,2.88,5.291,4.608,8.789,4.608h146.795c17.792,0,32.896,12.736,34.389,28.992c1.131,12.16-4.715,23.723-15.189,30.187c-3.264,2.005-5.205,5.632-5.056,9.493s2.368,7.317,5.781,9.088c9.024,4.587,14.613,13.632,14.613,23.573C490.667,317.461,480.491,328.768,467.008,330.325z"
-                        ></path>
-                        <path
-                          d="M160,245.333c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V256C170.667,250.112,165.888,245.333,160,245.333z"
-                        ></path>
-                      </svg>
-                      <span class="small text-dashed">helpful</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- review -->
-              <div class="border border-light rounded mb-4 p-4">
-                <div class="row">
-                  <div class="col-md-3 text-center">
-                    <div
-                      class="avatar avatar-lg bg-gray-300 rounded-circle text-white"
-                    >
-                      <i>PC</i>
-                    </div>
-                    <p class="text-gray-900">
-                      <span class="d-block fw-medium">P. Cole</span>
-                      <span class="d-block small text-muted"
-                        >about 2 weeks ago</span
-                      >
-                    </p>
-                  </div>
-                  <div class="col-md-9">
-                    <h3 class="h5">Too expensive</h3>
-                    <i class="rating-3 text-warning"><!-- stars --></i>
-                    <p>
-                      The quality is great, but in my honest opinion, the price
-                      is to high! Are just speakers, for god sake! Anyway, good
-                      quality, again!
-                    </p>
-                    <a
-                      href="#!"
-                      class="link-muted text-decoration-none d-inline-grid gap-auto-2"
-                      ><!-- helpful -->
-                      <svg
-                        width="20px"
-                        height="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M512,304c0-12.821-5.099-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.144,0-37.995,12.48-38.656,12.992c-2.539,2.027-4.011,5.099-4.011,8.341v72.341L173.205,237.44l-2.539,1.301v-4.075c0-5.888-4.779-10.667-10.667-10.667H53.333C23.915,224,0,247.915,0,277.333V448c0,29.419,23.915,53.333,53.333,53.333h64c23.061,0,42.773-14.72,50.197-35.264C185.28,475.2,209.173,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.248c2.453-11.136,1.024-22.336-3.84-32.064c15.744-7.915,26.347-24.192,26.347-42.688c0-7.552-1.728-14.784-4.992-21.312C501.419,338.752,512,322.496,512,304z M467.008,330.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c5.419,5.099,8.427,11.968,8.427,19.307c0,13.461-10.176,24.768-23.637,26.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c7.019,6.613,9.835,15.893,7.723,25.451c-2.624,11.904-14.187,20.523-27.499,20.523H224c-17.323,0-46.379-8.128-56.448-18.219c-3.051-3.029-7.659-3.925-11.627-2.304c-3.989,1.643-6.592,5.547-6.592,9.856c0,17.643-14.357,32-32,32h-64c-17.643,0-32-14.357-32-32V277.333c0-17.643,14.357-32,32-32h96V256c0,3.691,1.92,7.125,5.077,9.088c3.115,1.877,7.04,2.069,10.368,0.448l21.333-10.667c2.155-1.067,3.883-2.859,4.907-5.056l64-138.667c0.64-1.408,0.981-2.944,0.981-4.48V37.781C260.437,35.328,268.139,32,277.333,32C289.024,32,320,61.056,320,96c0,37.547-20.437,91.669-20.629,92.203c-1.237,3.264-0.811,6.955,1.173,9.856c2.005,2.88,5.291,4.608,8.789,4.608h146.795c17.792,0,32.896,12.736,34.389,28.992c1.131,12.16-4.715,23.723-15.189,30.187c-3.264,2.005-5.205,5.632-5.056,9.493s2.368,7.317,5.781,9.088c9.024,4.587,14.613,13.632,14.613,23.573C490.667,317.461,480.491,328.768,467.008,330.325z"
-                        ></path>
-                        <path
-                          d="M160,245.333c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V256C170.667,250.112,165.888,245.333,160,245.333z"
-                        ></path>
-                      </svg>
-                      <span class="small text-dashed">helpful</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- pagination -->
-              <nav aria-label="pagination" class="mt-5">
-                <ul
-                  class="pagination pagination-pill justify-content-end justify-content-center justify-content-md-end"
-                >
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">Previous</a>
-                  </li>
-
-                  <li class="page-item active">
-                    <a class="page-link" href="#"
-                      >1 <span class="visually-hidden">(current)</span></a
-                    >
-                  </li>
-
-                  <li class="page-item" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                  </li>
-
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- pagination -->
             </div>
+
+            <!-- review -->
+            <div class="border border-light rounded mb-4 p-4">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <div
+                    class="avatar avatar-lg bg-gray-300 rounded-circle text-white"
+                  >
+                    <i>HVS</i>
+                  </div>
+                  <p class="text-gray-900">
+                    <span class="d-block fw-medium">Hứa Văn Sắp</span>
+                    <span class="d-block small text-muted"
+                      >3 tuần trước</span
+                    >
+                    <span class="d-block small">
+                      <span class="text-success">
+                        <svg
+                          height="18px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                       Đã mua hàng
+                      </span>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-md-9">
+                  <h3 class="h5">Tốt cho sức khỏe</h3>
+                  <i class="rating-5 text-warning"><!-- sao --></i>
+                  <p>
+                    Tôi đến phòng tập thể dục 5 ngày một tuần, vì vậy tôi sử dụng chúng hàng ngày! Rất tốt
+ chất lượng, tôi sẽ giới thiệu nó!
+                  </p>
+                  <a
+                    href="#!"
+                    class="link-muted text-decoration-none d-inline-grid gap-auto-2"
+                    ><!-- Đã thích -->
+                    <svg
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M512,304c0-12.821-5.099-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.144,0-37.995,12.48-38.656,12.992c-2.539,2.027-4.011,5.099-4.011,8.341v72.341L173.205,237.44l-2.539,1.301v-4.075c0-5.888-4.779-10.667-10.667-10.667H53.333C23.915,224,0,247.915,0,277.333V448c0,29.419,23.915,53.333,53.333,53.333h64c23.061,0,42.773-14.72,50.197-35.264C185.28,475.2,209.173,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.248c2.453-11.136,1.024-22.336-3.84-32.064c15.744-7.915,26.347-24.192,26.347-42.688c0-7.552-1.728-14.784-4.992-21.312C501.419,338.752,512,322.496,512,304z M467.008,330.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c5.419,5.099,8.427,11.968,8.427,19.307c0,13.461-10.176,24.768-23.637,26.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c7.019,6.613,9.835,15.893,7.723,25.451c-2.624,11.904-14.187,20.523-27.499,20.523H224c-17.323,0-46.379-8.128-56.448-18.219c-3.051-3.029-7.659-3.925-11.627-2.304c-3.989,1.643-6.592,5.547-6.592,9.856c0,17.643-14.357,32-32,32h-64c-17.643,0-32-14.357-32-32V277.333c0-17.643,14.357-32,32-32h96V256c0,3.691,1.92,7.125,5.077,9.088c3.115,1.877,7.04,2.069,10.368,0.448l21.333-10.667c2.155-1.067,3.883-2.859,4.907-5.056l64-138.667c0.64-1.408,0.981-2.944,0.981-4.48V37.781C260.437,35.328,268.139,32,277.333,32C289.024,32,320,61.056,320,96c0,37.547-20.437,91.669-20.629,92.203c-1.237,3.264-0.811,6.955,1.173,9.856c2.005,2.88,5.291,4.608,8.789,4.608h146.795c17.792,0,32.896,12.736,34.389,28.992c1.131,12.16-4.715,23.723-15.189,30.187c-3.264,2.005-5.205,5.632-5.056,9.493s2.368,7.317,5.781,9.088c9.024,4.587,14.613,13.632,14.613,23.573C490.667,317.461,480.491,328.768,467.008,330.325z"
+                      ></path>
+                      <path
+                        d="M160,245.333c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V256C170.667,250.112,165.888,245.333,160,245.333z"
+                      ></path>
+                    </svg>
+                    <span class="small text-dashed">Đã thích</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- review -->
+            <div class="border border-light rounded mb-4 p-4">
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <div
+                    class="avatar avatar-lg bg-gray-300 rounded-circle text-white"
+                  >
+                    <i>ĐNV</i>
+                  </div>
+                  <p class="text-gray-900">
+                    <span class="d-block fw-medium">Đinh Ninh Về</span>
+                    <span class="d-block small text-muted"
+                      >2 tuần trước</span
+                    >
+                  </p>
+                </div>
+                <div class="col-md-9">
+                  <h3 class="h5">Quá đắt</h3>
+                  <i class="rating-3 text-warning"><!-- sao --></i>
+                  <p>
+                    Chất lượng thì tuyệt vời, nhưng theo ý kiến ​​trung thực của tôi, giá cả thì
+                    hơi cao so hơn thị trường bên ngoài! Dù sao thì tốt
+                    chất lượng, một lần nữa!
+                  </p>
+                  <a
+                    href="#!"
+                    class="link-muted text-decoration-none d-inline-grid gap-auto-2"
+                    ><!-- Đã thích -->
+                    <svg
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M512,304c0-12.821-5.099-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.144,0-37.995,12.48-38.656,12.992c-2.539,2.027-4.011,5.099-4.011,8.341v72.341L173.205,237.44l-2.539,1.301v-4.075c0-5.888-4.779-10.667-10.667-10.667H53.333C23.915,224,0,247.915,0,277.333V448c0,29.419,23.915,53.333,53.333,53.333h64c23.061,0,42.773-14.72,50.197-35.264C185.28,475.2,209.173,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.248c2.453-11.136,1.024-22.336-3.84-32.064c15.744-7.915,26.347-24.192,26.347-42.688c0-7.552-1.728-14.784-4.992-21.312C501.419,338.752,512,322.496,512,304z M467.008,330.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c5.419,5.099,8.427,11.968,8.427,19.307c0,13.461-10.176,24.768-23.637,26.325c-4.117,0.491-7.595,3.285-8.917,7.232c-1.301,3.947-0.213,8.277,2.816,11.136c7.019,6.613,9.835,15.893,7.723,25.451c-2.624,11.904-14.187,20.523-27.499,20.523H224c-17.323,0-46.379-8.128-56.448-18.219c-3.051-3.029-7.659-3.925-11.627-2.304c-3.989,1.643-6.592,5.547-6.592,9.856c0,17.643-14.357,32-32,32h-64c-17.643,0-32-14.357-32-32V277.333c0-17.643,14.357-32,32-32h96V256c0,3.691,1.92,7.125,5.077,9.088c3.115,1.877,7.04,2.069,10.368,0.448l21.333-10.667c2.155-1.067,3.883-2.859,4.907-5.056l64-138.667c0.64-1.408,0.981-2.944,0.981-4.48V37.781C260.437,35.328,268.139,32,277.333,32C289.024,32,320,61.056,320,96c0,37.547-20.437,91.669-20.629,92.203c-1.237,3.264-0.811,6.955,1.173,9.856c2.005,2.88,5.291,4.608,8.789,4.608h146.795c17.792,0,32.896,12.736,34.389,28.992c1.131,12.16-4.715,23.723-15.189,30.187c-3.264,2.005-5.205,5.632-5.056,9.493s2.368,7.317,5.781,9.088c9.024,4.587,14.613,13.632,14.613,23.573C490.667,317.461,480.491,328.768,467.008,330.325z"
+                      ></path>
+                      <path
+                        d="M160,245.333c-5.888,0-10.667,4.779-10.667,10.667v192c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667V256C170.667,250.112,165.888,245.333,160,245.333z"
+                      ></path>
+                    </svg>
+                    <span class="small text-dashed">Đã thích</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- pagination -->
+            <nav aria-label="pagination" class="mt-5">
+              <ul
+                class="pagination pagination-pill justify-content-end justify-content-center justify-content-md-end"
+              >
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Trang trước</a>
+                </li>
+
+                <li class="page-item active">
+                  <a class="page-link" href="#"
+                    >1 <span class="visually-hidden">hiện tại</span></a
+                  >
+                </li>
+
+                <li class="page-item" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">trang tiếp</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- pagination -->
           </div>
         </div>
       </div>
-      <!-- /REVIEWS -->
+    </div>
+    <!-- /REVIEWS -->
 
-      <!-- Footer -->
-      <footer id="footer" class="shadow-xs">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-12 col-lg-8">
-              <div class="row mb-3">
-                <!-- Col 1 -->
-                <div class="col-12 col-lg-4 mb-1">
-                  <!-- mobile only : SOW Toggle Button -->
-                  <button
-                    class="clearfix btn btn-toggle btn-sm w-100 text-align-left shadow-md border rounded mb-1 d-block d-lg-none"
-                    data-bs-target="#footer_c1"
-                    data-toggle-container-class="d-none d-sm-block bg-white shadow-md border animate-fadein rounded p-3"
-                  >
-                    <span class="group-icon p-2 float-start">
-                      <i class="fi fi-bars-2"></i>
-                      <i class="fi fi-close"></i>
-                    </span>
+    <!-- Footer -->
+    <footer id="footer" class="shadow-xs">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="row mb-3">
+              <!-- Col 1 -->
+              <div class="col-12 col-lg-4 mb-1">
+                <!-- mobile only : SOW Toggle Button -->
+                <button
+                  class="clearfix btn btn-toggle btn-sm w-100 text-align-left shadow-md border rounded mb-1 d-block d-lg-none"
+                  data-bs-target="#footer_c1"
+                  data-toggle-container-class="d-none d-sm-block bg-white shadow-md border animate-fadein rounded p-3"
+                >
+                  <span class="group-icon p-2 float-start">
+                    <i class="fi fi-bars-2"></i>
+                    <i class="fi fi-close"></i>
+                  </span>
 
-                    <span class="h5 py-2 m-0 float-start">
-                      Hệ thống đại lý
-                    </span>
-                  </button>
+                  <span class="h5 py-2 m-0 float-start"> Hệ thống đại lý </span>
+                </button>
 
-                  <!-- desktop only -->
-                  <h3 class="h5 py-3 m-0 d-none d-lg-block">Hệ thống đại lý</h3>
+                <!-- desktop only -->
+                <h3 class="h5 py-3 m-0 d-none d-lg-block">Hệ thống đại lý</h3>
 
-                  <!-- navbar : navigation -->
-                  <ul id="footer_c1" class="nav flex-column d-none d-lg-block">
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Đại lý 1</a>
-                    </li>
+                <!-- navbar : navigation -->
+                <ul id="footer_c1" class="nav flex-column d-none d-lg-block">
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Đại lý 1</a>
+                  </li>
 
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Đại lý 2</a>
-                    </li>
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Đại lý 2</a>
+                  </li>
 
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Đại lý 3</a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Đại lý 3</a>
+                  </li>
+                </ul>
+              </div>
 
-                <!-- Col 2 -->
-                <div class="col-12 col-lg-4 mb-1">
-                  <!-- mobile only : SOW Toggle Button -->
-                  <button
-                    class="clearfix btn btn-toggle btn-sm w-100 text-align-left shadow-md border rounded mb-1 d-block d-lg-none"
-                    data-bs-target="#footer_c2"
-                    data-toggle-container-class="d-none d-sm-block bg-white shadow-md border animate-fadein rounded p-3"
-                  >
-                    <span class="group-icon p-2 float-start">
-                      <i class="fi fi-bars-2"></i>
-                      <i class="fi fi-close"></i>
-                    </span>
+              <!-- Col 2 -->
+              <div class="col-12 col-lg-4 mb-1">
+                <!-- mobile only : SOW Toggle Button -->
+                <button
+                  class="clearfix btn btn-toggle btn-sm w-100 text-align-left shadow-md border rounded mb-1 d-block d-lg-none"
+                  data-bs-target="#footer_c2"
+                  data-toggle-container-class="d-none d-sm-block bg-white shadow-md border animate-fadein rounded p-3"
+                >
+                  <span class="group-icon p-2 float-start">
+                    <i class="fi fi-bars-2"></i>
+                    <i class="fi fi-close"></i>
+                  </span>
 
-                    <span class="h5 py-2 m-0 float-start">
-                      Chính sách và điều khoản
-                    </span>
-                  </button>
-
-                  <!-- desktop only -->
-                  <h3 class="h5 py-3 m-0 d-none d-lg-block">
+                  <span class="h5 py-2 m-0 float-start">
                     Chính sách và điều khoản
-                  </h3>
+                  </span>
+                </button>
 
-                  <!-- navbar : navigation -->
-                  <ul id="footer_c2" class="nav flex-column d-none d-lg-block">
-                    <li class="list-item">
-                      <a class="d-block py-1" href="blog-page-sidebar.html"
-                        >Chính sách</a
-                      >
-                    </li>
+                <!-- desktop only -->
+                <h3 class="h5 py-3 m-0 d-none d-lg-block">
+                  Chính sách và điều khoản
+                </h3>
 
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Điều khoản</a>
-                    </li>
+                <!-- navbar : navigation -->
+                <ul id="footer_c2" class="nav flex-column d-none d-lg-block">
+                  <li class="list-item">
+                    <a class="d-block py-1" href="blog-page-sidebar.html"
+                      >Chính sách</a
+                    >
+                  </li>
 
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Giấy phép kinh doanh</a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Điều khoản</a>
+                  </li>
 
-                <!-- Col 3 -->
-                <div class="col-12 col-lg-4 mb-1">
-                  <!-- mobile only : SOW Toggle Button-->
-                  <button
-                    class="clearfix btn btn-toggle btn-sm w-100 text-align-left shadow-md border rounded mb-1 d-block d-lg-none"
-                    data-bs-target="#footer_c3"
-                    data-toggle-container-class="d-none d-sm-block bg-white shadow-md border animate-fadein rounded p-3"
-                  >
-                    <span class="group-icon p-2 float-start">
-                      <i class="fi fi-bars-2"></i>
-                      <i class="fi fi-close"></i>
-                    </span>
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Giấy phép kinh doanh</a>
+                  </li>
+                </ul>
+              </div>
 
-                    <span class="h5 py-2 m-0 float-start">
-                      Về ORGANIC FARM 3T
-                    </span>
-                  </button>
+              <!-- Col 3 -->
+              <div class="col-12 col-lg-4 mb-1">
+                <!-- mobile only : SOW Toggle Button-->
+                <button
+                  class="clearfix btn btn-toggle btn-sm w-100 text-align-left shadow-md border rounded mb-1 d-block d-lg-none"
+                  data-bs-target="#footer_c3"
+                  data-toggle-container-class="d-none d-sm-block bg-white shadow-md border animate-fadein rounded p-3"
+                >
+                  <span class="group-icon p-2 float-start">
+                    <i class="fi fi-bars-2"></i>
+                    <i class="fi fi-close"></i>
+                  </span>
 
-                  <!-- desktop only -->
-                  <h3 class="h5 py-3 m-0 d-none d-lg-block">
+                  <span class="h5 py-2 m-0 float-start">
                     Về ORGANIC FARM 3T
-                  </h3>
+                  </span>
+                </button>
 
-                  <!-- navbar : navigation -->
-                  <ul id="footer_c3" class="nav flex-column d-none d-lg-block">
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Sứ mệnh và Tầm nhìn</a>
-                    </li>
+                <!-- desktop only -->
+                <h3 class="h5 py-3 m-0 d-none d-lg-block">
+                  Về ORGANIC FARM 3T
+                </h3>
 
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Đội ngũ quản lý</a>
-                    </li>
+                <!-- navbar : navigation -->
+                <ul id="footer_c3" class="nav flex-column d-none d-lg-block">
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Sứ mệnh và Tầm nhìn</a>
+                  </li>
 
-                    <li class="list-item">
-                      <a class="d-block py-1" href="#">Các nhà phân phối</a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Đội ngũ quản lý</a>
+                  </li>
+
+                  <li class="list-item">
+                    <a class="d-block py-1" href="#">Các nhà phân phối</a>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <h5 class="my-3">Đăng ký để nhận thông báo mới nhất</h5>
-              <form novalidate class="bs-validate" method="post" action="#">
-                <div class="input-group mb-3">
-                  <input
-                    required
-                    type="email"
-                    name="subscribe_email"
-                    value=""
-                    class="form-control"
-                    placeholder="Địa chỉ email"
-                    aria-label="Địa chỉ email"
-                  />
-                  <button class="btn btn-dark">Đăng ký</button>
-                </div>
-              </form>
-            </div>
+          <div class="col">
+            <h5 class="my-3">Đăng ký để nhận thông báo mới nhất</h5>
+            <form novalidate class="bs-validate" method="post" action="#">
+              <div class="input-group mb-3">
+                <input
+                  required
+                  type="email"
+                  name="subscribe_email"
+                  value=""
+                  class="form-control"
+                  placeholder="Địa chỉ email"
+                  aria-label="Địa chỉ email"
+                />
+                <button class="btn btn-dark">Đăng ký</button>
+              </div>
+            </form>
           </div>
         </div>
+      </div>
 
-        <div class="border-top" style="background-color: #64bb47">
-          <div class="container text-center py-5">
-            <!-- logo -->
-            <h1 class="h--70 d-inline-flex align-items-center border p-2">
-              LOGO 3T
-            </h1>
+      <div class="border-top" style="background-color: #64bb47">
+        <div class="container text-center py-5">
+          <!-- logo -->
+          <h1 class="h--70 d-inline-flex align-items-center border p-2">
+            LOGO 3T
+          </h1>
 
-            <p class="m-0 fs-6">&copy; Orangic Farm 3T (2024 - 2030)</p>
+          <p class="m-0 fs-6">&copy; Orangic Farm 3T (2024 - 2030)</p>
 
-            <div class="mt-5">
-              <!-- social -->
-              <a
-                href="#"
-                class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
-                rel="noopener"
-                aria-label="facebook page"
-              >
-                <i class="fi fi-social-facebook"></i>
-              </a>
+          <div class="mt-5">
+            <!-- social -->
+            <a
+              href="#"
+              class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
+              rel="noopener"
+              aria-label="facebook page"
+            >
+              <i class="fi fi-social-facebook"></i>
+            </a>
 
-              <a
-                href="#"
-                class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
-                rel="noopener"
-                aria-label="twitter page"
-              >
-                <i class="fi fi-social-twitter"></i>
-              </a>
+            <a
+              href="#"
+              class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
+              rel="noopener"
+              aria-label="twitter page"
+            >
+              <i class="fi fi-social-twitter"></i>
+            </a>
 
-              <a
-                href="#"
-                class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
-                rel="noopener"
-                aria-label="linkedin page"
-              >
-                <i class="fi fi-social-linkedin"></i>
-              </a>
+            <a
+              href="#"
+              class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
+              rel="noopener"
+              aria-label="linkedin page"
+            >
+              <i class="fi fi-social-linkedin"></i>
+            </a>
 
-              <a
-                href="#"
-                class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
-                rel="noopener"
-                aria-label="youtube page"
-              >
-                <i class="fi fi-social-youtube"></i>
-              </a>
+            <a
+              href="#"
+              class="btn btn-sm btn-light transition-hover-top mb-2 rounded-circle"
+              rel="noopener"
+              aria-label="youtube page"
+            >
+              <i class="fi fi-social-youtube"></i>
+            </a>
 
-              <!-- credit cards -->
-              <ul class="list-inline mb-0 mt-2">
-                <li class="list-inline-item m-0">
-                  <img
-                    width="38"
-                    height="24"
-                    class="lazy"
-                    data-src="assets/images/credit_card/visa.svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    alt="visa credit card icon"
-                  />
-                </li>
+            <!-- credit cards -->
+            <ul class="list-inline mb-0 mt-2">
+              <li class="list-inline-item m-0">
+                <img
+                  width="38"
+                  height="24"
+                  class="lazy"
+                  data-src="assets/images/credit_card/visa.svg"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="visa credit card icon"
+                />
+              </li>
 
-                <li class="list-inline-item m-0">
-                  <img
-                    width="38"
-                    height="24"
-                    class="lazy"
-                    data-src="assets/images/credit_card/mastercard.svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    alt="mastercard credit card icon"
-                  />
-                </li>
+              <li class="list-inline-item m-0">
+                <img
+                  width="38"
+                  height="24"
+                  class="lazy"
+                  data-src="assets/images/credit_card/mastercard.svg"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="mastercard credit card icon"
+                />
+              </li>
 
-                <li class="list-inline-item m-0">
-                  <img
-                    width="38"
-                    height="24"
-                    class="lazy"
-                    data-src="assets/images/credit_card/discover.svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    alt="discover credit card icon"
-                  />
-                </li>
+              <li class="list-inline-item m-0">
+                <img
+                  width="38"
+                  height="24"
+                  class="lazy"
+                  data-src="assets/images/credit_card/discover.svg"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="discover credit card icon"
+                />
+              </li>
 
-                <li class="list-inline-item m-0">
-                  <img
-                    width="38"
-                    height="24"
-                    class="lazy"
-                    data-src="assets/images/credit_card/amazon.svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    alt="amazon credit card icon"
-                  />
-                </li>
+              <li class="list-inline-item m-0">
+                <img
+                  width="38"
+                  height="24"
+                  class="lazy"
+                  data-src="assets/images/credit_card/amazon.svg"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="amazon credit card icon"
+                />
+              </li>
 
-                <li class="list-inline-item m-0">
-                  <img
-                    width="38"
-                    height="24"
-                    class="lazy"
-                    data-src="assets/images/credit_card/paypal.svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    alt="paypal credit card icon"
-                  />
-                </li>
+              <li class="list-inline-item m-0">
+                <img
+                  width="38"
+                  height="24"
+                  class="lazy"
+                  data-src="assets/images/credit_card/paypal.svg"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="paypal credit card icon"
+                />
+              </li>
 
-                <li class="list-inline-item m-0">
-                  <img
-                    width="38"
-                    height="24"
-                    class="lazy"
-                    data-src="assets/images/credit_card/skrill.svg"
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    alt="skrill credit card icon"
-                  />
-                </li>
+              <li class="list-inline-item m-0">
+                <img
+                  width="38"
+                  height="24"
+                  class="lazy"
+                  data-src="assets/images/credit_card/skrill.svg"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  alt="skrill credit card icon"
+                />
+              </li>
 
-                <!-- more vendors on assets/images/credit_card/ -->
-              </ul>
-            </div>
+              <!-- more vendors on assets/images/credit_card/ -->
+            </ul>
           </div>
         </div>
-      </footer>
-      <!-- /Footer -->
-    </div>
+      </div>
+    </footer>
     <!-- /#wrapper -->
 
     <script src="assets/js/core.min.js"></script>
