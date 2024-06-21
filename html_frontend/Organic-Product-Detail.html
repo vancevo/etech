@@ -722,20 +722,6 @@
                             alt="..."
                           />
                         </div>
-
-                        <!-- slider 5 -->
-                        <!-- <div class="swiper-slide p-2 rounded cursor-pointer">
-	                        <img height="80" class="bg-suprime rounded" 
-	                          src="demo.files/images/various/product/speakers/thumb/1_5-min.jpg" 
-	                          alt="...">
-	                      </div> -->
-
-                        <!-- slider 6 -->
-                        <!-- <div class="swiper-slide p-2 rounded cursor-pointer">
-	                        <img height="80" class="bg-suprime rounded" 
-	                          src="demo.files/images/various/product/speakers/thumb/1_6-min.jpg" 
-	                          alt="...">
-	                      </div> -->
                       </div>
                     </div>
                   </div>
@@ -981,46 +967,27 @@
                 <!-- /shipping -->
 
                 <hr class="my-0 bg-gray-300" />
+                <div class="py-3 d-lg-flex">
 
-                <!-- add to cart -->
-                <div class="py-2 d-lg-flex">
                   <div class="w-100 d-flex mb-2 mb-lg-0">
-                    <div class="d-flex">
-                      <button
-                        type="submit"
-                        class="btn btn-lg btn-warning  mb-2"
-                      >
-                        Mua ngay
-                      </button>
-                      <button
-                        type="submit"
-                        class="btn btn-lg btn-primary  mb-2"
-                      >
-                        Thêm vào giỏ hàng
-                      </button>
+                    <!-- quantity -->
+                    <!-- <input required="" type="number" value="1" min="1" max="9999" class="flex-none form-control form-control-lg w-auto text-center float-start mx-0"> -->
+                    <button type="submit" class="btn btn-lg btn-warning flex-none">Mua ngay</button>
+                    
+                    <!-- add to cart button -->
+                    <div class="d-grid w-100 mx-2">
+                      <button type="submit" class="btn btn-lg btn-primary flex-none">Thêm vào giỏ hàng</button>
                     </div>
                   </div>
-                </div>
 
                   <!-- favourites button (delete if not needed) -->
-                  <a
-                    href="#"
-                    class="btn-toggle btn btn-lg btn-light d-flex justify-content-center align-items-center px-lg-4"
-                    data-bs-toggle="tooltip"
-                    data-bs-original-title="add to favourite"
-                    data-toggle-ajax-url-on="demo.files/php/demo.ajax_request.php?product_id=1&amp;action=add_to_favourite"
-                    data-toast-success-message="Added to your favourite!"
-                    data-toast-success-position="bottom-center"
-                  >
-                    <i class="fs-6 m-0 fi fi-heart-empty"
-                      ><!-- heart icon --></i
-                    >
-                    <!-- mobile only --><span class="px-3 d-lg-none"
-                      >add to favourite</span
-                    >
+                  <a href="#" class="btn-toggle btn btn-lg btn-outline-danger d-flex justify-content-center align-items-center px-lg-4 js-togglified" data-bs-toggle="tooltip" data-bs-original-title="Thêm vào mục yêu thích" data-toggle-ajax-url-on="demo.files/php/demo.ajax_request.php?product_id=1&amp;action=add_to_favourite" data-toast-success-message="Added to your favourite!" data-toast-success-position="bottom-center">
+                    <i class="fs-6 m-0 fi fi-heart-empty"><!-- heart icon --></i> 
+                    <!-- mobile only --><span class="px-3 d-lg-none">Thêm vào mục yêu thích</span>
                   </a>
+
                 </div>
-                <!-- /add to cart -->
+
               </div>
             </div>
           </div>
@@ -1159,7 +1126,7 @@
     </div>
       <!-- /Description info -->
     <!-- SUGGESTIONS -->
-    <div class="section bg-gray-200 py-5">
+    <div class="section bg-gray-200 py-4">
       <div class="container">
         <h2 class="fw-bold">SẢN PHẨM TƯƠNG TỰ</h2>
 
@@ -1391,9 +1358,9 @@
     <!-- /INFO BOX -->
 
     <!-- REVIEWS -->
-    <div class="section">
+    <div class="section py-4">
       <div class="container">
-        <h2 class="fw-bold mb-5">Khách hàng đánh giá</h2>
+        <h2 class="fw-bold mb-4">Khách hàng đánh giá</h2>
 
         <div class="row g-4 g-lg-5">
           <!-- sidebar -->
