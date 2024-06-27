@@ -60,6 +60,201 @@
   width: fit-content;
 }
 
+/* -- LOGIN */
+.login-wrapper {
+  min-height: 100vh;
+  position: relative;
+  background: url("../../demo.files/images/3t/login/farm-bg-1.jpg") no-repeat right center;
+  background-size: cover;
+}
+
+.login-inner {
+  position: absolute;
+  top: 50%;
+  left: 11.07%;
+  transform: translateY(-50%);
+  width: 511px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  background: url("../../demo.files/images/3t/login/bg-inner.png") repeat;
+  padding: 7px;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 25px;
+}
+.form-row.last {
+  margin-bottom: 22px;
+}
+.form-row .form-wrapper {
+  width: 50%;
+}
+.form-row .form-wrapper:first-child {
+  margin-right: 25px;
+}
+
+.form-wrapper {
+  position: relative;
+}
+.form-wrapper label {
+  display: block;
+  font-size: 17px;
+  color: #4c4c4c;
+  margin-bottom: 8px;
+}
+.form-wrapper i.zmdi-chevron-down {
+  position: absolute;
+  right: 16px;
+  top: 42px;
+  font-size: 15px;
+  color: #666;
+}
+.form-wrapper span.lnr-calendar-full {
+  position: absolute;
+  left: 16px;
+  font-size: 15px;
+  color: #666;
+  top: 43px;
+}
+
+.form-control {
+  border: 1px solid #e6e6e6;
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+}
+.form-control.datepicker-here {
+  padding-left: 39px;
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 22px;
+}
+.checkbox label {
+  cursor: pointer;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 12px;
+  width: 13px;
+  border-radius: 2px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.checkmark:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  content: "\f26b";
+  color: #333;
+}
+
+.login-button {
+  border: none;
+  width: 173px;
+  height: 42px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #3e91f7;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.login-input,
+.login-textarea,
+.login-select {
+  font-size: 13px;
+  color: #666;
+}
+
+.form-login {
+  width: 100%;
+  padding: 57px 46px 55px;
+  background: #fff;
+}
+
+.login-h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #3e91f7;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+  .login-wrapper {
+    background-position: center center;
+  }
+}
+@media (max-width: 991px) {
+  .login-inner {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .login-inner {
+    width: 100%;
+    transform: translateY(0);
+    position: static;
+    padding: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+  }
+
+  .login-wrapper {
+    background: none;
+    display: block;
+  }
+
+  .login-form {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    display: block;
+  }
+  .form-row .form-wrapper {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .form-row .form-wrapper:first-child {
+    margin-right: 0;
+  }
+}
+/* --END LOGIN */
+
 @media only screen and (max-width: 500px) {
   /* PRODUCT DETAIL */
   .product_detail-info--title {
@@ -76,3 +271,5 @@
     color: unset !important;
   }
 }
+
+
