@@ -96,24 +96,30 @@
               </button>
 
               <!-- 
-                Logo : height: 70px max
-              -->
+          Logo : height: 70px max
+          -->
               <a class="navbar-brand m-0" href="#">
-                <h1 class="h--70 d-inline-flex align-items-center border">
-                  LOGO 3T
-                </h1>
+                <!-- <h1 class="h--70 d-inline-flex align-items-center border">
+                LOGO 3T
+              </h1> -->
+                <img
+                  width="70"
+                  height="70"
+                  class="lazy bg-white rounded-circle logo"
+                  data-src="demo.files/images/3t/logo/organic-logo.png"
+                />
               </a>
             </div>
 
             <!-- 
-
-              [SOW] SEARCH SUGGEST PLUGIN
-              ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
-              PLEASE READ DOCUMENTATION
-              documentation/plugins-sow-search-suggest.html
-              ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
-
-            -->
+  
+          [SOW] SEARCH SUGGEST PLUGIN
+          ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
+          PLEASE READ DOCUMENTATION
+          documentation/plugins-sow-search-suggest.html
+          ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++ ++
+  
+        -->
             <form
               action="#search-page"
               method="GET"
@@ -187,9 +193,9 @@
                   </div>
 
                   <!-- 
-                    AJAX CONTENT CONTAINER 
-                    SHOULD ALWAYS BE AS IT IS : NO COMMENTS OR EVEN SPACES!
-                  -->
+            AJAX CONTENT CONTAINER 
+            SHOULD ALWAYS BE AS IT IS : NO COMMENTS OR EVEN SPACES!
+            -->
                   <div
                     class="sow-search-content rounded w-100 scrollable-vertical"
                   ></div>
@@ -198,14 +204,14 @@
               <!-- /search suggestion container -->
 
               <!-- 
-
-                overlay combinations:
-                  backdrop-dark
-                  backdrop-light
-                  overlay-dark opacity-* [1-9]
-                  overlay-light opacity-* [1-9]
-
-              -->
+  
+          overlay combinations:
+            backdrop-dark
+            backdrop-light
+            overlay-dark opacity-* [1-9]
+            overlay-light opacity-* [1-9]
+  
+          -->
               <div class="sow-search-backdrop backdrop-dark hide">
                 <!-- alternate: overlay-dark opacity-3 -->
               </div>
@@ -326,10 +332,10 @@
                   <div class="dropdown-header p-3 fw-medium">Giỏ hàng</div>
 
                   <!--
-                  <div class="py-5 text-center bg-light">
-                    Your cart is empty!
-                  </div>
-                  -->
+            <div class="py-5 text-center bg-light">
+            Your cart is empty!
+            </div>
+            -->
 
                   <!-- item list -->
                   <div class="max-vh-50 scrollable-vertical">
@@ -413,39 +419,39 @@
             >
               <!-- Menu -->
               <!--
-
-                Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
-                  .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
-                  .dropdown-menu-hover    - open on hover
-                  .dropdown-menu-clean    - no background color on hover
-                  .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
-                  .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
-                  .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
-
-                  Repositioning long dropdown childs (Example: Pages->Account)
-                    .dropdown-menu-up-n100    - open up with top: -100px
-                    .dropdown-menu-up-n100    - open up with top: -150px
-                    .dropdown-menu-up-n180    - open up with top: -180px
-                    .dropdown-menu-up-n220    - open up with top: -220px
-                    .dropdown-menu-up-n250    - open up with top: -250px
-                    .dropdown-menu-up       - open up without negative class
-
-
-                  Dropdown prefix icon (optional, if enabled in variables.scss)
-                    .prefix-link-icon .prefix-icon-dot    - link prefix
-                    .prefix-link-icon .prefix-icon-line   - link prefix
-                    .prefix-link-icon .prefix-icon-ico    - link prefix
-                    .prefix-link-icon .prefix-icon-arrow  - link prefix
-
-                  .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
-                  .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
-
-                  Mobile animation - add to .navbar-collapse:
-                  .navbar-animate-fadein
-                .navbar-animate-fadeinup
-                  .navbar-animate-bouncein
-
-              -->
+  
+          Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
+            .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
+            .dropdown-menu-hover    - open on hover
+            .dropdown-menu-clean    - no background color on hover
+            .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
+            .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
+            .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
+  
+            Repositioning long dropdown childs (Example: Pages->Account)
+            .dropdown-menu-up-n100    - open up with top: -100px
+            .dropdown-menu-up-n100    - open up with top: -150px
+            .dropdown-menu-up-n180    - open up with top: -180px
+            .dropdown-menu-up-n220    - open up with top: -220px
+            .dropdown-menu-up-n250    - open up with top: -250px
+            .dropdown-menu-up       - open up without negative class
+  
+  
+            Dropdown prefix icon (optional, if enabled in variables.scss)
+            .prefix-link-icon .prefix-icon-dot    - link prefix
+            .prefix-link-icon .prefix-icon-line   - link prefix
+            .prefix-link-icon .prefix-icon-ico    - link prefix
+            .prefix-link-icon .prefix-icon-arrow  - link prefix
+  
+            .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
+            .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
+  
+            Mobile animation - add to .navbar-collapse:
+            .navbar-animate-fadein
+          .navbar-animate-fadeinup
+            .navbar-animate-bouncein
+  
+          -->
               <div
                 class="collapse navbar-collapse navbar-animate-fadein"
                 id="navbarMainNav"
@@ -472,16 +478,22 @@
                   </button>
 
                   <!-- navbar-brand
-                    Mobile Menu Logo 
-                    Logo : height: 70px max
-                  -->
+            Mobile Menu Logo 
+            Logo : height: 70px max
+            -->
                   <a class="navbar-brand" href="#">
                     <!-- logo -->
-                    <h1
-                      class="h--70 d-inline-flex align-items-center border p-2"
-                    >
-                      LOGO 3T
-                    </h1>
+                    <!-- <h1
+                    class="h--70 d-inline-flex align-items-center border p-2"
+                  >
+                    LOGO 3T
+                  </h1> -->
+                    <img
+                      width="60"
+                      height="60"
+                      class="lazy bg-white rounded-circle"
+                      data-src="demo.files/images/3t/logo/organic-logo.png"
+                    />
                   </a>
                 </div>
                 <!-- /navbar : mobile menu -->
@@ -490,34 +502,34 @@
                 <ul class="navbar-nav navbar-sm">
                   <!-- Menu -->
                   <!--
-
-                    Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
-                      .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
-                      .dropdown-menu-hover    - open on hover
-                      .dropdown-menu-clean    - no background color on hover
-                      .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
-                      .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
-                      .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
-
-                      Repositioning long dropdown childs (Example: Pages->Account)
-                        .dropdown-menu-up-n100    - open up with top: -100px
-                        .dropdown-menu-up-n100    - open up with top: -150px
-                        .dropdown-menu-up-n180    - open up with top: -180px
-                        .dropdown-menu-up-n220    - open up with top: -220px
-                        .dropdown-menu-up-n250    - open up with top: -250px
-                        .dropdown-menu-up       - open up without negative class
-
-
-                      Dropdown prefix icon (optional, if enabled in variables.scss)
-                        .prefix-link-icon .prefix-icon-dot    - link prefix
-                        .prefix-link-icon .prefix-icon-line   - link prefix
-                        .prefix-link-icon .prefix-icon-ico    - link prefix
-                        .prefix-link-icon .prefix-icon-arrow  - link prefix
-
-                      .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
-                      .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
-
-                  -->
+  
+            Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
+              .dropdown-menu-dark     - dark dropdown (desktop only, will be white on mobile)
+              .dropdown-menu-hover    - open on hover
+              .dropdown-menu-clean    - no background color on hover
+              .dropdown-menu-invert     - open dropdown in oposite direction (left|right, according to RTL|LTR)
+              .dropdown-menu-uppercase  - uppercase text (font-size is scalled down to 13px)
+              .dropdown-click-ignore    - keep dropdown open on inside click (useful on forms inside dropdown)
+  
+              Repositioning long dropdown childs (Example: Pages->Account)
+              .dropdown-menu-up-n100    - open up with top: -100px
+              .dropdown-menu-up-n100    - open up with top: -150px
+              .dropdown-menu-up-n180    - open up with top: -180px
+              .dropdown-menu-up-n220    - open up with top: -220px
+              .dropdown-menu-up-n250    - open up with top: -250px
+              .dropdown-menu-up       - open up without negative class
+  
+  
+              Dropdown prefix icon (optional, if enabled in variables.scss)
+              .prefix-link-icon .prefix-icon-dot    - link prefix
+              .prefix-link-icon .prefix-icon-line   - link prefix
+              .prefix-link-icon .prefix-icon-ico    - link prefix
+              .prefix-link-icon .prefix-icon-arrow  - link prefix
+  
+              .nav-link.nav-link-caret-hide   - no dropdown icon indicator on main link
+              .nav-item.dropdown-mega     - required ONLY on fullwidth mega menu
+  
+            -->
                   <!-- home -->
                   <li class="nav-item dropdown active">
                     <a
@@ -676,7 +688,7 @@
               <h2>Organic Farm</h2>
               <p class="fs-7" style="color: grey">Hoạt động 2 phút trước</p>
               <div class="d-flex gap-1">
-                <a href="#" class="btn btn-primary" >Theo dõi</a>
+                <a href="#" class="btn btn-primary">Theo dõi</a>
                 <a href="#" class="btn btn-danger">Yêu thích</a>
               </div>
             </div>
@@ -1404,13 +1416,13 @@
       </div>
       <!-- /Flickity Carousel -->
 
-     
-
       <!--  PRODUCT -->
       <!-- products -->
       <div class="container">
         <div class="d-flex gap-2">
-          <p class="p-2 border rounded-3 cursor-pointer bg-primary text-white">Phổ biến</p>
+          <p class="p-2 border rounded-3 cursor-pointer bg-primary text-white">
+            Phổ biến
+          </p>
           <p class="p-2 border rounded-3 cursor-pointer">Bán chạy</p>
           <p class="p-2 border rounded-3 cursor-pointer">Sắp thu hoạch</p>
         </div>
@@ -1498,8 +1510,6 @@
               </svg>
             </a>
           </div>
-
-          
         </div>
         <!-- /additional filters -->
 
@@ -2262,13 +2272,20 @@
         </div>
 
         <div class="border-top" style="background-color: #64bb47">
-          <div class="container text-center py-5">
+          <div class="container text-center py-3">
             <!-- logo -->
-            <h1 class="h--70 d-inline-flex align-items-center border p-2">
+            <!-- <h1 class="h--70 d-inline-flex align-items-center border p-2">
               LOGO 3T
-            </h1>
-
-            <p class="m-0 fs-6">&copy; Orangic Farm 3T (2024 - 2030)</p>
+            </h1> -->
+            <img
+              width="100"
+              height="100"
+              class="lazy mb-2 bg-white rounded-circle"
+              data-src="demo.files/images/3t/logo/organic-logo.png"
+            />
+            <p class="m-0 fs-6">
+              &copy; Copyright Orangic Farm 3T (2024 - 2030)
+            </p>
 
             <div class="mt-5">
               <!-- social -->
@@ -2382,7 +2399,6 @@
           </div>
         </div>
       </footer>
-      <!-- /Footer -->
     </div>
     <!-- /#wrapper -->
 
